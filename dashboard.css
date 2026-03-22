@@ -536,7 +536,7 @@ tbody tr:hover {
 }
 
 .logo {
-  width: 140px;
+  width: 190px;
 }
 
 .canvas-holder {
@@ -559,6 +559,9 @@ canvas {
     justify-content: center;
     align-items: flex-start;
     gap: 10px;
+  }
+  .material-symbols-outlined i {
+    font-size: 1.5rem;
   }
 }
 

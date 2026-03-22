@@ -1813,6 +1813,7 @@ body.no-scroll {
   justify-content: space-between;
   /* align-items: flex-end; */
   margin-bottom: 50px;
+  gap: 30px;
 }
 
 .sorting-wrapper {
