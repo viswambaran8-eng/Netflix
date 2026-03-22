@@ -1,0 +1,1012 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <link rel="icon" href="./Assets/icon.webp" />
+    <link rel="stylesheet" href="./about.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header1">
+        <div class="container1">
+          <h3>Welcome to Stackly – Streamming Service Connect and Enjoy</h3>
+        </div>
+        <div class="container2">
+          <div>
+            <i class="fa-solid fa-phone-volume"></i>
+            <p>(123)456-7890</p>
+          </div>
+          <div>
+            <i class="fa-regular fa-envelope"></i>
+            <p>Support@stackly.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="header2">
+        <div class="logo">
+          <a href="./index.html">
+            <img src="./Assets/logo.webp" alt="Logo" />
+          </a>
+        </div>
+
+        <div class="div">
+          <nav>
+            <ul>
+              <li class="dropdown">
+                <a href="./index.html">Home</a>
+
+                <!-- <span class="drop-toggle">
+                  <i class="fa-solid fa-caret-down"></i>
+                </span> -->
+
+                <ul class="dropdown-menu">
+                  <li><a href="./index2.html">Home 2</a></li>
+                </ul>
+              </li>
+
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./service.html">Services</a></li>
+              <li><a href="./blog.html">Blog</a></li>
+              <li><a href="./contact.html">Contact Us</a></li>
+              <!-- <li><a href="./dashboard.html">Dashboard</a></li> -->
+            </ul>
+          </nav>
+
+          <div class="icons">
+            <div class="login">
+              <a href="./login.html">
+                <button class="log-btn">Login</button>
+              </a>
+            </div>
+
+            <div class="mobilebar">
+              <div class="hamburger-box">
+                <div class="hamburger">
+                  <div class="line line1"></div>
+                  <div class="line line2"></div>
+                  <div class="line line3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="sidebar" id="sidebar">
+      <ul>
+        <li class="has-dropdown menu-item">
+          <div class="dropdown-header">
+            <a href="./index.html">Home</a>
+            <!-- <span class="drop-caret" id="home-caret">▾</span> -->
+          </div>
+          <!-- <ul class="submenu" id="home-dropdown">
+            <li><a href="./index2.html">Home 2</a></li>
+          </ul> -->
+        </li>
+
+        <li class="menu-item">
+          <a href="./about.html">About</a>
+        </li>
+        <li class="menu-item">
+          <a href="./service.html">Services</a>
+        </li>
+        <li class="menu-item">
+          <a href="./blog.html">Blog</a>
+        </li>
+        <li class="menu-item">
+          <a href="./contact.html">Contact Us</a>
+        </li>
+        <!-- <li class="menu-item">
+          <a href="./dashboard.html">Dashboard</a>
+        </li> -->
+        <li class="menu-item">
+          <a href="./login.html">Login</a>
+        </li>
+      </ul>
+
+      <div class="sidebar-login">
+        <!-- <a href="./app.html">
+            <button class="login-btn">Buy Now</button>
+          </a> -->
+      </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <section class="netflix-about-hero">
+      <div class="hero-video-container">
+        <div class="vignette-overlay"></div>
+        <img
+          src="./Assets/cinemabackground_11zon.webp"
+          alt="Cinema Background"
+          class="hero-bg-img"
+        />
+      </div>
+
+      <div class="about-hero-inner">
+        <div class="hero-label">Our Story</div>
+        <h1 class="hero-main-title">
+          Redefining How the <br /><span>World Tells Stories.</span>
+        </h1>
+
+        <div class="hero-rich-content">
+          <p class="hero-lead">
+            At the intersection of technology and entertainment, we are building
+            a home for the world's most daring creators. From the streets of
+            Seoul to the heart of Hollywood, we bring local stories to a global
+            stage.
+          </p>
+          <div class="hero-features-row">
+            <div class="h-feature">
+              <span class="feat-num">190+</span>
+              <span class="feat-text">Countries Reached</span>
+            </div>
+            <!-- <div class="h-divider"></div> -->
+            <div class="h-feature">
+              <span class="feat-num">Unlimited</span>
+              <span class="feat-text">Original Content</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="scroll-indicator">
+          <span>Discover Our Journey</span>
+          <div class="mouse-icon"><div class="wheel"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="story-timeline-section">
+      <div class="story-container">
+        <h2 class="story-title">Our <span>Journey</span></h2>
+
+        <div class="timeline-wrapper">
+          <div class="timeline-line"><div class="line-progress"></div></div>
+
+          <div class="timeline-item">
+            <div class="timeline-content left">
+              <span class="year">1997</span>
+              <h3>The Vision</h3>
+              <p>
+                Started with a revolutionary idea: Delivering stories directly
+                to your door, breaking the limits of traditional video rentals.
+              </p>
+            </div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-visual right">
+              <img
+                src="./Assets/Vintage DVD and Mail_11zon.webp"
+                alt="Vintage DVD and Mail"
+              />
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-visual left">
+              <img
+                src="./Assets/Laptop Streaming_11zon.webp"
+                alt="Laptop Streaming"
+              />
+            </div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-content right">
+              <span class="year">2007</span>
+              <h3>The Pivot</h3>
+              <p>
+                We launched streaming, allowing members to instantly watch shows
+                and movies on their personal computers.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-content left">
+              <span class="year">2013</span>
+              <h3>Originals Era</h3>
+              <p>
+                We began producing our own content, giving a voice to unique
+                creators and redefining global television standards.
+              </p>
+            </div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-visual right">
+              <img
+                src="./Assets/Film Production_11zon.webp"
+                alt="Film Production"
+              />
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-visual left">
+              <img
+                src="./Assets/Global Content Grid_11zon_11zon.webp"
+                alt="Global Content Grid"
+              />
+            </div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-content right">
+              <span class="year">Today</span>
+              <h3>Global Stage</h3>
+              <p>
+                Connecting over 190 countries through the power of diverse,
+                immersive, and local storytelling.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mv-section">
+      <div class="mv-header-block">
+        <h2 class="mv-main-title">Driven by <span>Purpose</span></h2>
+        <p class="mv-description">
+          Our mission is to deliver high-quality, personalized streaming
+          experiences powered by relentless innovation and storytelling that
+          knows no borders.
+        </p>
+      </div>
+
+      <div class="mv-container">
+        <div class="mv-card mission">
+          <div class="mv-bg-img">
+            <img src="./Assets/Innovation_11zon.webp" alt="Innovation" />
+          </div>
+          <div class="mv-content">
+            <div class="mv-label">The Strategy</div>
+            <h3>Our <span>Mission</span></h3>
+            <p>
+              To empower creators and delight audiences with seamless technology
+              and diverse narratives.
+            </p>
+            <div class="mv-icon"><i class="fas fa-rocket"></i></div>
+          </div>
+        </div>
+
+        <div class="mv-card vision">
+          <div class="mv-bg-img">
+            <img src="./Assets/Global Vision_11zon.webp" alt="Global Vision" />
+          </div>
+          <div class="mv-content">
+            <div class="mv-label">The Future</div>
+            <h3>Our <span>Vision</span></h3>
+            <p>
+              To redefine the global stage for entertainment, becoming the
+              world's most loved storytelling service.
+            </p>
+            <div class="mv-icon"><i class="fas fa-eye"></i></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="strategy-section">
+      <div class="strategy-header">
+        <div class="strategy-tag">The Blueprint</div>
+        <h2 class="strategy-title">Our Content <span>Strategy</span></h2>
+        <p class="strategy-lead">
+          We focus on diversity, inclusivity, and global storytelling, ensuring
+          that every voice has a stage and every story finds its home.
+        </p>
+      </div>
+
+      <div class="strategy-grid">
+        <div class="strategy-card">
+          <img
+            src="./Assets/Radical Diversity_11zon_11zon.webp"
+            alt="Radical Diversity"
+            class="card-img"
+          />
+          <div class="card-overlay"></div>
+          <div class="card-content">
+            <span class="pillar-number">01</span>
+            <h3>Radical <span>Diversity</span></h3>
+            <p>
+              Championing underrepresented voices through authentic casting and
+              behind-the-camera leadership.
+            </p>
+            <div class="pillar-line"></div>
+          </div>
+        </div>
+
+        <div class="strategy-card highlight">
+          <img
+            src="./Assets/Seamless Inclusivity_11zon.webp"
+            alt="Seamless Inclusivity"
+            class="card-img"
+          />
+          <div class="card-overlay"></div>
+          <div class="card-content">
+            <span class="pillar-number">02</span>
+            <h3>Seamless <span>Inclusivity</span></h3>
+            <p>
+              Creating content that is accessible to everyone, with
+              industry-leading audio descriptions and subtitles.
+            </p>
+            <div class="pillar-line"></div>
+          </div>
+        </div>
+
+        <div class="strategy-card">
+          <img
+            src="./Assets/Global Narratives_11zon.webp"
+            alt="Global Narratives"
+            class="card-img"
+          />
+          <div class="card-overlay"></div>
+          <div class="card-content">
+            <span class="pillar-number">03</span>
+            <h3>Global <span>Narratives</span></h3>
+            <p>
+              Investing in local language productions to bring regional
+              masterpieces to a global 190-country audience.
+            </p>
+            <div class="pillar-line"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="global-presence-section">
+      <div class="map-container">
+        <img
+          src="./Assets/world map_11zon_11zon.webp"
+          alt="World Map Dark"
+          class="base-map"
+        />
+        <div class="map-overlay"></div>
+
+        <div class="pulse-point point-la" data-region="Hollywood"></div>
+        <div class="pulse-point point-seoul" data-region="Seoul"></div>
+        <div class="pulse-point point-mumbai" data-region="Mumbai"></div>
+        <div class="pulse-point point-london" data-region="London"></div>
+      </div>
+
+      <div class="global-inner">
+        <div class="global-content-box">
+          <h2 class="global-title">Global Reach, <span>Local Stories</span></h2>
+          <p class="global-desc">
+            We aren't just a global service; we are a collection of local ones.
+            From the bustling film sets of Mumbai to the high-tech studios in
+            Seoul, we invest in regional creators to bring authentic voices to a
+            stage of <strong>190+ countries</strong>.
+          </p>
+
+          <div class="region-info-card">
+            <h4 id="active-region">Currently Highlighting: Hollywood</h4>
+            <p id="region-fact">
+              Producing over 50+ Global Originals annually from this hub.
+            </p>
+          </div>
+
+          <div class="language-stats">
+            <div class="stat-box">
+              <span class="stat-val">30+</span>
+              <p>Languages Subtitled</p>
+            </div>
+            <div class="stat-box">
+              <span class="stat-val">24/7</span>
+              <p>Global Delivery</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="culture-section">
+      <div class="culture-header">
+        <div class="culture-tag">Inside the Studio</div>
+        <h2 class="culture-title">The Humans Behind <span>The Magic</span></h2>
+        <p class="culture-lead">
+          We are a global collective of rebels, artists, and engineers. Our
+          culture is built on
+          <strong>Responsibility, Integrity, and Impact.</strong>
+        </p>
+      </div>
+
+      <div class="culture-grid">
+        <div class="culture-item large">
+          <img
+            src="./Assets/Team Collaboration_11zon.webp"
+            alt="Team Collaboration"
+          />
+          <div class="item-overlay">
+            <h3>Collaborative Spirit</h3>
+            <p>Radical candor is our secret sauce.</p>
+          </div>
+        </div>
+
+        <div class="culture-item small">
+          <img
+            src="./Assets/Creative Design_11zon.webp"
+            alt="Creative Design"
+          />
+          <div class="item-overlay">
+            <h3>Design First</h3>
+          </div>
+        </div>
+
+        <div class="culture-item small">
+          <img src="./Assets/Engineering_11zon.webp" alt="Engineering" />
+          <div class="item-overlay">
+            <h3>Scale Masters</h3>
+          </div>
+        </div>
+
+        <div class="culture-item wide">
+          <img src="./Assets/Global Meeting_11zon.webp" alt="Global Meeting" />
+          <div class="item-overlay">
+            <h3>190+ Perspectives</h3>
+            <p>Diversity isn't a goal; it's our foundation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="impact-section">
+      <div class="impact-bg-overlay"></div>
+
+      <div class="impact-container">
+        <div class="achievements-block">
+          <div class="impact-tag">Recognition</div>
+          <h2 class="impact-title">Award-Winning <span>Experiences</span></h2>
+
+          <div class="awards-ticker">
+            <div class="ticker-track">
+              <div class="award-item">
+                <i class="fas fa-trophy"></i> Emmy® Winner 2026
+              </div>
+              <div class="award-item">
+                <i class="fas fa-medal"></i> UX Design Gold
+              </div>
+              <div class="award-item">
+                <i class="fas fa-star"></i> Innovation Excellence
+              </div>
+              <div class="award-item">
+                <i class="fas fa-heart"></i> Fan Favorite App
+              </div>
+              <div class="award-item">
+                <i class="fas fa-trophy"></i> Emmy® Winner 2026
+              </div>
+              <div class="award-item">
+                <i class="fas fa-medal"></i> UX Design Gold
+              </div>
+              <div class="award-item">
+                <i class="fas fa-trophy"></i> Emmy® Winner 2026
+              </div>
+              <div class="award-item">
+                <i class="fas fa-medal"></i> UX Design Gold
+              </div>
+              <div class="award-item">
+                <i class="fas fa-star"></i> Innovation Excellence
+              </div>
+              <div class="award-item">
+                <i class="fas fa-heart"></i> Fan Favorite App
+              </div>
+              <div class="award-item">
+                <i class="fas fa-trophy"></i> Emmy® Winner 2026
+              </div>
+              <div class="award-item">
+                <i class="fas fa-medal"></i> UX Design Gold
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number" data-target="250">0</div>
+            <div class="stat-label">Million Members</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="15000">0</div>
+            <div class="stat-label">Titles Streamed Daily</div>
+          </div>
+          <div class="stat-card highlight">
+            <div class="stat-number" data-target="99">0</div>
+            <div class="stat-label">% Uptime Global</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <div class="footer-grid">
+        <div class="footer-brand gsap-contact">
+          <div class="logo" style="margin-bottom: 20px">
+            <a href="./index.html">
+              <img
+                src="./Assets/logo.webp"
+                alt="Netflix - Logo"
+                style="max-width: 180px"
+              />
+            </a>
+          </div>
+
+          <p>
+            Ready to watch? Enter your email to create or restart your
+            membership and unlock a world of unlimited movies, TV shows, and
+            more.
+          </p>
+        </div>
+
+        <div class="footer-links gsap-contact">
+          <h4>Quick Links</h4>
+
+          <a href="./about.html">About</a>
+          <a href="./service.html">Services</a>
+          <a href="./blog.html">Blog</a>
+          <a href="./contact.html">Contact Us</a>
+          <a href="./login.html">Login</a>
+        </div>
+        <!-- <div class="footer-links">
+          <h4>Navigation</h4>
+          <a href="./about.html">About</a>
+          <a href="./service.html">Services</a>
+          <a href="./blog.html">Blog</a>
+        </div> -->
+        <div class="footer-newsletter">
+          <h4>Newsletter</h4>
+          <p>
+            Enter your email to create or restart your membership and unlock a
+            world of unlimited movies, TV shows, and more.
+          </p>
+          <form action="./error.html">
+            <div class="news-input">
+              <input type="email" placeholder="Email Address" required />
+              <button type="submit">→</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Innovations. All Rights Reserved.</p>
+        <div class="legal-links">
+          <a href="./error.html">Privacy Policy</a>
+          <a href="./error.html">ISO Compliance</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./script.js"></script>
+<script>
+  AOS.init({
+    once: true,
+    duration: 1000,
+    easing: "ease-out-cubic",
+    startEvent: "aos:ready", // manual trigger
+  });
+</script>
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<!-- 1 -->
+
+<script>
+  window.addEventListener("load", () => {
+    const tl = gsap.timeline();
+
+    // 1. Initial Scale of the background image (Zoom In)
+    gsap.set(".hero-bg-img", { scale: 1.3 });
+
+    // 2. The Pull-Back Animation
+    tl.to(".hero-bg-img", {
+      scale: 1,
+      duration: 3,
+      ease: "power2.out",
+    })
+      .from(
+        ".hero-label",
+        {
+          opacity: 0,
+          y: 20,
+          duration: 1,
+        },
+        "-=2.5",
+      )
+      .from(
+        ".hero-main-title",
+        {
+          opacity: 0,
+          y: 40,
+          duration: 1.2,
+          ease: "power4.out",
+        },
+        "-=2",
+      )
+      .from(
+        ".hero-rich-content",
+        {
+          opacity: 0,
+          y: 30,
+          duration: 1,
+        },
+        "-=1.5",
+      )
+      .from(
+        ".scroll-indicator",
+        {
+          opacity: 0,
+          duration: 1,
+        },
+        "-=1",
+      );
+
+    // 3. Parallax Scroll Effect
+    gsap.to(".hero-bg-img", {
+      yPercent: 20,
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".netflix-about-hero",
+        start: "top top",
+        end: "bottom top",
+        scrub: true,
+      },
+    });
+  });
+</script>
+
+<!-- 2 -->
+
+<script>
+  window.addEventListener("load", () => {
+    // Line progress
+    gsap.to(".line-progress", {
+      height: "100%",
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".timeline-wrapper",
+        start: "top 30%",
+        end: "bottom 70%",
+        scrub: true,
+      },
+    });
+
+    const items = document.querySelectorAll(".timeline-item");
+
+    items.forEach((item) => {
+      const text = item.querySelector(".timeline-content");
+      const img = item.querySelector(".timeline-visual");
+      const dot = item.querySelector(".timeline-dot");
+
+      // Text Slide
+      gsap.from(text, {
+        x: text.classList.contains("left") ? -50 : 50,
+        opacity: 0,
+        duration: 1,
+        scrollTrigger: { trigger: item, start: "top 70%" },
+      });
+
+      // Image Zoom & Fade
+      gsap.from(img, {
+        scale: 0.8,
+        opacity: 0,
+        duration: 1.2,
+        ease: "power2.out",
+        scrollTrigger: { trigger: item, start: "top 70%" },
+      });
+
+      // Dot Pop
+      gsap.from(dot, {
+        scale: 0,
+        duration: 0.5,
+        scrollTrigger: { trigger: item, start: "top 70%" },
+      });
+    });
+  });
+</script>
+
+<!-- 3 -->
+
+<script>
+  window.addEventListener("load", () => {
+    // 1. Header & Description Entrance
+    const headerTl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".mv-header-block",
+        start: "top 85%",
+      },
+    });
+
+    headerTl
+      .from(".mv-main-title", {
+        y: 50,
+        opacity: 0,
+        duration: 1.2,
+        ease: "power4.out",
+      })
+      .from(".mv-description", { y: 30, opacity: 0, duration: 1 }, "-=0.8");
+
+    // 2. Card Interaction Logic
+    const cards = document.querySelectorAll(".mv-card");
+
+    cards.forEach((card) => {
+      card.addEventListener("mouseenter", () => {
+        // Expand current card
+        gsap.to(card, { flex: 1.5, duration: 0.6, ease: "power2.out" });
+        gsap.to(card.querySelector("img"), {
+          scale: 1.1,
+          filter: "brightness(0.7) grayscale(0)",
+          duration: 0.6,
+        });
+
+        // Blur and shrink the other card
+        const other = Array.from(cards).find((c) => c !== card);
+        gsap.to(other, { flex: 0.7, duration: 0.6, ease: "power2.out" });
+        gsap.to(other.querySelector("img"), {
+          filter: "brightness(0.2) blur(8px)",
+          duration: 0.6,
+        });
+      });
+
+      card.addEventListener("mouseleave", () => {
+        // Reset all cards to equal size and original state
+        gsap.to(cards, { flex: 1, duration: 0.6, ease: "power2.inOut" });
+        cards.forEach((c) => {
+          gsap.to(c.querySelector("img"), {
+            scale: 1,
+            filter: "brightness(0.4) grayscale(0.5) blur(0px)",
+            duration: 0.6,
+          });
+        });
+      });
+    });
+  });
+</script>
+
+<!-- 4 -->
+
+<script>
+  window.addEventListener("load", () => {
+    const cards = document.querySelectorAll(".strategy-card");
+
+    // 1. Assign backgrounds from data-attributes
+    cards.forEach((card) => {
+      const bg = card.getAttribute("data-bg");
+      card.style.backgroundImage = `url(${bg})`;
+    });
+
+    // 2. GSAP Entrance Stagger
+    gsap.to(".strategy-card", {
+      scrollTrigger: {
+        trigger: ".strategy-grid",
+        start: "top 80%", // Starts when the top of the grid hits 80% of the viewport
+        toggleActions: "play none none none", // Ensures it only plays once
+      },
+      opacity: 1,
+      y: 0, // Moves back to original position
+      stagger: 0.5, // Reduced from 0.5 for a snappier "Netflix" feel
+      duration: 1.2,
+      ease: "power4.out",
+    });
+
+    // 3. Hover Interaction: Parallel Brightening
+    cards.forEach((card) => {
+      card.addEventListener("mouseenter", () => {
+        gsap.to(card, {
+          boxShadow: "0 20px 50px rgba(229, 9, 20, 0.2)",
+          duration: 0.4,
+        });
+      });
+
+      card.addEventListener("mouseleave", () => {
+        gsap.to(card, {
+          boxShadow: "0 0 30px rgba(0,0,0,0)",
+          duration: 0.4,
+        });
+      });
+    });
+
+    // 4. FUNCTION: Header Reveal
+    gsap.from(".strategy-header > *", {
+      scrollTrigger: {
+        trigger: ".strategy-header",
+        start: "top 90%",
+      },
+      y: 30,
+      opacity: 0,
+      stagger: 0.2,
+      duration: 1,
+    });
+  });
+</script>
+
+<!-- 5 -->
+
+<script>
+  window.addEventListener("load", () => {
+    const points = document.querySelectorAll(".pulse-point");
+    const regionName = document.getElementById("active-region");
+    const regionFact = document.getElementById("region-fact");
+
+    const regionData = {
+      Hollywood: "Producing over 50+ Global Originals annually from this hub.",
+      Seoul: "Home to 'K-Content' that dominates global viewership charts.",
+      Mumbai: "Crafting thousands of hours of high-octane local cinema.",
+      London: "Specializing in world-class period dramas and documentaries.",
+    };
+
+    // 1. Entrance Animation
+    gsap.from(".global-content-box", {
+      x: -100,
+      opacity: 0,
+      duration: 1.2,
+      ease: "power4.out",
+      scrollTrigger: ".global-presence-section",
+    });
+
+    gsap.from(".pulse-point", {
+      scale: 0,
+      stagger: 0.2,
+      duration: 1,
+      ease: "back.out(1.7)",
+      scrollTrigger: ".global-presence-section",
+    });
+
+    // 2. Interactive Switch Function
+    function updateRegion(region) {
+      gsap.to([regionName, regionFact], {
+        opacity: 0,
+        y: 10,
+        duration: 0.3,
+        onComplete: () => {
+          regionName.innerText = `Currently Highlighting: ${region}`;
+          regionFact.innerText = regionData[region];
+          gsap.to([regionName, regionFact], {
+            opacity: 1,
+            y: 0,
+            duration: 0.3,
+          });
+        },
+      });
+    }
+
+    // 3. Auto-Cycle Loop
+    let regions = Object.keys(regionData);
+    let currentIndex = 0;
+
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % regions.length;
+      updateRegion(regions[currentIndex]);
+
+      // Highlight the corresponding dot
+      gsap.to(".pulse-point", { scale: 1, backgroundColor: "#e50914" });
+      const activeDot = document.querySelector(
+        `.point-${regions[currentIndex].toLowerCase()}`,
+      );
+      if (activeDot)
+        gsap.to(activeDot, { scale: 1.5, backgroundColor: "#fff" });
+    }, 4000);
+
+    // 4. Click Interaction
+    points.forEach((point) => {
+      point.addEventListener("click", function () {
+        const region = this.getAttribute("data-region");
+        updateRegion(region);
+      });
+    });
+  });
+</script>
+
+<!-- 6 -->
+
+<script>
+  window.addEventListener("load", () => {
+    // 1. Entrance Animation
+    gsap.to(".culture-item", {
+      scrollTrigger: {
+        trigger: ".culture-grid",
+        start: "top 80%",
+      },
+      opacity: 1,
+      y: 0,
+      duration: 1,
+      stagger: 0.35,
+      ease: "power4.out",
+    });
+
+    // 2. Velocity Skew Function
+    let proxy = { skew: 0 },
+      skewSetter = gsap.quickSetter(".culture-item", "skewY", "deg"),
+      clamp = gsap.utils.clamp(-5, 5); // Limit the skew to 5 degrees
+
+    ScrollTrigger.create({
+      onUpdate: (self) => {
+        let skew = clamp(self.getVelocity() / -300);
+        if (Math.abs(skew) > Math.abs(proxy.skew)) {
+          proxy.skew = skew;
+          gsap.to(proxy, {
+            skew: 0,
+            duration: 0.8,
+            ease: "power3",
+            overwrite: true,
+            onUpdate: () => skewSetter(proxy.skew),
+          });
+        }
+      },
+    });
+
+    // Performance optimization: make the skew transform-only
+    gsap.set(".culture-item", {
+      transformOrigin: "right center",
+      force3D: true,
+    });
+  });
+</script>
+
+<!-- 7 -->
+
+<script>
+  window.addEventListener("load", () => {
+    // 1. Infinite Awards Ticker
+    gsap.to(".ticker-track", {
+      xPercent: -50,
+      ease: "none",
+      duration: 20, // Adjust speed here
+      repeat: -1,
+    });
+
+    // 2. Count-Up Logic Function
+    function animateStats() {
+      const stats = document.querySelectorAll(".stat-number");
+
+      stats.forEach((stat) => {
+        const target = +stat.getAttribute("data-target");
+        const countData = { val: 0 };
+
+        gsap.to(countData, {
+          val: target,
+          duration: 3,
+          ease: "power3.out",
+          onUpdate: () => {
+            // Dynamic formatting based on target values
+            let suffix = "";
+            let finalVal = Math.floor(countData.val);
+
+            if (target === 250) suffix = "M+";
+            if (target === 15000) suffix = "+";
+            if (target === 99) suffix = "%";
+
+            stat.innerText = finalVal.toLocaleString() + suffix;
+          },
+        });
+      });
+    }
+
+    // 3. Trigger Stat Animations on Scroll
+    ScrollTrigger.create({
+      trigger: ".stats-grid",
+      start: "top 85%",
+      onEnter: animateStats,
+      once: true, // Ensures it doesn't re-trigger every time you scroll up/down
+    });
+
+    // 4. Subtle Entrance for Cards
+    gsap.from(".stat-card", {
+      opacity: 0,
+      stagger: 0.2,
+      duration: 1.2,
+      ease: "expo.out",
+      scrollTrigger: ".stats-grid",
+    });
+  });
+</script>

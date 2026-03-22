@@ -1,0 +1,1118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bio Tech</title>
+    <link rel="icon" href="./Assets/icon.webp" />
+    <link rel="stylesheet" href="./dashboard.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="app-container">
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+          <a href="index.html" class="brand">
+            <img src="./assets/logo.webp" alt="logo" class="logo" />
+          </a>
+          <button class="mobile-toggle" id="close-sidebar">
+            <span class="material-symbols-outlined" style="color: beige">
+              <i class="fa-solid fa-x"></i>
+            </span>
+          </button>
+        </div>
+
+        <nav class="nav-menu">
+          <p class="nav-label">Browse</p>
+
+          <button class="nav-item active" data-target="view-home">
+            <span class="material-symbols-outlined">
+              <i class="fa-solid fa-house"></i>
+            </span>
+            Home
+          </button>
+
+          <button class="nav-item" data-target="view-trending">
+            <span class="material-symbols-outlined">
+              <i class="fa-solid fa-fire-flame-curved"></i>
+            </span>
+            Trending
+          </button>
+
+          <button class="nav-item" data-target="view-library">
+            <span class="material-symbols-outlined">
+              <i class="fa-solid fa-clapperboard"></i>
+            </span>
+            My Library
+          </button>
+
+          <p class="nav-label">Personal</p>
+
+          <button
+            onclick="window.location.href = 'profile.html'"
+            class="nav-item"
+          >
+            <span class="material-symbols-outlined">
+              <i class="fa-solid fa-user"></i>
+            </span>
+            Profile Settings
+          </button>
+
+          <button
+            onclick="window.location.href = 'login.html'"
+            class="nav-item"
+          >
+            <span class="material-symbols-outlined">
+              <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            </span>
+            Sign Out
+          </button>
+        </nav>
+      </aside>
+
+      <main class="main-content">
+        <header class="top-navbar">
+          <div style="display: flex; align-items: center; gap: 12px">
+            <button class="mobile-toggle" id="open-sidebar">
+              <span class="material-symbols-outlined">
+                <i class="fa-solid fa-bars"></i>
+              </span>
+            </button>
+            <h3 class="brand-font" style="color: var(--red); font-weight: 400">
+              Stackly Streamly
+            </h3>
+          </div>
+
+          <div class="user-controls">
+            <button
+              onclick="window.location.href = './error.html'"
+              class="icon-btn"
+              style="position: relative"
+            >
+              <span
+                class="material-symbols-outlined"
+                style="color: rgba(255, 255, 255, 0.6)"
+                ><i class="fa-solid fa-bell"></i></span
+              ><span
+                style="
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                  width: 8px;
+                  height: 8px;
+                  background: #e50914; /* Netflix Red */
+                  border-radius: 50%;
+                  border: 2px solid var(--bg-base);
+                "
+              ></span>
+            </button>
+
+            <div class="profile-menu-wrap">
+              <div class="avatar" id="profile-avatar" style="background: red">
+                JD
+              </div>
+
+              <div class="profile-dropdown glass-panel" id="profile-dropdown">
+                <div class="dropdown-user-info">
+                  <div
+                    class="avatar"
+                    style="
+                      width: 36px;
+                      height: 36px;
+                      font-size: 0.9rem;
+                      background: #5d3fd3;
+                    "
+                  >
+                    JD
+                  </div>
+                  <div>
+                    <p class="dropdown-name">John Doe</p>
+                    <p
+                      id="userEmailDisplay"
+                      style="font-size: 0.75rem; opacity: 0.7"
+                    >
+                      Premium Member
+                    </p>
+                  </div>
+                </div>
+
+                <div class="dropdown-divider"></div>
+
+                <a href="./error.html" class="dropdown-item">
+                  <span class="material-symbols-outlined">
+                    <i class="fa-solid fa-circle-user"></i>
+                  </span>
+                  Account
+                </a>
+                <a href="./error.html" class="dropdown-item">
+                  <span class="material-symbols-outlined">
+                    <i class="fa-solid fa-clapperboard"></i>
+                  </span>
+                  Watch History
+                </a>
+                <a href="./error.html" class="dropdown-item">
+                  <span class="material-symbols-outlined">
+                    <i class="fa-solid fa-sliders"></i>
+                  </span>
+                  Playback Settings
+                </a>
+
+                <div class="dropdown-divider"></div>
+
+                <a href="login.html" class="dropdown-item logout-action">
+                  <span class="material-symbols-outlined">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                  </span>
+                  Sign Out of Streamly
+                </a>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <div class="dashboard-body">
+          <section id="view-home" class="content-section active-section">
+            <div style="margin-bottom: 32px">
+              <h1 class="page-title">Welcome Back, Viewer</h1>
+              <p style="color: var(--text-muted)">
+                <span class="live-indicator"></span> Streaming Servers Online •
+                Last updated just now
+              </p>
+            </div>
+
+            <div class="grid-4">
+              <div class="glass-panel" style="margin-bottom: 0">
+                <div class="kpi-header">
+                  <span>Minutes Watched</span>
+                  <span
+                    class="material-symbols-outlined"
+                    style="color: var(--cyan)"
+                  >
+                    <i class="fa-solid fa-play"></i>
+                  </span>
+                </div>
+                <div class="kpi-value">1,482</div>
+                <div
+                  style="
+                    color: var(--green);
+                    font-size: 0.85rem;
+                    font-weight: 500;
+                  "
+                >
+                  +12% this week
+                </div>
+              </div>
+
+              <div class="glass-panel" style="margin-bottom: 0">
+                <div class="kpi-header">
+                  <span>Completion Rate</span>
+                  <span
+                    class="material-symbols-outlined"
+                    style="color: var(--purple)"
+                  >
+                    <i class="fa-solid fa-circle-check"></i>
+                  </span>
+                </div>
+                <div class="kpi-value">
+                  94<span style="font-size: 1.5rem; color: var(--text-muted)"
+                    >%</span
+                  >
+                </div>
+                <div
+                  style="
+                    color: var(--green);
+                    font-size: 0.85rem;
+                    font-weight: 500;
+                  "
+                >
+                  High Engagement
+                </div>
+              </div>
+
+              <div class="glass-panel" style="margin-bottom: 0">
+                <div class="kpi-header">
+                  <span>Saved to Watchlist</span>
+                  <span
+                    class="material-symbols-outlined"
+                    style="color: var(--amber)"
+                  >
+                    <i class="fa-solid fa-bookmark"></i>
+                  </span>
+                </div>
+                <div class="kpi-value">24</div>
+                <div
+                  style="
+                    color: var(--red);
+                    font-size: 0.85rem;
+                    font-weight: 500;
+                  "
+                >
+                  3 expiring soon
+                </div>
+              </div>
+            </div>
+
+            <div class="grid-2-layout">
+              <div
+                class="glass-panel"
+                style="display: flex; flex-direction: column"
+              >
+                <div class="kpi-header" style="margin-bottom: 24px">
+                  <h3 style="color: var(--text-main); font-size: 1.1rem">
+                    Genre Interest Analysis
+                  </h3>
+                </div>
+                <div style="position: relative; height: 250px">
+                  <div class="canvas-holder">
+                    <div class="canvas-holder">
+                      <canvas id="throughputChart"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="glass-panel">
+                <div class="kpi-header" style="margin-bottom: 24px">
+                  <h3 style="color: var(--text-main); font-size: 1.1rem">
+                    Continue Watching
+                  </h3>
+                </div>
+                <div class="table-container">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td
+                          style="
+                            font-family: &quot;DM Sans&quot;;
+                            font-weight: 500;
+                          "
+                        >
+                          The Cyber Protocol
+                        </td>
+                        <td>
+                          <span class="status-pill status-processing"
+                            >S2:E4 (34m left)</span
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td
+                          style="
+                            font-family: &quot;DM Sans&quot;;
+                            font-weight: 500;
+                          "
+                        >
+                          Interstellar Voyagers
+                        </td>
+                        <td>
+                          <span class="status-pill status-success"
+                            >Completed</span
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td
+                          style="
+                            font-family: &quot;DM Sans&quot;;
+                            font-weight: 500;
+                          "
+                        >
+                          Data Stream: Reloaded
+                        </td>
+                        <td>
+                          <span class="status-pill status-warning"
+                            >Resume from 12:04</span
+                          >
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid-3">
+              <div class="glass-panel">
+                <h3 style="margin-bottom: 16px">Profile Progress</h3>
+                <div style="display: flex; flex-direction: column; gap: 12px">
+                  <div>
+                    <p style="font-size: 0.85rem">Action & Sci-Fi</p>
+                    <div class="progress-track">
+                      <div
+                        class="progress-fill"
+                        style="width: 80%; background: var(--green)"
+                      ></div>
+                    </div>
+                  </div>
+                  <div>
+                    <p style="font-size: 0.85rem">Documentaries</p>
+                    <div class="progress-track">
+                      <div
+                        class="progress-fill"
+                        style="width: 65%; background: var(--cyan)"
+                      ></div>
+                    </div>
+                  </div>
+                  <div>
+                    <p style="font-size: 0.85rem">Mystery & Thriller</p>
+                    <div class="progress-track">
+                      <div
+                        class="progress-fill"
+                        style="width: 45%; background: var(--purple)"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="glass-panel">
+                <h3 style="margin-bottom: 16px">Content Activity Feed</h3>
+                <ul
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                    font-size: 0.9rem;
+                  "
+                >
+                  <li>🎬 New Arrival: "The Last Lab" now streaming</li>
+                  <li>🍿 "Interstellar Voyagers" added to your Watchlist</li>
+                  <li>✨ Your "Sci-Fi" recommendation list updated</li>
+                </ul>
+              </div>
+
+              <div class="glass-panel">
+                <h3 style="margin-bottom: 16px">Streaming Quality</h3>
+                <div style="display: flex; flex-direction: column; gap: 10px">
+                  <p>Current Resolution: <strong>4K Ultra HD</strong></p>
+                  <p>Bitrate: <strong>15.4 Mbps</strong></p>
+                  <p>Network Latency: <strong>24 ms</strong></p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="view-library" class="content-section">
+            <div
+              class="myflex"
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                margin-bottom: 32px;
+              "
+            >
+              <div>
+                <h1 class="page-title">Content Library</h1>
+                <p style="color: var(--text-muted)">
+                  Manage your watchlist, downloads, and purchased titles.
+                </p>
+              </div>
+              <button
+                onclick="window.location.href = './error.html'"
+                class="btn-primary"
+                style="display: flex; align-items: center; gap: 8px"
+              >
+                <span
+                  class="material-symbols-outlined"
+                  style="font-size: 1.2rem"
+                >
+                  <i class="fa-solid fa-plus"></i>
+                </span>
+                Create New Playlist
+              </button>
+            </div>
+
+            <div class="glass-panel">
+              <div style="display: flex; gap: 16px; margin-bottom: 24px">
+                <button
+                  onclick="window.location.href = './error.html'"
+                  class="icon-btn"
+                  style="
+                    border-radius: 8px;
+                    width: auto;
+                    padding: 0 16px;
+                    display: flex;
+                    gap: 8px;
+                  "
+                >
+                  <span class="material-symbols-outlined">
+                    <i class="fa-solid fa-filter"></i>
+                  </span>
+                  Genre Filters
+                </button>
+              </div>
+
+              <div class="table-container">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Content ID</th>
+                      <th>Title & Category</th>
+                      <th>Streaming Status</th>
+                      <th>Quality / Format</th>
+                      <th>Watch Progress</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr style="background: rgba(239, 68, 68, 0.05)">
+                      <td
+                        style="
+                          font-family: &quot;DM Sans&quot;;
+                          font-weight: 500;
+                        "
+                      >
+                        MOV-0092-B
+                      </td>
+                      <td>The Cyber Protocol (Movie)</td>
+                      <td>
+                        <span
+                          style="
+                            color: var(--red);
+                            font-weight: 600;
+                            font-size: 0.85rem;
+                          "
+                        >
+                          <span
+                            class="material-symbols-outlined"
+                            style="font-size: 1rem; vertical-align: middle"
+                          >
+                            <i class="fa-solid fa-fire"></i>
+                          </span>
+                          TRENDING
+                        </span>
+                      </td>
+                      <td>4K Ultra HD • HDR10</td>
+                      <td>
+                        <span class="status-pill status-processing">
+                          <span
+                            class="live-indicator"
+                            style="width: 6px; height: 6px"
+                          ></span>
+                          75% Completed
+                        </span>
+                      </td>
+                      <td>
+                        <button
+                          onclick="window.location.href = './error.html'"
+                          class="icon-btn"
+                          style="width: 32px; height: 32px"
+                        >
+                          <span
+                            class="material-symbols-outlined"
+                            style="font-size: 1.1rem"
+                          >
+                            <i class="fa-solid fa-play"></i>
+                          </span>
+                        </button>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td
+                        style="
+                          font-family: &quot;DM Sans&quot;;
+                          font-weight: 500;
+                        "
+                      >
+                        SER-7741-A
+                      </td>
+                      <td>Interstellar Voyagers (Series)</td>
+                      <td style="color: var(--text-muted); font-size: 0.85rem">
+                        In Library
+                      </td>
+                      <td>1080p • Dolby Atmos</td>
+                      <td>
+                        <span class="status-pill status-success">Watched</span>
+                      </td>
+                      <td>
+                        <button
+                          onclick="window.location.href = './error.html'"
+                          class="icon-btn"
+                          style="width: 32px; height: 32px"
+                        >
+                          <span
+                            class="material-symbols-outlined"
+                            style="font-size: 1.1rem"
+                          >
+                            <i class="fa-solid fa-rotate-right"></i>
+                          </span>
+                        </button>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td
+                        style="
+                          font-family: &quot;DM Sans&quot;;
+                          font-weight: 500;
+                        "
+                      >
+                        DOC-7742-A
+                      </td>
+                      <td>Deep Blue Odyssey (Doc)</td>
+                      <td style="color: var(--text-muted); font-size: 0.85rem">
+                        Watchlist
+                      </td>
+                      <td>4K Ultra HD • SDR</td>
+                      <td>
+                        <span class="status-pill status-success"
+                          >Not Started</span
+                        >
+                      </td>
+                      <td>
+                        <button
+                          onclick="window.location.href = './error.html'"
+                          class="icon-btn"
+                          style="width: 32px; height: 32px"
+                        >
+                          <span
+                            class="material-symbols-outlined"
+                            style="font-size: 1.1rem"
+                          >
+                            <i class="fa-solid fa-play"></i>
+                          </span>
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="grid-3">
+              <div class="glass-panel">
+                <h3 style="margin-bottom: 16px">Library Statistics</h3>
+                <p>Saved Titles: <strong>1,482</strong></p>
+                <p>Offline Downloads: <strong>12</strong></p>
+                <p>Storage Used: <strong>44.2 GB</strong></p>
+              </div>
+
+              <div class="glass-panel">
+                <h3 style="margin-bottom: 16px">Recently Added</h3>
+                <ul style="display: flex; flex-direction: column; gap: 10px">
+                  <li>The Last Lab — New Season</li>
+                  <li>Oncology Chronicles — Movie</li>
+                  <li>Clinical Justice — Documentary</li>
+                </ul>
+              </div>
+
+              <div class="glass-panel">
+                <h3 style="margin-bottom: 16px">Category Mix</h3>
+                <p>Sci-Fi & Action: 620</p>
+                <p>Documentary: 410</p>
+                <p>Drama & Mystery: 320</p>
+              </div>
+            </div>
+          </section>
+
+          <section id="view-trending" class="content-section">
+            <div style="margin-bottom: 32px">
+              <h1 class="page-title">Top Picks For You</h1>
+              <p style="color: var(--text-muted)">
+                Based on your recent interest in Science Fiction and Cyberpunk.
+              </p>
+            </div>
+
+            <div class="grid-3">
+              <div class="glass-panel" style="border-top: 2px solid #e50914">
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                  "
+                >
+                  <div>
+                    <h3 style="margin-bottom: 4px">Neon Genesis: Rebirth</h3>
+                    <p style="font-size: 0.85rem; color: var(--text-muted)">
+                      Season 1 • Sci-Fi Thriller
+                    </p>
+                  </div>
+                  <span
+                    class="status-pill status-processing"
+                    style="
+                      padding: 2px 8px;
+                      font-size: 0.65rem;
+                      background: #e50914;
+                      color: white;
+                      border: none;
+                    "
+                  >
+                    <span
+                      class="live-indicator"
+                      style="width: 6px; height: 6px; background: white"
+                    ></span>
+                    TOP 10 TODAY
+                  </span>
+                </div>
+
+                <div
+                  style="
+                    margin-top: 24px;
+                    background: rgba(0, 0, 0, 0.4);
+                    height: 120px;
+                    border-radius: 12px;
+                    border: var(--border-subtle);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    overflow: hidden;
+                  "
+                >
+                  <i
+                    class="fa-solid fa-play"
+                    style="font-size: 2.5rem; color: rgba(255, 255, 255, 0.2)"
+                  ></i>
+                  <div
+                    style="
+                      position: absolute;
+                      bottom: 8px;
+                      left: 12px;
+                      font-family: monospace;
+                      font-size: 0.8rem;
+                      color: #e50914;
+                    "
+                  >
+                    S1 : E4 "The Catalyst"
+                  </div>
+                </div>
+
+                <div style="margin-top: 24px">
+                  <div
+                    style="
+                      display: flex;
+                      justify-content: space-between;
+                      font-size: 0.85rem;
+                      margin-bottom: 8px;
+                    "
+                  >
+                    <span>Completion Progress</span>
+                    <span style="color: #e50914">62%</span>
+                  </div>
+                  <div class="progress-track">
+                    <div
+                      class="progress-fill"
+                      style="
+                        width: 62%;
+                        background: linear-gradient(90deg, #e50914, #ff4d4d);
+                        box-shadow: 0 0 10px rgba(229, 9, 20, 0.4);
+                      "
+                    ></div>
+                  </div>
+                </div>
+
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 24px;
+                    border-top: var(--border-subtle);
+                    padding-top: 16px;
+                  "
+                >
+                  <div>
+                    <p
+                      style="
+                        font-size: 0.7rem;
+                        color: var(--text-muted);
+                        text-transform: uppercase;
+                      "
+                    >
+                      Match Score
+                    </p>
+                    <p style="font-weight: 500; color: #46d369">98% Match</p>
+                  </div>
+                  <div style="text-align: right">
+                    <p
+                      style="
+                        font-size: 0.7rem;
+                        color: var(--text-muted);
+                        text-transform: uppercase;
+                      "
+                    >
+                      Release Date
+                    </p>
+                    <p style="font-weight: 500">March 2026</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="glass-panel"
+                style="border-top: 2px solid var(--purple)"
+              >
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                  "
+                >
+                  <div>
+                    <h3 style="margin-bottom: 4px">The Midnight Vault</h3>
+                    <p style="font-size: 0.85rem; color: var(--text-muted)">
+                      Feature Film • Mystery
+                    </p>
+                  </div>
+                  <span
+                    class="status-pill status-success"
+                    style="
+                      padding: 2px 8px;
+                      font-size: 0.65rem;
+                      border: 1px solid var(--purple);
+                      color: var(--purple);
+                    "
+                    >NEW RELEASE</span
+                  >
+                </div>
+
+                <div
+                  style="
+                    margin-top: 24px;
+                    background: rgba(0, 0, 0, 0.2);
+                    padding: 16px;
+                    border-radius: 12px;
+                    border: var(--border-subtle);
+                    text-align: center;
+                  "
+                >
+                  <span
+                    class="material-symbols-outlined"
+                    style="
+                      font-size: 2rem;
+                      color: var(--text-muted);
+                      margin-bottom: 8px;
+                    "
+                  >
+                    <i class="fa-solid fa-fire-flame-curved"></i>
+                  </span>
+                  <p style="font-size: 0.9rem; color: var(--text-muted)">
+                    Trending #1 in your region. 2.4M people watched this
+                    weekend.
+                  </p>
+                </div>
+
+                <a href="./error.html">
+                  <button
+                    class="btn-primary"
+                    style="
+                      width: 100%;
+                      margin-top: 24px;
+                      background: #e50914;
+                      color: #fff;
+                      border: none;
+                      padding: 10px;
+                      font-weight: bold;
+                      cursor: pointer;
+                      border-radius: 4px;
+                    "
+                  >
+                    <i class="fa-solid fa-play" style="margin-right: 8px"></i>
+                    Play Now
+                  </button>
+                </a>
+              </div>
+
+              <div
+                class="glass-panel"
+                style="border-top: 2px solid var(--amber)"
+              >
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                  "
+                >
+                  <div>
+                    <h3 style="margin-bottom: 4px">Terminal Protocol</h3>
+                    <p style="font-size: 0.85rem; color: var(--text-muted)">
+                      Limited Series • Tech
+                    </p>
+                  </div>
+                  <span
+                    class="status-pill status-warning"
+                    style="padding: 2px 8px; font-size: 0.65rem"
+                    >COMING FRIDAY</span
+                  >
+                </div>
+
+                <div
+                  style="
+                    margin-top: 24px;
+                    background: rgba(245, 158, 11, 0.05);
+                    padding: 16px;
+                    border-radius: 12px;
+                    border: 1px solid rgba(245, 158, 11, 0.2);
+                  "
+                >
+                  <p
+                    style="
+                      font-size: 0.8rem;
+                      color: var(--amber);
+                      margin-bottom: 4px;
+                    "
+                  >
+                    Early Access Available
+                  </p>
+                  <p style="font-weight: 500; font-size: 0.9rem">
+                    Set a reminder to get notified as soon as the first episode
+                    drops.
+                  </p>
+                </div>
+
+                <a href="./error.html">
+                  <button
+                    class="btn-primary"
+                    style="
+                      width: 100%;
+                      margin-top: 24px;
+                      background: transparent;
+                      color: var(--amber);
+                      border: 1px solid var(--amber);
+                    "
+                  >
+                    <i class="fa-regular fa-bell" style="margin-right: 8px"></i>
+                    Remind Me
+                  </button>
+                </a>
+              </div>
+            </div>
+
+            <div class="grid-3">
+              <div class="glass-panel">
+                <h3 style="margin-bottom: 16px">Viewer Activity</h3>
+                <p>Watch Time This Week</p>
+                <h2 style="color: #fff">14.5 Hours</h2>
+                <p style="margin-top: 10px">Favorite Genre</p>
+                <h3 style="color: #46d369">Cyberpunk Anime</h3>
+              </div>
+
+              <div class="glass-panel">
+                <h3 style="margin-bottom: 16px">Continue Watching</h3>
+                <ul
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    font-size: 0.9rem;
+                    color: var(--text-muted);
+                  "
+                >
+                  <li>
+                    <i
+                      class="fa-solid fa-circle-play"
+                      style="margin-right: 8px; color: #e50914"
+                    ></i>
+                    Dark Matter — S2:E1
+                  </li>
+                  <li>
+                    <i
+                      class="fa-solid fa-circle-play"
+                      style="margin-right: 8px; color: #e50914"
+                    ></i>
+                    Silicon Soul — 01:14:00
+                  </li>
+                  <li>
+                    <i
+                      class="fa-solid fa-circle-play"
+                      style="margin-right: 8px; color: #e50914"
+                    ></i>
+                    The Last Edge — S1:E9
+                  </li>
+                </ul>
+              </div>
+
+              <div class="glass-panel">
+                <h3 style="margin-bottom: 16px">Account Status</h3>
+                <p style="color: #46d369">Premium Ultra HD Active</p>
+                <p style="margin-top: 10px">Next billing: April 7, 2026</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./script.js"></script>
+<script>
+  AOS.init({
+    once: true,
+    duration: 1000,
+    easing: "ease-out-cubic",
+    startEvent: "aos:ready", // manual trigger
+  });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<!-- <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const userEmail = sessionStorage.getItem("userEmail");
+    const adminEmail = sessionStorage.getItem("adminEmail");
+
+    const displayEmail = userEmail || adminEmail;
+
+    if (displayEmail) {
+      document.getElementById("userEmailDisplay").textContent =
+        "Welcome, " + displayEmail;
+    } else {
+      window.location.href = "login.html";
+    }
+  });
+</script> -->
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    // ✅ Get email (clean way)
+    const emailEl = document.getElementById("userEmailDisplay");
+    const email = sessionStorage.getItem("loggedInUser");
+
+    if (email) {
+      emailEl.textContent = "Welcome, " + email;
+    } else {
+      window.location.href = "login.html";
+    }
+
+    // ✅ Sidebar toggle (Remains functional for the new layout)
+    const sidebar = document.getElementById("sidebar");
+
+    document
+      .getElementById("open-sidebar")
+      .addEventListener("click", () => sidebar.classList.add("open"));
+
+    document
+      .getElementById("close-sidebar")
+      .addEventListener("click", () => sidebar.classList.remove("open"));
+
+    // ✅ OTT Engagement Chart (Genre/Watch Time)
+    const ctx = document.getElementById("throughputChart");
+
+    if (ctx) {
+      const context = ctx.getContext("2d");
+
+      // Updated Gradient to feel more "Streaming/Cinema" (using Cyan to match your theme)
+      let gradient = context.createLinearGradient(0, 0, 0, 250);
+      gradient.addColorStop(0, "rgba(0, 229, 255, 0.4)");
+      gradient.addColorStop(1, "rgba(0, 229, 255, 0.0)");
+
+      new Chart(context, {
+        type: "line",
+        data: {
+          labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+          datasets: [
+            {
+              label: "Watch Time (Minutes)", // Updated label
+              data: [45, 120, 85, 210, 150, 310, 280], // Updated data points for a viewer profile
+              borderColor: "#00E5FF",
+              backgroundColor: gradient,
+              fill: true,
+              tension: 0.4,
+              pointRadius: 4,
+              pointBackgroundColor: "#00E5FF",
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              display: false, // Cleaner look for a consumer dashboard
+            },
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+              grid: {
+                color: "rgba(255, 255, 255, 0.05)",
+              },
+              ticks: {
+                color: "rgba(255, 255, 255, 0.5)",
+              },
+            },
+            x: {
+              grid: {
+                display: false,
+              },
+              ticks: {
+                color: "rgba(255, 255, 255, 0.5)",
+              },
+            },
+          },
+        },
+      });
+    }
+
+    // ✅ Navigation tabs (Updated to match Viewer Section IDs)
+    const navItems = document.querySelectorAll(".nav-item[data-target]");
+    const contentSections = document.querySelectorAll(".content-section");
+
+    navItems.forEach((item) => {
+      item.addEventListener("click", (e) => {
+        // Check if the button has a data-target (prevents breaking Logout/Home links)
+        const targetId = item.getAttribute("data-target");
+        if (!targetId) return;
+
+        e.preventDefault();
+
+        // 1. Reset active states on navigation
+        navItems.forEach((nav) => nav.classList.remove("active"));
+        item.classList.add("active");
+
+        // 2. Switch content sections
+        contentSections.forEach((section) =>
+          section.classList.remove("active-section"),
+        );
+
+        const targetSection = document.getElementById(targetId);
+        if (targetSection) {
+          targetSection.classList.add("active-section");
+        }
+
+        // 3. Mobile auto-close
+        if (window.innerWidth <= 768) {
+          sidebar.classList.remove("open");
+        }
+      });
+    });
+
+    // ✅ Profile dropdown (FIXED inside DOMContentLoaded)
+    const avatarBtn = document.getElementById("profile-avatar");
+    const profileDropdown = document.getElementById("profile-dropdown");
+
+    if (avatarBtn && profileDropdown) {
+      avatarBtn.addEventListener("click", (event) => {
+        event.stopPropagation();
+        profileDropdown.classList.toggle("show");
+      });
+
+      document.addEventListener("click", (event) => {
+        if (
+          profileDropdown.classList.contains("show") &&
+          !profileDropdown.contains(event.target)
+        ) {
+          profileDropdown.classList.remove("show");
+        }
+      });
+    }
+  });
+</script>

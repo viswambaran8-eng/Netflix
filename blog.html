@@ -1,0 +1,812 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <link rel="icon" href="./Assets/icon.webp" />
+    <link rel="stylesheet" href="./blog.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header1">
+        <div class="container1">
+          <h3>Welcome to Stackly – Streamming Service Connect and Enjoy</h3>
+        </div>
+        <div class="container2">
+          <div>
+            <i class="fa-solid fa-phone-volume"></i>
+            <p>(123)456-7890</p>
+          </div>
+          <div>
+            <i class="fa-regular fa-envelope"></i>
+            <p>Support@stackly.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="header2">
+        <div class="logo">
+          <a href="./index.html">
+            <img src="./Assets/logo.webp" alt="Logo" />
+          </a>
+        </div>
+
+        <div class="div">
+          <nav>
+            <ul>
+              <li class="dropdown">
+                <a href="./index.html">Home</a>
+
+                <!-- <span class="drop-toggle">
+                  <i class="fa-solid fa-caret-down"></i>
+                </span> -->
+
+                <ul class="dropdown-menu">
+                  <li><a href="./index2.html">Home 2</a></li>
+                </ul>
+              </li>
+
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./service.html">Services</a></li>
+              <li><a href="./blog.html">Blog</a></li>
+              <li><a href="./contact.html">Contact Us</a></li>
+              <!-- <li><a href="./dashboard.html">Dashboard</a></li> -->
+            </ul>
+          </nav>
+
+          <div class="icons">
+            <div class="login">
+              <a href="./login.html">
+                <button class="log-btn">Login</button>
+              </a>
+            </div>
+
+            <div class="mobilebar">
+              <div class="hamburger-box">
+                <div class="hamburger">
+                  <div class="line line1"></div>
+                  <div class="line line2"></div>
+                  <div class="line line3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="sidebar" id="sidebar">
+      <ul>
+        <li class="has-dropdown menu-item">
+          <div class="dropdown-header">
+            <a href="./index.html">Home</a>
+            <!-- <span class="drop-caret" id="home-caret">▾</span> -->
+          </div>
+          <!-- <ul class="submenu" id="home-dropdown">
+            <li><a href="./index2.html">Home 2</a></li>
+          </ul> -->
+        </li>
+
+        <li class="menu-item">
+          <a href="./about.html">About</a>
+        </li>
+        <li class="menu-item">
+          <a href="./service.html">Services</a>
+        </li>
+        <li class="menu-item">
+          <a href="./blog.html">Blog</a>
+        </li>
+        <li class="menu-item">
+          <a href="./contact.html">Contact Us</a>
+        </li>
+        <!-- <li class="menu-item">
+          <a href="./dashboard.html">Dashboard</a>
+        </li> -->
+        <li class="menu-item">
+          <a href="./login.html">Login</a>
+        </li>
+      </ul>
+
+      <div class="sidebar-login">
+        <!-- <a href="./app.html">
+            <button class="login-btn">Buy Now</button>
+          </a> -->
+      </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <section class="blog-hero">
+      <div class="hero-bg-wrapper">
+        <img
+          src="./Assets/cinemabackground_11zon_11zon.webp"
+          alt="Cinema Background"
+          class="hero-ken-burns"
+        />
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="blog-hero-content">
+        <div class="blog-badge">Editorial & News</div>
+        <h1 class="hero-heading">
+          Insights from the <br />World of <span>Entertainment</span>
+        </h1>
+        <p class="hero-subtext">
+          News, trends, and exclusive behind-the-scenes stories from the global
+          stage.
+        </p>
+
+        <div class="hero-mouse-wrapper">
+          <div class="mouse-icon">
+            <div class="mouse-wheel"></div>
+          </div>
+          <span class="mouse-text">Scroll to Explore</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-section">
+      <div class="featured-container">
+        <div class="featured-card">
+          <div class="featured-image-wrapper">
+            <img
+              src="./Assets/Trending Show Analysis_11zon.webp"
+              alt="Trending Show Analysis"
+              class="featured-img"
+            />
+            <div class="featured-badge">Must Read</div>
+          </div>
+
+          <div class="featured-content">
+            <div class="content-tag">In-Depth Analysis</div>
+            <h2 class="featured-title">
+              Beyond the Screen: Decoding the <span>Visual Language</span> of
+              Modern Noir
+            </h2>
+            <p class="featured-excerpt">
+              An exhaustive exploration of how lighting, shadows, and color
+              theory are redefining the way we experience psychological
+              thrillers in the digital age.
+            </p>
+            <a href="./error.html" class="read-btn"
+              >Read Full Analysis <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="latest-section">
+      <div class="latest-header">
+        <h2 class="section-heading">Latest <span>Updates</span></h2>
+        <div class="heading-line"></div>
+      </div>
+
+      <div class="latest-grid">
+        <article class="blog-card">
+          <div class="card-img-box">
+            <img src="./Assets/News update_11zon.webp" alt="News update" />
+          </div>
+          <div class="card-body">
+            <span class="card-date">March 22, 2026</span>
+            <h3>The Rise of AI in Post-Production</h3>
+            <p>
+              How machine learning is cutting editing times by half without
+              losing the human touch.
+            </p>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="card-img-box">
+            <img
+              src="./Assets/Streaming Wars The Global Shift_11zon.webp"
+              alt="Streaming Wars: The Global Shift"
+            />
+          </div>
+          <div class="card-body">
+            <span class="card-date">March 20, 2026</span>
+            <h3>Streaming Wars: The Global Shift</h3>
+            <p>
+              Why international markets are now the primary focus for content
+              giants.
+            </p>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="card-img-box">
+            <img
+              src="./Assets/Cinematography in the iPhone Age_11zon.webp"
+              alt="Cinematography in the iPhone Age"
+            />
+          </div>
+          <div class="card-body">
+            <span class="card-date">March 18, 2026</span>
+            <h3>Cinematography in the iPhone Age</h3>
+            <p>Can mobile devices truly replace professional cinema cameras?</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="cat-section">
+      <div class="cat-container">
+        <div class="cat-header">
+          <h2 class="section-title">Browse by <span>Topic</span></h2>
+        </div>
+
+        <div class="cat-grid">
+          <div class="cat-card">
+            <img
+              src="./Assets/reviews_11zon.webp"
+              alt="Reviews"
+              class="cat-img"
+            />
+            <div class="cat-overlay"></div>
+            <i class="fas fa-star"></i>
+            <h3>Reviews</h3>
+          </div>
+
+          <div class="cat-card">
+            <img
+              src="./Assets/newz_11zon_11zon.webp"
+              alt="News"
+              class="cat-img"
+            />
+            <div class="cat-overlay"></div>
+            <i class="fas fa-newspaper"></i>
+            <h3>News</h3>
+          </div>
+
+          <div class="cat-card">
+            <img
+              src="./Assets/guides_11zon_11zon.webp"
+              alt="Guides"
+              class="cat-img"
+            />
+            <div class="cat-overlay"></div>
+            <i class="fas fa-book-open"></i>
+            <h3>Guides</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trend-section">
+      <div class="trend-container">
+        <div class="trend-visual">
+          <div class="trend-pill" data-trend="Hot">#ModernNoirDecoded</div>
+          <div class="trend-pill" data-trend="Rising">#AIPostProduction</div>
+          <div class="trend-pill" data-trend="Viral">#StreamingWars2026</div>
+          <div class="trend-pill" data-trend="Rising">#iPhoneCinemaPro</div>
+        </div>
+
+        <div class="trend-info">
+          <div class="trend-tag">Live Analytics</div>
+          <h2 class="trend-title">Hot <span>Discussions</span></h2>
+          <p class="trend-desc">
+            Join the conversation. Our neural engine tracks thousands of daily
+            interactions to surface the most impactful stories in entertainment.
+          </p>
+          <a href="./error.html">
+            <button class="trend-btn">Join Discord</button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="interview-section">
+      <div class="interview-container">
+        <div class="interview-card">
+          <div class="int-image-box">
+            <img
+              src="./Assets/Actor Interview_11zon.webp"
+              alt="Actor Interview"
+              class="int-img"
+            />
+            <div class="play-btn-wrapper">
+              <a href="./error.html">
+                <div class="play-btn"><i class="fas fa-play"></i></div>
+              </a>
+              <div class="pulse-ring"></div>
+            </div>
+          </div>
+
+          <div class="int-content">
+            <div class="int-tag">Exclusive Spotlight</div>
+            <h2 class="int-title">
+              Inside the Method: <span>Aleksei Volkov</span> on the Future of
+              Indie Cinema
+            </h2>
+            <p class="int-desc">
+              We sat down with the award-winning director to discuss the shift
+              toward practical effects and the return of 35mm film in the
+              digital era.
+            </p>
+            <a href="./error.html">
+              <button class="int-action-btn">Watch Full Interview</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="guide-section">
+      <div class="guide-header">
+        <h2 class="section-title">Master the <span>Stream</span></h2>
+        <p>Everything you need to optimize your viewing experience.</p>
+      </div>
+
+      <div class="guide-grid">
+        <div class="guide-card">
+          <div class="guide-icon"><i class="fas fa-tv"></i></div>
+          <h3>4K Calibration</h3>
+          <p>How to set up your display for the perfect color accuracy.</p>
+          <a href="./error.html">View Guide</a>
+        </div>
+        <div class="guide-card">
+          <div class="guide-icon"><i class="fas fa-wifi"></i></div>
+          <h3>Zero Buffering</h3>
+          <p>Network optimizations for high-bitrate content playback.</p>
+          <a href="./error.html">View Guide</a>
+        </div>
+        <div class="guide-card">
+          <div class="guide-icon"><i class="fas fa-mobile-alt"></i></div>
+          <h3>Mobile Mastery</h3>
+          <p>Hidden gestures and features in the mobile application.</p>
+          <a href="./error.html">View Guide</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="news-section">
+      <div class="news-container">
+        <div class="news-card">
+          <div class="news-info">
+            <div class="news-icon">
+              <i class="fas fa-envelope-open-text"></i>
+            </div>
+            <h3>Curated Insights</h3>
+            <p>
+              Subscribe for exclusive creator interviews, trend analysis, and a
+              weekly digest of the global entertainment landscape.
+            </p>
+          </div>
+
+          <form class="news-form" id="newsletterForm">
+            <div class="input-wrapper">
+              <input
+                type="email"
+                id="newsEmail"
+                placeholder="Your best email address..."
+                required
+              />
+              <div class="input-glow"></div>
+            </div>
+            <button type="submit" class="subscribe-btn">
+              <span class="btn-text">Keep Me Updated</span>
+              <i class="fas fa-check success-check"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <div class="footer-grid">
+        <div class="footer-brand gsap-contact">
+          <div class="logo" style="margin-bottom: 20px">
+            <a href="./index.html">
+              <img
+                src="./Assets/logo.webp"
+                alt="Netflix - Logo"
+                style="max-width: 180px"
+              />
+            </a>
+          </div>
+
+          <p>
+            Ready to watch? Enter your email to create or restart your
+            membership and unlock a world of unlimited movies, TV shows, and
+            more.
+          </p>
+        </div>
+
+        <div class="footer-links gsap-contact">
+          <h4>Quick Links</h4>
+
+          <a href="./about.html">About</a>
+          <a href="./service.html">Services</a>
+          <a href="./blog.html">Blog</a>
+          <a href="./contact.html">Contact Us</a>
+          <a href="./login.html">Login</a>
+        </div>
+        <!-- <div class="footer-links">
+          <h4>Navigation</h4>
+          <a href="./about.html">About</a>
+          <a href="./service.html">Services</a>
+          <a href="./blog.html">Blog</a>
+        </div> -->
+        <div class="footer-newsletter">
+          <h4>Newsletter</h4>
+          <p>
+            Enter your email to create or restart your membership and unlock a
+            world of unlimited movies, TV shows, and more.
+          </p>
+          <form action="./error.html">
+            <div class="news-input">
+              <input type="email" placeholder="Email Address" required />
+              <button type="submit">→</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Innovations. All Rights Reserved.</p>
+        <div class="legal-links">
+          <a href="./error.html">Privacy Policy</a>
+          <a href="./error.html">ISO Compliance</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./script.js"></script>
+<script>
+  AOS.init({
+    once: true,
+    duration: 1000,
+    easing: "ease-out-cubic",
+    startEvent: "aos:ready", // manual trigger
+  });
+</script>
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<!-- hero -->
+
+<script>
+  window.addEventListener("load", () => {
+    // 1. Ken Burns Effect (Slow continuous zoom)
+    gsap.to(".hero-ken-burns", {
+      scale: 1.2,
+      duration: 20,
+      ease: "none",
+      repeat: -1,
+      yoyo: true,
+    });
+
+    // 2. Entrance Animation Timeline
+    const heroTl = gsap.timeline({ delay: 0.5 });
+
+    heroTl
+      .to(".blog-badge", {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: "power3.out",
+      })
+      .to(
+        ".hero-heading",
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1.2,
+          ease: "expo.out",
+        },
+        "-=0.7",
+      )
+      .to(
+        ".hero-subtext",
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          ease: "power3.out",
+        },
+        "-=0.7",
+      )
+      .to(
+        ".hero-scroll-indicator",
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          ease: "power2.out",
+        },
+        "-=0.5",
+      );
+
+    // 3. JS Function: Dynamic Scroll Reveal
+    function setupScrollLine() {
+      gsap.to(".scroll-line", {
+        scaleY: 0.2,
+        transformOrigin: "top",
+        repeat: -1,
+        duration: 1.5,
+        ease: "sine.inOut",
+        yoyo: true,
+      });
+    }
+
+    setupScrollLine();
+  });
+</script>
+
+<script>
+  window.addEventListener("load", () => {
+    // 1. Entrance Animation for the Mouse Wrapper
+    gsap.to(".hero-mouse-wrapper", {
+      opacity: 1,
+      y: 0,
+      duration: 1.2,
+      ease: "power3.out",
+      delay: 1.5, // Appears last after the text animations
+    });
+
+    // 2. JS Function: Infinite Mouse Wheel Animation
+    function animateMouseWheel() {
+      gsap.to(".mouse-wheel", {
+        y: 15, // Moves down
+        opacity: 0, // Fades out as it moves
+        duration: 1.5,
+        repeat: -1, // Loops forever
+        ease: "power2.inOut",
+      });
+    }
+
+    animateMouseWheel();
+
+    // 3. Optional: Subtle Floating for the whole mouse
+    gsap.to(".mouse-icon", {
+      y: 5,
+      duration: 2,
+      repeat: -1,
+      yoyo: true,
+      ease: "sine.inOut",
+    });
+  });
+</script>
+
+<!-- 2 , 3 -->
+
+<script>
+  window.addEventListener("load", () => {
+    // 1. Featured Post Entrance
+    gsap.to(".featured-card", {
+      scrollTrigger: {
+        trigger: ".featured-section",
+        start: "top 75%",
+      },
+      opacity: 1,
+      y: 0,
+      duration: 1.5,
+      ease: "expo.out",
+    });
+
+    // 2. Latest Articles Staggered Entrance
+    gsap.to(".blog-card", {
+      scrollTrigger: {
+        trigger: ".latest-section",
+        start: "top 80%",
+      },
+      opacity: 1,
+      y: 0,
+      duration: 1,
+      stagger: 0.2,
+      ease: "power2.out",
+    });
+
+    // 3. FUNCTION: Dynamic Article Focus
+    const cards = document.querySelectorAll(".blog-card");
+
+    cards.forEach((card) => {
+      card.addEventListener("mouseenter", () => {
+        // Dim other cards when one is hovered
+        gsap.to(cards, { opacity: 0.4, scale: 0.98, duration: 0.3 });
+        gsap.to(card, { opacity: 1, scale: 1.02, duration: 0.3 });
+      });
+
+      card.addEventListener("mouseleave", () => {
+        // Reset all cards
+        gsap.to(cards, { opacity: 1, scale: 1, duration: 0.3 });
+      });
+    });
+  });
+</script>
+
+<!-- 4 , 5  -->
+
+<script>
+  window.addEventListener("load", () => {
+    // 1. Staggered Category Cards Entrance
+    gsap.to(".cat-card", {
+      scrollTrigger: { trigger: ".cat-section", start: "top 80%" },
+      opacity: 1,
+      scale: 1,
+      duration: 1,
+      stagger: 0.2,
+      ease: "back.out(1.7)",
+    });
+
+    // 2. Trending Section Entrance
+    gsap.to(".trend-visual, .trend-info", {
+      scrollTrigger: { trigger: ".trend-section", start: "top 80%" },
+      opacity: 1,
+      x: 0,
+      duration: 1.2,
+      stagger: 0.4,
+      ease: "power4.out",
+    });
+
+    // 3. FUNCTION: Background Image Injector
+    function initCategoryBgs() {
+      const cards = document.querySelectorAll(".cat-card");
+      cards.forEach((card) => {
+        const bg = card.getAttribute("data-bg");
+        card.style.setProperty("--card-bg", `url(${bg})`);
+        // Injecting the background via JS for cleaner HTML
+        const bgDiv = card.querySelector("::before");
+        card.style.backgroundImage = `linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(${bg})`;
+      });
+    }
+    initCategoryBgs();
+
+    // 4. FUNCTION: Trending Pulse
+    gsap.to(".trend-pill", {
+      borderColor: "#ff0000",
+      duration: 1.5,
+      repeat: -1,
+      yoyo: true,
+      stagger: 0.3,
+      ease: "sine.inOut",
+    });
+  });
+</script>
+
+<!-- 6 , 7 -->
+
+<script>
+  window.addEventListener("load", () => {
+    // 1. Interview Entrance
+    gsap.to(".interview-card", {
+      scrollTrigger: { trigger: ".interview-section", start: "top 75%" },
+      opacity: 1,
+      y: 0,
+      duration: 1.5,
+      ease: "expo.out",
+    });
+
+    // 2. Play Button Pulse Function
+    function animatePlayButton() {
+      gsap.fromTo(
+        ".play-btn",
+        { scale: 1 },
+        {
+          scale: 1.1,
+          duration: 0.8,
+          repeat: -1,
+          yoyo: true,
+          ease: "sine.inOut",
+        },
+      );
+    }
+    animatePlayButton();
+
+    // 3. Guide Cards Staggered Entrance
+    gsap.to(".guide-card", {
+      scrollTrigger: { trigger: ".guide-section", start: "top 80%" },
+      opacity: 1,
+      y: 0,
+      duration: 1,
+      stagger: 0.2,
+      ease: "power2.out",
+    });
+
+    // 4. FUNCTION: Subtle 3D Tilt for Guide Cards
+    const cards = document.querySelectorAll(".guide-card");
+    cards.forEach((card) => {
+      card.addEventListener("mousemove", (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left - rect.width / 2;
+        const y = e.clientY - rect.top - rect.height / 2;
+
+        gsap.to(card, {
+          rotationY: x / 15,
+          rotationX: -y / 15,
+          duration: 0.5,
+          ease: "power2.out",
+        });
+      });
+
+      card.addEventListener("mouseleave", () => {
+        gsap.to(card, { rotationY: 0, rotationX: 0, duration: 0.5 });
+      });
+    });
+  });
+</script>
+
+<!-- 8 -->
+<script>
+  window.addEventListener("load", () => {
+    // 1. Newsletter Entrance Animation
+    gsap.to(".news-card", {
+      scrollTrigger: {
+        trigger: ".news-section",
+        start: "top 80%",
+      },
+      opacity: 1,
+      y: 0,
+      duration: 1,
+      ease: "power2.out",
+    });
+
+    // 2. Continuous Input Pulse (Attention Grabber)
+    function initInputPulse() {
+      const input = document.getElementById("newsEmail");
+
+      // Pulse animation runs infinitely unless input is focused
+      const pulse = gsap.to(input, {
+        borderColor: "#ff0000",
+        boxShadow: "0 0 10px rgba(229, 9, 20, 0.4)",
+        duration: 1.5,
+        repeat: -1,
+        yoyo: true,
+        ease: "sine.inOut",
+      });
+
+      input.addEventListener("focus", () => pulse.pause());
+      input.addEventListener("blur", () => pulse.play());
+    }
+
+    initInputPulse();
+
+    // 3. Form Submission Functionality & Success Animation
+    const form = document.getElementById("newsletterForm");
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault(); // Stop actual form submit
+
+      // Animate to success state
+      gsap.to(".btn-text", { opacity: 0, y: -10, duration: 0.3 });
+
+      gsap.to(".subscribe-btn", {
+        background: "#4caf50",
+        duration: 0.5,
+        delay: 0.2,
+      });
+
+      gsap.to(".success-check", {
+        opacity: 1,
+        scale: 1,
+        duration: 0.5,
+        delay: 0.3,
+        ease: "back.out(1.7)",
+      });
+
+      // Reset after some time (simulating success feedback loop)
+      setTimeout(() => {
+        form.reset();
+        gsap.to(".success-check", { opacity: 0, scale: 0, duration: 0.3 });
+        gsap.to(".btn-text", { opacity: 1, y: 0, duration: 0.3 });
+        gsap.to(".subscribe-btn", { background: "#e50914", duration: 0.3 });
+      }, 3000);
+    });
+  });
+</script>

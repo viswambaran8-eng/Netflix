@@ -1,0 +1,928 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <link rel="icon" href="./Assets/icon.webp" />
+    <link rel="stylesheet" href="./contact.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header1">
+        <div class="container1">
+          <h3>Welcome to Stackly – Streamming Service Connect and Enjoy</h3>
+        </div>
+        <div class="container2">
+          <div>
+            <i class="fa-solid fa-phone-volume"></i>
+            <p>(123)456-7890</p>
+          </div>
+          <div>
+            <i class="fa-regular fa-envelope"></i>
+            <p>Support@stackly.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="header2">
+        <div class="logo">
+          <a href="./index.html">
+            <img src="./Assets/logo.webp" alt="Logo" />
+          </a>
+        </div>
+
+        <div class="div">
+          <nav>
+            <ul>
+              <li class="dropdown">
+                <a href="./index.html">Home</a>
+
+                <!-- <span class="drop-toggle">
+                  <i class="fa-solid fa-caret-down"></i>
+                </span> -->
+
+                <ul class="dropdown-menu">
+                  <li><a href="./index2.html">Home 2</a></li>
+                </ul>
+              </li>
+
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./service.html">Services</a></li>
+              <li><a href="./blog.html">Blog</a></li>
+              <li><a href="./contact.html">Contact Us</a></li>
+              <!-- <li><a href="./dashboard.html">Dashboard</a></li> -->
+            </ul>
+          </nav>
+
+          <div class="icons">
+            <div class="login">
+              <a href="./login.html">
+                <button class="log-btn">Login</button>
+              </a>
+            </div>
+
+            <div class="mobilebar">
+              <div class="hamburger-box">
+                <div class="hamburger">
+                  <div class="line line1"></div>
+                  <div class="line line2"></div>
+                  <div class="line line3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="sidebar" id="sidebar">
+      <ul>
+        <li class="has-dropdown menu-item">
+          <div class="dropdown-header">
+            <a href="./index.html">Home</a>
+            <!-- <span class="drop-caret" id="home-caret">▾</span> -->
+          </div>
+          <!-- <ul class="submenu" id="home-dropdown">
+            <li><a href="./index2.html">Home 2</a></li>
+          </ul> -->
+        </li>
+
+        <li class="menu-item">
+          <a href="./about.html">About</a>
+        </li>
+        <li class="menu-item">
+          <a href="./service.html">Services</a>
+        </li>
+        <li class="menu-item">
+          <a href="./blog.html">Blog</a>
+        </li>
+        <li class="menu-item">
+          <a href="./contact.html">Contact Us</a>
+        </li>
+        <!-- <li class="menu-item">
+          <a href="./dashboard.html">Dashboard</a>
+        </li> -->
+        <li class="menu-item">
+          <a href="./login.html">Login</a>
+        </li>
+      </ul>
+
+      <div class="sidebar-login">
+        <!-- <a href="./app.html">
+            <button class="login-btn">Buy Now</button>
+          </a> -->
+      </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <section class="contact-hero">
+      <div class="contact-ambient-glow"></div>
+
+      <div class="contact-hero-container">
+        <div class="contact-hero-left">
+          <div class="contact-tag-line">
+            <span class="live-dot"></span> Signal Status: Online
+          </div>
+          <h1 class="contact-heading">Direct <span>Access</span></h1>
+          <p class="contact-subtext">
+            No ticketing queues. No automated loops. Reach the architects behind
+            the platform through our prioritized multi-channel gateway.
+          </p>
+
+          <div class="stats-box">
+            <div class="stat-item">
+              <div class="stat-val" data-target="98">0%</div>
+              <div class="stat-label">Resolution Rate</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-val" data-target="120">0s</div>
+              <div class="stat-label">Avg. Response</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-val" data-target="24">0/7</div>
+              <div class="stat-label">Global Coverage</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-hero-right">
+          <div class="pulse-portal">
+            <div class="portal-ring r1"></div>
+            <div class="portal-ring r2"></div>
+            <div class="portal-ring r3"></div>
+            <div class="portal-core">
+              <i class="fas fa-phone-alt"></i>
+              <span class="core-text">Connect</span>
+            </div>
+            <div class="contact-chip top-left">Technical</div>
+            <div class="contact-chip bottom-right">Partnerships</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-form-section">
+      <div class="form-bg-overlay"></div>
+
+      <div class="form-container">
+        <div class="form-sidebar">
+          <div class="sidebar-content">
+            <div class="status-indicator">
+              <span class="pulse-dot"></span>
+              <span class="status-text">Encrypted Connection Active</span>
+            </div>
+            <h2 class="sidebar-title">Send a <span>Message</span></h2>
+            <p class="sidebar-desc">
+              Fill out the details below. Our technical routing system will
+              deliver your query to the correct department instantly.
+            </p>
+
+            <div class="form-image-wrapper">
+              <img
+                src="./Assets/Cyber Security Interface_11zon_11zon.webp"
+                alt="Cyber Security Interface"
+                class="sidebar-img"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="form-wrapper">
+          <form id="contactForm" class="netflix-form">
+            <div class="input-group">
+              <input type="text" id="name" required />
+              <label>Full Name</label>
+              <div class="lines"></div>
+            </div>
+
+            <div class="input-group">
+              <input type="email" id="email" required />
+              <label>Email Address</label>
+              <div class="lines"></div>
+            </div>
+
+            <div class="input-group">
+              <select id="subject" required>
+                <option value="" disabled selected></option>
+                <option value="tech">Technical Support</option>
+                <option value="billing">Billing & Plans</option>
+                <option value="press">Press & Media</option>
+              </select>
+              <label>How can we help?</label>
+              <div class="lines"></div>
+            </div>
+
+            <div class="input-group">
+              <textarea id="message" rows="4" required></textarea>
+              <label>Your Message</label>
+              <div class="lines"></div>
+            </div>
+
+            <button type="submit" class="form-submit-btn">
+              <span class="btn-text">Transmit Query</span>
+              <div class="btn-glow"></div>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="support-section">
+      <div class="support-container">
+        <div class="support-grid">
+          <div class="support-content">
+            <div class="support-tag">Always Online</div>
+            <h2 class="support-title">24/7 Priority <span>Assistance</span></h2>
+            <p class="support-desc">
+              Our technical engineers are stationed across three continents to
+              ensure that no matter your time zone, an expert is ready to
+              resolve your query in real-time.
+            </p>
+
+            <ul class="support-features">
+              <li><i class="fas fa-bolt"></i> 2-Minute Response Guarantee</li>
+              <li><i class="fas fa-shield-alt"></i> Tier-1 Encrypted Chat</li>
+              <li><i class="fas fa-globe"></i> Multi-language Support</li>
+            </ul>
+          </div>
+
+          <div class="support-visual">
+            <div class="support-card-ui">
+              <div class="scan-line"></div>
+              <img
+                src="./Assets/Tech Support Hub_11zon.webp"
+                alt="Tech Support Hub"
+                class="support-img"
+              />
+              <div class="support-overlay-text">System Status: Optimal</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="map-section">
+      <div class="map-header">
+        <h2 class="map-title">Global <span>Presence</span></h2>
+        <div class="map-line"></div>
+      </div>
+
+      <div class="location-grid">
+        <div class="location-card" data-offset="-7">
+          <div class="loc-img-box">
+            <img
+              src="./Assets/los angles_11zon_11zon.webp"
+              alt="Los Angeles"
+            />
+          </div>
+          <div class="loc-info">
+            <h3>Los Angeles</h3>
+            <p>1240 Entertainment Way, CA</p>
+            <div class="local-time">
+              Local Time: <span class="time-val">--:--</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="location-card" data-offset="1">
+          <div class="loc-img-box">
+            <img
+              src="./Assets/london_11zon.webp"
+              alt="London"
+            />
+          </div>
+          <div class="loc-info">
+            <h3>London</h3>
+            <p>42 Media District, UK</p>
+            <div class="local-time">
+              Local Time: <span class="time-val">--:--</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="location-card" data-offset="9">
+          <div class="loc-img-box">
+            <img
+              src="./Assets/tokyo_11zon_11zon.webp"
+              alt="Tokyo"
+            />
+          </div>
+          <div class="loc-info">
+            <h3>Tokyo</h3>
+            <p>88 Shibuya Crossing, JP</p>
+            <div class="local-time">
+              Local Time: <span class="time-val">--:--</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <div class="faq-container">
+        <div class="faq-header">
+          <div class="faq-tag">Support Database</div>
+          <h2 class="faq-title">Common <span>Inquiries</span></h2>
+        </div>
+
+        <div class="faq-accordion">
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>How do I reset my security credentials?</span>
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Navigate to the 'Security' tab in your account dashboard. Our
+                system uses multi-factor authentication to ensure your data
+                remains encrypted during the reset process.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Can I upgrade my streaming tier mid-month?</span>
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Yes. Any tier upgrades are processed instantly. Our billing
+                engine will calculate the pro-rated difference for the remainder
+                of your current cycle.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span
+                >What is the average response time for technical tickets?</span
+              >
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Technical queries are routed through our priority AI dispatcher.
+                Typical response times for 'High' priority tickets are under 120
+                minutes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="social-section">
+      <div class="social-container">
+        <div class="social-header">
+          <div class="social-badge">Connect with the Hub</div>
+          <h2 class="social-title">Stay <span>Synched</span></h2>
+          <p class="social-subtitle">
+            Join 2M+ creators and engineers across our official channels for
+            real-time updates and exclusive behind-the-scenes content.
+          </p>
+        </div>
+
+        <div class="social-grid">
+          <a href="./error.html" class="social-tile x-platform">
+            <div class="social-bg"></div>
+            <i class="fab fa-x-twitter"></i>
+            <span>Follow Signal</span>
+          </a>
+          <a href="./error.html" class="social-tile insta-platform">
+            <div class="social-bg"></div>
+            <i class="fab fa-instagram"></i>
+            <span>Behind Scenes</span>
+          </a>
+          <a href="./error.html" class="social-tile discord-platform">
+            <div class="social-bg"></div>
+            <i class="fab fa-discord"></i>
+            <span>Join Community</span>
+          </a>
+          <a href="./error.html" class="social-tile yt-platform">
+            <div class="social-bg"></div>
+            <i class="fab fa-youtube"></i>
+            <span>Tech Updates</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="live-chat-section">
+      <div class="chat-container">
+        <div class="chat-card">
+          <div class="chat-visual">
+            <img
+              src="./Assets/live support_11zon.webp"
+              alt="Live Support"
+              class="chat-img"
+            />
+            <div class="chat-status-badge">
+              <span class="status-dot"></span> Online Now
+            </div>
+          </div>
+
+          <div class="chat-content">
+            <div class="chat-tag">Real-Time Response</div>
+            <h2 class="chat-title">Instant <span>Human</span> Support</h2>
+            <p class="chat-desc">
+              Skip the email threads. Connect with our technical architects in
+              under 60 seconds for immediate troubleshooting and guidance.
+            </p>
+
+            <div class="typing-indicator">
+              <span></span><span></span><span></span>
+              <p>Agent is ready to assist...</p>
+            </div>
+
+            <button class="chat-launch-btn" onclick="openChat()">
+              Launch Live Terminal
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="help-section">
+      <div class="help-header">
+        <h2 class="help-title">Documentation <span>Vault</span></h2>
+        <form class="search-bar-wrapper" action="./error.html">
+          <input
+            type="text"
+            placeholder="Search guides, API docs, or FAQs..."
+            id="helpSearch"
+          />
+          <i class="fas fa-search"></i>
+        </form>
+      </div>
+
+      <div class="help-grid">
+        <div class="help-card">
+          <div class="help-icon"><i class="fas fa-rocket"></i></div>
+          <h3>Getting Started</h3>
+          <p>
+            Deployment guides and initial configuration protocols for new users.
+          </p>
+          <a href="./error.html">Explore Docs</a>
+        </div>
+        <div class="help-card">
+          <div class="help-icon"><i class="fas fa-code"></i></div>
+          <h3>API Reference</h3>
+          <p>Full technical documentation for custom integrations and hooks.</p>
+          <a href="./error.html">View API</a>
+        </div>
+        <div class="help-card">
+          <div class="help-icon"><i class="fas fa-credit-card"></i></div>
+          <h3>Billing & Tiers</h3>
+          <p>
+            Manage subscriptions, invoices, and enterprise licensing details.
+          </p>
+          <a href="./error.html">Manage Billing</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <div class="footer-grid">
+        <div class="footer-brand gsap-contact">
+          <div class="logo" style="margin-bottom: 20px">
+            <a href="./index.html">
+              <img
+                src="./Assets/logo.webp"
+                alt="Netflix - Logo"
+                style="max-width: 180px"
+              />
+            </a>
+          </div>
+
+          <p>
+            Ready to watch? Enter your email to create or restart your
+            membership and unlock a world of unlimited movies, TV shows, and
+            more.
+          </p>
+        </div>
+
+        <div class="footer-links gsap-contact">
+          <h4>Quick Links</h4>
+
+          <a href="./about.html">About</a>
+          <a href="./service.html">Services</a>
+          <a href="./blog.html">Blog</a>
+          <a href="./contact.html">Contact Us</a>
+          <a href="./login.html">Login</a>
+        </div>
+        <!-- <div class="footer-links">
+          <h4>Navigation</h4>
+          <a href="./about.html">About</a>
+          <a href="./service.html">Services</a>
+          <a href="./blog.html">Blog</a>
+        </div> -->
+        <div class="footer-newsletter">
+          <h4>Newsletter</h4>
+          <p>
+            Enter your email to create or restart your membership and unlock a
+            world of unlimited movies, TV shows, and more.
+          </p>
+          <form action="./error.html">
+            <div class="news-input">
+              <input type="email" placeholder="Email Address" required />
+              <button type="submit">→</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Innovations. All Rights Reserved.</p>
+        <div class="legal-links">
+          <a href="./error.html">Privacy Policy</a>
+          <a href="./error.html">ISO Compliance</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./script.js"></script>
+<script>
+  AOS.init({
+    once: true,
+    duration: 1000,
+    easing: "ease-out-cubic",
+    startEvent: "aos:ready", // manual trigger
+  });
+</script>
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<!-- hero -->
+
+<script>
+  window.addEventListener("load", () => {
+    // 1. Entrance Timeline
+    const contactTl = gsap.timeline({ delay: 0.2 });
+
+    contactTl
+      .to(".contact-tag-line, .contact-heading, .contact-subtext", {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        stagger: 0.2,
+        ease: "power4.out",
+      })
+      .to(
+        ".stat-item",
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.8,
+          stagger: 0.1,
+          onComplete: startCounters,
+        },
+        "-=0.5",
+      )
+      .to(
+        ".pulse-portal",
+        {
+          opacity: 1,
+          x: 0,
+          y: 0,
+          duration: 1.5,
+          ease: "expo.out",
+        },
+        "-=1",
+      );
+
+    // 2. JS Function: Number Counter
+    function startCounters() {
+      const vals = document.querySelectorAll(".stat-val");
+      vals.forEach((val) => {
+        const target = +val.getAttribute("data-target");
+        let count = 0;
+        const update = () => {
+          count += Math.ceil(target / 50);
+          if (count < target) {
+            val.innerText =
+              count + (target === 120 ? "s" : target === 24 ? "/7" : "%");
+            requestAnimationFrame(update);
+          } else {
+            val.innerText =
+              target + (target === 120 ? "s" : target === 24 ? "/7" : "%");
+          }
+        };
+        update();
+      });
+    }
+
+    // 3. JS Function: Interactive Portal Motion
+    function initPortal() {
+      // Continuous rotation
+      gsap.to(".r1", { rotation: 360, duration: 20, repeat: -1, ease: "none" });
+      gsap.to(".r2", {
+        rotation: -360,
+        duration: 15,
+        repeat: -1,
+        ease: "none",
+      });
+
+      // Core Pulse
+      gsap.to(".portal-core", {
+        scale: 1.05,
+        duration: 1.2,
+        repeat: -1,
+        yoyo: true,
+        ease: "sine.inOut",
+      });
+
+      // Mouse Follow Effect
+      document.addEventListener("mousemove", (e) => {
+        const xPos = (e.clientX / window.innerWidth - 0.5) * 40;
+        const yPos = (e.clientY / window.innerHeight - 0.5) * 40;
+
+        gsap.to(".pulse-portal", {
+          x: xPos,
+          y: yPos,
+          duration: 2,
+          ease: "power2.out",
+        });
+      });
+    }
+
+    initPortal();
+  });
+</script>
+
+<!-- 2 -->
+
+<script>
+  window.addEventListener("load", () => {
+    // 1. Form Container Entrance
+    gsap.to(".form-container", {
+      scrollTrigger: { trigger: ".contact-form-section", start: "top 80%" },
+      opacity: 1,
+      y: 0,
+      duration: 1.2,
+      ease: "power4.out",
+    });
+
+    // 2. Pulse Indicator Function
+    function initStatusPulse() {
+      gsap.to(".pulse-dot", {
+        opacity: 0.2,
+        scale: 1.5,
+        duration: 1,
+        repeat: -1,
+        yoyo: true,
+        ease: "sine.inOut",
+      });
+    }
+    initStatusPulse();
+
+    // 3. Form Transmission Animation (Success Function)
+    const form = document.getElementById("contactForm");
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+
+      const btn = document.querySelector(".form-submit-btn");
+      const btnText = document.querySelector(".btn-text");
+
+      // GSAP Transition to "Sending"
+      gsap.to(btnText, { opacity: 0, y: -10, duration: 0.3 });
+
+      setTimeout(() => {
+        btnText.innerText = "QUERY TRANSMITTED";
+        btn.style.background = "#4caf50"; // Turn Green
+        gsap.to(btnText, { opacity: 1, y: 0, duration: 0.3 });
+
+        // Reset Form
+        setTimeout(() => {
+          form.reset();
+          btn.style.background = "#e50914";
+          btnText.innerText = "TRANSMIT QUERY";
+        }, 3000);
+      }, 1500);
+    });
+  });
+</script>
+
+<!-- 3 , 4 -->
+
+<script>
+  window.addEventListener("load", () => {
+    // 1. Entrance Animations
+    gsap.to(".support-content, .support-visual", {
+      scrollTrigger: { trigger: ".support-section", start: "top 80%" },
+      opacity: 1,
+      y: 0,
+      duration: 1.2,
+      stagger: 0.3,
+      ease: "power4.out",
+    });
+
+    gsap.to(".location-card", {
+      scrollTrigger: { trigger: ".map-section", start: "top 80%" },
+      opacity: 1,
+      y: 0,
+      duration: 1,
+      stagger: 0.2,
+      ease: "power2.out",
+    });
+
+    // 2. JS Function: Scan Line Animation
+    function initScan() {
+      gsap.fromTo(
+        ".scan-line",
+        { top: "0%" },
+        { top: "100%", duration: 3, repeat: -1, ease: "none" },
+      );
+    }
+    initScan();
+
+    // 3. JS Function: World Clock Sync
+    function updateClocks() {
+      const locations = document.querySelectorAll(".location-card");
+      locations.forEach((card) => {
+        const offset = parseInt(card.getAttribute("data-offset"));
+        const timeVal = card.querySelector(".time-val");
+
+        const now = new Date();
+        const utc = now.getTime() + now.getTimezoneOffset() * 60000;
+        const cityTime = new Date(utc + 3600000 * offset);
+
+        timeVal.innerText = cityTime.toLocaleTimeString([], {
+          hour: "2-digit",
+          minute: "2-digit",
+        });
+      });
+    }
+
+    setInterval(updateClocks, 1000);
+    updateClocks();
+  });
+</script>
+
+<!-- 5 , 6 -->
+
+<script>
+  window.addEventListener("load", () => {
+    // 1. GSAP Reveal Animations
+    gsap.to(".faq-header, .faq-accordion", {
+      scrollTrigger: { trigger: ".faq-section", start: "top 80%" },
+      opacity: 1,
+      y: 0,
+      duration: 1,
+      stagger: 0.3,
+      ease: "power2.out",
+    });
+
+    gsap.to(".social-tile", {
+      scrollTrigger: { trigger: ".social-section", start: "top 85%" },
+      opacity: 1,
+      scale: 1,
+      duration: 0.8,
+      stagger: 0.15,
+      ease: "back.out(1.7)",
+    });
+
+    // 2. JS Function: Accordion Logic
+    const faqItems = document.querySelectorAll(".faq-item");
+
+    faqItems.forEach((item) => {
+      const question = item.querySelector(".faq-question");
+      const answer = item.querySelector(".faq-answer");
+
+      question.addEventListener("click", () => {
+        const isOpen = item.classList.contains("active");
+
+        // Close all other items
+        faqItems.forEach((otherItem) => {
+          otherItem.classList.remove("active");
+          gsap.to(otherItem.querySelector(".faq-answer"), {
+            height: 0,
+            paddingBottom: 0,
+            duration: 0.4,
+          });
+        });
+
+        // Toggle current item
+        if (!isOpen) {
+          item.classList.add("active");
+          gsap.to(answer, {
+            height: "auto",
+            paddingBottom: "25px",
+            duration: 0.5,
+            ease: "power2.out",
+          });
+        }
+      });
+    });
+
+    // 3. Social Tile Interaction Function
+    document.querySelectorAll(".social-tile").forEach((tile) => {
+      tile.addEventListener("mouseenter", () => {
+        gsap.to(tile, { borderColor: "#e50914", duration: 0.3 });
+      });
+      tile.addEventListener("mouseleave", () => {
+        gsap.to(tile, { borderColor: "#222", duration: 0.3 });
+      });
+    });
+  });
+</script>
+
+<script>
+  // Add this inside your window "load" event listener
+  gsap.to(".social-header", {
+    scrollTrigger: {
+      trigger: ".social-section",
+      start: "top 85%",
+    },
+    opacity: 1,
+    y: 0,
+    duration: 1.2,
+    ease: "power3.out",
+  });
+</script>
+
+<!-- 7 , 8 -->
+
+<script>
+  window.addEventListener("load", () => {
+    // 1. GSAP Revelations
+    gsap.to(".chat-card", {
+      scrollTrigger: { trigger: ".live-chat-section", start: "top 80%" },
+      opacity: 1,
+      y: 0,
+      duration: 1.2,
+      ease: "power3.out",
+    });
+
+    gsap.to(".help-header", {
+      scrollTrigger: { trigger: ".help-section", start: "top 80%" },
+      opacity: 1,
+      y: 0,
+      duration: 1,
+      ease: "power2.out",
+    });
+
+    gsap.to(".help-card", {
+      scrollTrigger: { trigger: ".help-grid", start: "top 85%" },
+      opacity: 1,
+      y: 0,
+      duration: 0.8,
+      stagger: 0.2,
+      ease: "back.out(1.7)",
+    });
+
+    // 2. JS Function: Typing Indicator Animation
+    function initTyping() {
+      gsap.to(".typing-indicator span", {
+        opacity: 1,
+        duration: 0.6,
+        repeat: -1,
+        yoyo: true,
+        stagger: 0.2,
+        ease: "sine.inOut",
+      });
+    }
+    initTyping();
+
+    // 3. JS Function: Chat Launch Simulation
+    window.openChat = function () {
+      alert("Initiating secure connection to technical support terminal...");
+      // Integration logic for Intercom/Zendesk would go here
+    };
+
+    // 4. Search Bar Focus Interaction
+    const searchInput = document.getElementById("helpSearch");
+    searchInput.addEventListener("focus", () => {
+      gsap.to(".search-bar-wrapper i", {
+        color: "#e50914",
+        scale: 1.2,
+        duration: 0.3,
+      });
+    });
+    searchInput.addEventListener("blur", () => {
+      gsap.to(".search-bar-wrapper i", {
+        color: "#555",
+        scale: 1,
+        duration: 0.3,
+      });
+    });
+  });
+</script>

@@ -1,0 +1,1738 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bio Tech</title>
+    <link rel="icon" href="./Assets/icon.webp" />
+    <link rel="stylesheet" href="./dashboard2.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body class="dashboard-body">
+    <div class="dashboard-layout">
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+          <div class="logo-wrap">
+            <img src="./Assets/logo.webp" alt="Netflix Admin" class="logo" />
+          </div>
+          <button class="close-sidebar" id="close-sidebar">
+            <span class="material-icons" style="color: gray"
+              ><i class="fa-solid fa-xmark"></i
+            ></span>
+          </button>
+        </div>
+
+        <div
+          class="patient-id-badge"
+          style="
+            background: rgba(229, 9, 20, 0.1);
+            border-left: 3px solid #e50914;
+          "
+        >
+          <span class="material-icons" style="color: #e50914"
+            ><i class="fa-solid fa-server"></i
+          ></span>
+          <div>
+            <p class="label">Admin Node</p>
+            <p class="value">US-WEST-2_OPS</p>
+          </div>
+        </div>
+
+        <nav class="sidebar-nav">
+          <p class="nav-section-title">Control Plane</p>
+
+          <button class="sidebar-link active" data-target="view-overview">
+            <span class="material-icons"
+              ><i class="fa-solid fa-chart-line"></i
+            ></span>
+            System Health
+          </button>
+
+          <button class="sidebar-link" data-target="view-cdn">
+            <span class="material-icons"
+              ><i class="fa-solid fa-bolt-lightning"></i
+            ></span>
+            CDN Telemetry
+          </button>
+
+          <button class="sidebar-link" data-target="view-library-management">
+            <span class="material-icons"
+              ><i class="fa-solid fa-clapperboard"></i
+            ></span>
+            Library Management
+          </button>
+
+          <button class="sidebar-link" data-target="view-user-subcription">
+            <span class="material-icons"
+              ><i class="fa-solid fa-users-gear"></i
+            ></span>
+            User & Subscription
+          </button>
+
+          <button class="sidebar-link" data-target="view-drm-security">
+            <span class="material-icons"
+              ><i class="fa-solid fa-shield-halved"></i
+            ></span>
+            DRM & Security
+          </button>
+        </nav>
+
+        <div class="sidebar-footer">
+          <a href="index.html" class="btn mob-view">
+            <span class="material-icons"
+              ><i class="fa-solid fa-house"></i
+            ></span>
+            Return to Home
+          </a>
+          <a
+            href="login.html"
+            class="sidebar-link logout-link"
+            style="color: #ff4d4d"
+          >
+            <span class="material-icons"
+              ><i class="fa-solid fa-power-off"></i
+            ></span>
+            Back to Login
+          </a>
+        </div>
+      </aside>
+
+      <main class="dashboard-main">
+        <header class="top-header">
+          <div class="header-left">
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+              <span class="material-icons" style="color: beige;"
+                ><i class="fa-solid fa-bars"></i
+              ></span>
+            </button>
+            <div>
+              <h1 id="greeting" style="color: beige;">System Ops: Michael</h1>
+              <p class="subtitle">
+                 Senior Architect | Node: US-WEST-2
+              </p>
+            </div>
+          </div>
+
+          <div class="header-right">
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                margin-right: 15px;
+              "
+            >
+              <div
+                style="
+                  text-align: right;
+                  display: none;
+                  @media (min-width: 768px) {
+                    display: block;
+                  }
+                "
+              >
+                <p
+                  style="
+                    font-size: 0.7rem;
+                    color: var(--text-muted);
+                    text-transform: uppercase;
+                    margin-bottom: 2px;
+                  "
+                >
+                  Global Traffic
+                </p>
+                <p style="font-size: 0.85rem; font-weight: 600; color: #46d369">
+                  STABLE
+                </p>
+              </div>
+
+              <button
+                onclick="window.location.href = './error.html'"
+                class="icon-btn position-relative"
+                style="position: relative"
+              >
+                <span class="material-icons"
+                  ><i class="fa-solid fa-tower-broadcast"></i
+                ></span>
+                <span
+                  class="notification-dot"
+                  style="background: #e50914"
+                ></span>
+              </button>
+            </div>
+
+            <div class="profile-menu-wrap" style="position: relative">
+              <div
+                class="user-avatar"
+                id="profile-avatar"
+                style="
+                  cursor: pointer;
+                  background: #e50914;
+                  color: white;
+                  font-weight: bold;
+                  border: 2px solid rgba(255, 255, 255, 0.1);
+                "
+              >
+                JD
+              </div>
+
+              <div class="profile-dropdown glass-card" id="profile-dropdown">
+                <div class="profile-dropdown-header">
+                  <p class="text-muted text-sm">Operator Identity</p>
+                  <h4
+                    id="dropdown-email"
+                    style="word-break: break-all; margin-top: 4px; color:var(--text-muted)"
+                  >
+                    m.ross@netflix.ops
+                  </h4>
+                </div>
+                <hr
+                  class="divider"
+                  style="margin: 12px 0; border-color: rgba(255, 255, 255, 0.1)"
+                />
+
+                <button
+                  class="sidebar-link"
+                  onclick="
+                    document
+                      .querySelector('[data-target=\'view-profile\']')
+                      .click()
+                  "
+                  style="margin: 0; padding: 10px; width: 100%"
+                >
+                  <span class="material-icons" style="font-size: 1.1rem"
+                    ></i
+                  ></span>
+                  Console Preferences
+                </button>
+
+                <button
+                  class="sidebar-link logout-link"
+                  onclick="
+                    sessionStorage.clear();
+                    window.location.href = 'login.html';
+                  "
+                  style="margin: 0; padding: 10px; width: 100%; color: #ff4d4d"
+                >
+                  <span class="material-icons" style="font-size: 1.1rem"
+                    ><i class="fa-solid fa-power-off"></i
+                  ></span>
+                  Back to Login
+                </button>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <div class="dashboard-content">
+          <section id="view-overview" class="content-view active-view">
+            <div
+              class="alert-banner glass-card"
+              style="border-left: 4px solid var(--amber)"
+            >
+              <div class="alert-icon">
+                <span class="material-icons" style="color: var(--amber)"
+                  ><i class="fa-solid fa-triangle-exclamation"></i
+                ></span>
+              </div>
+              <div class="alert-text">
+                <h4>High Bitrate Latency: APAC-SOUTH</h4>
+                <p>
+                  Traffic spike detected in Singapore Node. Auto-scaling
+                  protocols have been initiated by the Traffic Management
+                  System.
+                </p>
+              </div>
+            </div>
+
+            <div class="overview-grid">
+              <div class="tracker-card glass-card span-2">
+                <div class="card-header">
+                  <h3>Content Ingest Pipeline</h3>
+                  <span
+                    class="badge badge-processing"
+                    style="background: rgba(229, 9, 20, 0.2); color: #e50914"
+                    >Transcoding</span
+                  >
+                </div>
+                <p class="text-muted">
+                  Asset ID: #NFLX-77201 (Stranger Things S05-E01-MASTER)
+                </p>
+
+                <div class="step-tracker">
+                  <div class="step completed">
+                    <div class="step-icon">
+                      <span class="material-icons"
+                        ><i class="fa-solid fa-cloud-arrow-up"></i
+                      ></span>
+                    </div>
+                    <p>Upload</p>
+                  </div>
+                  <div class="step-line completed-line"></div>
+                  <div class="step completed">
+                    <div class="step-icon">
+                      <span class="material-icons"
+                        ><i class="fa-solid fa-file-shield"></i
+                      ></span>
+                    </div>
+                    <p>QC Check</p>
+                  </div>
+                  <div class="step-line completed-line"></div>
+                  <div class="step active">
+                    <div class="step-icon">
+                      <span class="material-icons"
+                        ><i class="fa-solid fa-microchip"></i
+                      ></span>
+                    </div>
+                    <p>Encoding</p>
+                  </div>
+                  <div class="step-line"></div>
+                  <div class="step">
+                    <div class="step-icon">
+                      <span class="material-icons"
+                        ><i class="fa-solid fa-language"></i
+                      ></span>
+                    </div>
+                    <p>Localizing</p>
+                  </div>
+                  <div class="step-line"></div>
+                  <div class="step">
+                    <div class="step-icon">
+                      <span class="material-icons"
+                        ><i class="fa-solid fa-globe"></i
+                      ></span>
+                    </div>
+                    <p>CDN Deploy</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="vitals-card glass-card">
+                <div class="card-header">
+                  <h3>Global Vitals</h3>
+                  <span class="material-icons text-muted"
+                    ><i class="fa-solid fa-chart-simple"></i
+                  ></span>
+                </div>
+                <div class="vitals-list">
+                  <div class="vital-item">
+                    <span class="vital-label">Active Streams</span>
+                    <span class="vital-value">14.2 <small>Million</small></span>
+                  </div>
+                  <div class="vital-item">
+                    <span class="vital-label">Error Rate (Global)</span>
+                    <span class="vital-value" style="color: #46d369"
+                      >0.02 <small>%</small></span
+                    >
+                  </div>
+                  <div class="vital-item">
+                    <span class="vital-label">Avg. Bitrate</span>
+                    <span class="vital-value">5.8 <small>Mbps</small></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="glass-card mt-4">
+              <div class="section-header">
+                <h3>Global Deployment Log</h3>
+              </div>
+              <div class="data-table-wrapper">
+                <table class="clinical-table">
+                  <thead>
+                    <tr>
+                      <th>Timestamp</th>
+                      <th>Operation Type</th>
+                      <th>Region/Cluster</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Mar 22, 18:30 UTC</td>
+                      <td>DRM License Renewal</td>
+                      <td>Global-Auth-v3</td>
+                      <td>
+                        <span
+                          class="badge badge-completed"
+                          style="
+                            background: rgba(70, 211, 105, 0.2);
+                            color: #46d369;
+                          "
+                          >Success</span
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Mar 22, 17:45 UTC</td>
+                      <td>Subway-v2 UI Patch</td>
+                      <td>EU-WEST-1 (Dublin)</td>
+                      <td>
+                        <span
+                          class="badge badge-completed"
+                          style="
+                            background: rgba(70, 211, 105, 0.2);
+                            color: #46d369;
+                          "
+                          >Success</span
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Mar 22, 16:12 UTC</td>
+                      <td>Edge Cache Purge</td>
+                      <td>US-EAST-1 (Ashburn)</td>
+                      <td>
+                        <span class="badge badge-processing">In Queue</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="grid-2-col mt-4">
+              <button
+                onclick="window.location.href = './error.html'"
+                class="glass-card"
+                style="
+                  text-align: center;
+                  border: 1px solid rgba(229, 9, 20, 0.3);
+                  cursor: pointer;
+                  background: rgba(229, 9, 20, 0.05);
+                "
+              >
+                <span
+                  class="material-icons"
+                  style="font-size: 2rem; color: #e50914"
+                  ><i class="fa-solid fa-upload"></i
+                ></span>
+                <h4 class="mt-2"  style="color: beige;">Ingest New Content Asset</h4>
+              </button>
+              <button
+                onclick="window.location.href = './error.html'"
+                class="glass-card"
+                style="
+                  text-align: center;
+                  border: 1px solid rgba(70, 211, 105, 0.3);
+                  cursor: pointer;
+                  background: rgba(70, 211, 105, 0.05);
+                "
+              >
+                <span
+                  class="material-icons"
+                  style="font-size: 2rem; color: #46d369"
+                  ><i class="fa-solid fa-message"></i
+                ></span>
+                <h4 class="mt-2" style="color: beige;">Internal Ops Slack Sync</h4>
+              </button>
+            </div>
+
+            <div class="glass-card mt-4">
+              <div class="section-header">
+                <h3>Scheduled Operations</h3>
+                <button
+                  onclick="window.location.href = './error.html'"
+                  class="btn-outline btn-sm"
+                >
+                  Release Calendar
+                </button>
+              </div>
+              <div class="vital-item mt-3" style="border-bottom: none">
+                <div>
+                  <h4 style="margin-bottom: 4px">
+                    Global Database Migration (Shard-B)
+                  </h4>
+                  <p class="text-muted text-sm">
+                    <span
+                      class="material-icons"
+                      style="font-size: 1rem; vertical-align: middle"
+                      ><i class="fa-solid fa-database"></i
+                    ></span>
+                    Redundancy failover test for Latin America cluster
+                  </p>
+                </div>
+                <div style="text-align: right">
+                  <span class="badge badge-processing">In 6 Hours</span>
+                  <p class="text-muted text-sm mt-2">02:00 UTC</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="view-cdn" class="content-view">
+            <div class="section-header">
+              <div>
+                <h2>CDN Telemetry & Edge Performance</h2>
+                <p class="text-muted">
+                  Real-time throughput analysis and edge node health across
+                  global clusters.
+                </p>
+              </div>
+              <form class="search-box" action="./error.html">
+                <span class="material-icons"
+                  ><i class="fa-solid fa-magnifying-glass"></i
+                ></span>
+                <input
+                  type="text"
+                  placeholder="Search Edge Nodes (e.g. IXP-LHR-1)..."
+                />
+              </form>
+            </div>
+
+            <div class="data-table-wrapper glass-card">
+              <table class="clinical-table">
+                <thead>
+                  <tr>
+                    <th>Timestamp</th>
+                    <th>Edge Cluster</th>
+                    <th>Primary KPI</th>
+                    <th>Metric Value</th>
+                    <th>SLA Threshold</th>
+                    <th>Node Status</th>
+                    <th>Logs</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Mar 22, 18:25</td>
+                    <td><strong>US-EAST-VA</strong></td>
+                    <td>TTFF (4K)</td>
+                    <td class="status-warning" style="color: var(--amber)">
+                      1.8s
+                      <span class="material-icons" style="font-size: 1rem"
+                        ><i class="fa-solid fa-arrow-trend-up"></i
+                      ></span>
+                    </td>
+                    <td class="text-muted">&lt; 1.2s</td>
+                    <td>
+                      <span
+                        class="badge badge-processing"
+                        style="
+                          background: rgba(255, 193, 7, 0.2);
+                          color: var(--amber);
+                        "
+                        >Degraded</span
+                      >
+                    </td>
+                    <td>
+                      <button
+                        onclick="window.location.href = './error.html'"
+                        class="btn-outline btn-sm"
+                      >
+                        JSON
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Mar 22, 18:20</td>
+                    <td><strong>EU-WEST-LON</strong></td>
+                    <td>Rebuffer Rate</td>
+                    <td class="status-good" style="color: #46d369">
+                      0.01%
+                      <span class="material-icons" style="font-size: 1rem"
+                        ><i class="fa-solid fa-check"></i
+                      ></span>
+                    </td>
+                    <td class="text-muted">&lt; 0.05%</td>
+                    <td>
+                      <span
+                        class="badge badge-completed"
+                        style="
+                          background: rgba(70, 211, 105, 0.2);
+                          color: #46d369;
+                        "
+                        >Optimal</span
+                      >
+                    </td>
+                    <td>
+                      <button
+                        onclick="window.location.href = './error.html'"
+                        class="btn-outline btn-sm"
+                      >
+                        JSON
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Mar 22, 18:15</td>
+                    <td><strong>APAC-SG-1</strong></td>
+                    <td>Cache Hit Ratio</td>
+                    <td>94.2%</td>
+                    <td class="text-muted">&gt; 92.0%</td>
+                    <td>
+                      <span
+                        class="badge badge-completed"
+                        style="
+                          background: rgba(70, 211, 105, 0.2);
+                          color: #46d369;
+                        "
+                        >Optimal</span
+                      >
+                    </td>
+                    <td>
+                      <button
+                        onclick="window.location.href = './error.html'"
+                        class="btn-outline btn-sm"
+                      >
+                        JSON
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3 class="mt-4 mb-4">Network Architecture Docs</h3>
+            <div class="grid-2-col">
+              <div
+                class="consent-item glass-card"
+                style="justify-content: space-between"
+              >
+                <div style="display: flex; gap: 16px; align-items: center">
+                  <span
+                    class="material-icons file-icon"
+                    style="color: #e50914; margin: 0"
+                  >
+                    <i class="fa-solid fa-network-wired"></i>
+                  </span>
+                  <div>
+                    <h4>Open Connect Peering Guide v4.2</h4>
+                    <p class="text-muted text-sm">Updated Mar 01, 2026</p>
+                  </div>
+                </div>
+                <button
+                  onclick="window.location.href = './error.html'"
+                  class="icon-btn-small"
+                >
+                  <span class="material-icons"
+                    ><i class="fa-solid fa-download"></i
+                  ></span>
+                </button>
+              </div>
+              <div
+                class="consent-item glass-card"
+                style="justify-content: space-between"
+              >
+                <div style="display: flex; gap: 16px; align-items: center">
+                  <span
+                    class="material-icons file-icon"
+                    style="color: #e50914; margin: 0"
+                  >
+                    <i class="fa-solid fa-shield-virus"></i>
+                  </span>
+                  <div>
+                    <h4>DDoS Mitigation Protocol</h4>
+                    <p class="text-muted text-sm">Active Configuration</p>
+                  </div>
+                </div>
+                <button
+                  onclick="window.location.href = './error.html'"
+                  class="icon-btn-small"
+                >
+                  <span class="material-icons"
+                    ><i class="fa-solid fa-download"></i
+                  ></span>
+                </button>
+              </div>
+            </div>
+
+            <div class="glass-card mt-4">
+              <h3>Pending Traffic Shifts</h3>
+              <p class="text-muted mb-3">
+                Nodes currently undergoing maintenance or scheduled DNS
+                propagation.
+              </p>
+              <div class="data-table-wrapper">
+                <table class="clinical-table">
+                  <thead>
+                    <tr>
+                      <th>Traffic Rule</th>
+                      <th>Effective Date</th>
+                      <th>Migration Stage</th>
+                      <th>Est. Completion</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>LHR-to-FRA Overflow</strong></td>
+                      <td>Mar 23, 2026</td>
+                      <td>
+                        <span class="badge badge-processing"
+                          >DNS TTL Propagation</span
+                        >
+                      </td>
+                      <td class="text-muted">04:00 UTC</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="glass-card mt-4" style="border-left: 4px solid #e50914">
+              <div class="section-header">
+                <h3>Throughput Trend Analysis (Gbps)</h3>
+                <span class="text-muted text-sm"
+                  >Global Aggregate - Last 24 Hours</span
+                >
+              </div>
+              <div
+                style="
+                  width: 100%;
+                  height: 250px;
+                  background: rgba(229, 9, 20, 0.02);
+                  border-radius: 8px;
+                  border: 1px dashed rgba(229, 9, 20, 0.2);
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  flex-direction: column;
+                "
+              >
+                <span
+                  class="material-icons"
+                  style="font-size: 3rem; color: #4b1a1a"
+                  ><i class="fa-solid fa-chart-area"></i
+                ></span>
+                <p class="text-muted mt-2">
+                  Grafana / Prometheus Real-time Stream
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section id="view-library-management" class="content-view">
+            <h2>Global Content Library Management</h2>
+            <p class="text-muted mb-4">
+              Manage title availability, licensing windows, and regional
+              distribution rights.
+            </p>
+
+            <div class="grid-2-col">
+              <div class="timeline glass-card">
+                <h3>Rights & Windows Timeline</h3>
+                <hr class="divider" />
+                <div class="timeline-item mt-4">
+                  <div class="timeline-marker active-marker"></div>
+                  <div class="timeline-content">
+                    <h4>Active Window</h4>
+                    <h3>Q1 Content Refresh</h3>
+                    <p class="text-muted">
+                      Global rollout of licensed series (S01-S04).
+                    </p>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-marker"></div>
+                  <div class="timeline-content">
+                    <h4>Upcoming Expiration</h4>
+                    <h3>Studio-A Legacy Deal</h3>
+                    <p class="text-muted">
+                      142 titles set to rotate out on April 12, 2026.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="glass-card">
+                <h3>Studio Relations Team</h3>
+                <hr class="divider" />
+                <div class="vital-item mt-3">
+                  <div>
+                    <h4>Sarah Jenkins</h4>
+                    <p class="text-muted text-sm">
+                      Head of Content Acquisition
+                    </p>
+                  </div>
+                  <button
+                    onclick="window.location.href = './error.html'"
+                    class="btn-outline btn-sm"
+                  >
+                    Contact
+                  </button>
+                </div>
+                <div class="vital-item mt-3">
+                  <div>
+                    <h4>Marcus Thorne</h4>
+                    <p class="text-muted text-sm">Legal & Rights Counsel</p>
+                  </div>
+                  <button
+                    onclick="window.location.href = './error.html'"
+                    class="btn-outline btn-sm"
+                  >
+                    Contact
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="glass-card mt-4">
+              <h3>Active Licensed Titles</h3>
+              <div class="data-table-wrapper mt-3">
+                <table class="clinical-table">
+                  <thead>
+                    <tr>
+                      <th>Title Asset</th>
+                      <th>Regional Rights</th>
+                      <th>Instructions / Limits</th>
+                      <th>Licensing Health</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>Neon Shadows (Season 1)</strong></td>
+                      <td>Global (Ex. MENA)</td>
+                      <td class="text-muted">
+                        Unlimited streaming; No offline downloads in JP.
+                      </td>
+                      <td>
+                        <span class="status-good" style="color: #46d369"
+                          >Valid: 2 Years</span
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><strong>The Last Echo</strong></td>
+                      <td>NA / EMEA</td>
+                      <td class="text-muted">
+                        Ad-tier inclusion strictly prohibited.
+                      </td>
+                      <td>
+                        <span class="status-warning" style="color: var(--amber)"
+                          >Expiring: 30 Days</span
+                        >
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="glass-card mt-4">
+              <h3>Daily Library Maintenance</h3>
+              <hr class="divider" />
+              <div class="vital-item mt-3">
+                <label
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+                    cursor: pointer;
+                    width: 100%;
+                  "
+                >
+                  <input
+                    type="checkbox"
+                    style="width: 20px; height: 20px; accent-color: #e50914"
+                  />
+                  <span style="font-size: 1.05rem"
+                    >Verify metadata localization for LATAM rollout</span
+                  >
+                </label>
+              </div>
+              <div class="vital-item mt-3">
+                <label
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+                    cursor: pointer;
+                    width: 100%;
+                  "
+                >
+                  <input
+                    type="checkbox"
+                    style="width: 20px; height: 20px; accent-color: #e50914"
+                  />
+                  <span style="font-size: 1.05rem"
+                    >Audit 'Trending Now' algorithm for regional bias</span
+                  >
+                </label>
+              </div>
+            </div>
+
+            <div class="glass-card mt-4">
+              <h3>Content Quality & Bug Reporting</h3>
+              <p class="text-muted mb-4">
+                Report playback issues, subtitle sync errors, or metadata
+                discrepancies directly to the Content Ops team.
+              </p>
+              <textarea
+                style="
+                  width: 100%;
+                  background: rgba(255, 255, 255, 0.05);
+                  border: 1px solid rgba(255, 255, 255, 0.1);
+                  color: white;
+                  padding: 16px;
+                  border-radius: 8px;
+                  margin-bottom: 16px;
+                  font-family: inherit;
+                "
+                rows="3"
+                placeholder="E.g. Audio sync issue on Title ID #4402 - Episode 4..."
+              ></textarea>
+              <button
+                onclick="window.location.href = './error.html'"
+                class="btn-primary"
+                style="
+                  background: #e50914;
+                  border: none;
+                  padding: 10px 24px;
+                  border-radius: 4px;
+                  color: white;
+                  cursor: pointer;
+                "
+              >
+                Dispatch Tech Ticket
+              </button>
+            </div>
+          </section>
+
+          <section id="view-user-subcription" class="content-view">
+            <h2>Subscriber Management & Revenue</h2>
+
+            <div class="grid-2-col mt-4">
+              <div class="glass-card">
+                <h3>Internal Account Record</h3>
+                <hr class="divider" />
+                <p><strong>Primary Member:</strong> michael.r@example.com</p>
+                <p><strong>Region/Market:</strong> North America (US)</p>
+                <p><strong>Account ID:</strong> NF-88372-910X</p>
+                <button
+                  onclick="window.location.href = './error.html'"
+                  class="btn-outline btn-sm mt-3"
+                >
+                  Manage User Profile
+                </button>
+              </div>
+
+              <div class="glass-card">
+                <h3>Active Plan Entitlements</h3>
+                <hr class="divider" />
+                <div class="consent-item">
+                  <span
+                    class="material-icons status-good"
+                    style="color: #46d369"
+                  >
+                    <i class="fa-solid fa-circle-check"></i>
+                  </span>
+                  <div>
+                    <p><strong>Premium Ultra HD Plan</strong></p>
+                    <p class="text-muted text-sm">
+                      4 Simultaneous Streams | Spatial Audio
+                    </p>
+                  </div>
+                </div>
+                <div class="consent-item mt-2">
+                  <span
+                    class="material-icons status-good"
+                    style="color: #46d369"
+                  >
+                    <i class="fa-solid fa-circle-check"></i>
+                  </span>
+                  <div>
+                    <p><strong>Ad-Free Entitlement</strong></p>
+                    <p class="text-muted text-sm">
+                      Tier: Legacy Premium (No Ads)
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="glass-card mt-4">
+              <div class="section-header">
+                <h3>Subscription & Billing History</h3>
+                <button
+                  onclick="window.location.href = './error.html'"
+                  class="btn-outline btn-sm"
+                >
+                  Export CSV Statement
+                </button>
+              </div>
+              <div class="data-table-wrapper">
+                <table class="clinical-table">
+                  <thead>
+                    <tr>
+                      <th>Billing Date</th>
+                      <th>Service Description</th>
+                      <th>Gross Amount</th>
+                      <th>Promotional Credit</th>
+                      <th>Net Revenue (ARPU)</th>
+                      <th>Payment Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Mar 15, 2026</td>
+                      <td>Monthly Premium + Extra Member</td>
+                      <td>$22.99</td>
+                      <td>$0.00</td>
+                      <td><strong>$22.99</strong></td>
+                      <td>
+                        <span
+                          class="badge badge-completed"
+                          style="
+                            background: rgba(70, 211, 105, 0.2);
+                            color: #46d369;
+                          "
+                          >Settled</span
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Feb 15, 2026</td>
+                      <td>Monthly Premium + Extra Member</td>
+                      <td>$22.99</td>
+                      <td>$5.00</td>
+                      <td><strong>$17.99</strong></td>
+                      <td>
+                        <span
+                          class="badge badge-completed"
+                          style="
+                            background: rgba(70, 211, 105, 0.2);
+                            color: #46d369;
+                          "
+                          >Settled</span
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Jan 15, 2026</td>
+                      <td>Account Reactivation Fee</td>
+                      <td>$9.99</td>
+                      <td>$0.00</td>
+                      <td><strong>$9.99</strong></td>
+                      <td>
+                        <span
+                          class="badge badge-processing"
+                          style="
+                            background: rgba(59, 130, 246, 0.2);
+                            color: #3b82f6;
+                          "
+                          >Processing</span
+                        >
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="glass-card mt-4">
+              <div class="section-header">
+                <h3>Household & Device Integrity</h3>
+                <button
+                  onclick="window.location.href = './error.html'"
+                  class="icon-btn-small"
+                >
+                  <span class="material-icons"
+                    ><i class="fa-solid fa-gears"></i
+                  ></span>
+                </button>
+              </div>
+              <hr class="divider" />
+              <div class="grid-2-col">
+                <div>
+                  <p class="text-muted text-sm">Primary Household IP</p>
+                  <h4 class="mt-2">192.168.1.42 (Salem, TN)</h4>
+                  <p
+                    class="mt-2"
+                    style="display: flex; align-items: center; gap: 8px"
+                  >
+                    <span
+                      class="material-icons text-muted"
+                      style="font-size: 1rem"
+                    >
+                      <i class="fa-solid fa-house-signal"></i>
+                    </span>
+                    Home Network Verified
+                  </p>
+                </div>
+                <div>
+                  <p class="text-muted text-sm">Traveling / Remote Device</p>
+                  <h4 class="mt-2">iPad Pro (Mobile Network)</h4>
+                  <p
+                    class="mt-2"
+                    style="display: flex; align-items: center; gap: 8px"
+                  >
+                    <span
+                      class="material-icons text-muted"
+                      style="font-size: 1rem"
+                    >
+                      <i class="fa-solid fa-mobile-screen-button"></i>
+                    </span>
+                    Access Code Valid (Expires in 4 days)
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="glass-card mt-4">
+              <div class="section-header">
+                <h3>Payment Gateway Integration</h3>
+                <button
+                  onclick="window.location.href = './error.html'"
+                  class="btn-outline btn-sm"
+                >
+                  Update Stripe/Braintree
+                </button>
+              </div>
+              <div
+                class="consent-item mt-3"
+                style="justify-content: space-between"
+              >
+                <div style="display: flex; gap: 16px; align-items: center">
+                  <span
+                    class="material-icons"
+                    style="font-size: 2rem; color: #e50914"
+                  >
+                    <i class="fa-brands fa-cc-visa"></i>
+                  </span>
+                  <div>
+                    <h4>Visa ending in •••• 4242</h4>
+                    <p class="text-muted text-sm">
+                      Auto-renew Enabled | Next Bill: Apr 15, 2026
+                    </p>
+                  </div>
+                </div>
+                <button
+                  onclick="window.location.href = './error.html'"
+                  class="icon-btn-small"
+                >
+                  <span class="material-icons"
+                    ><i class="fa-regular fa-trash-can"></i
+                  ></span>
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <section id="view-drm-security" class="content-view">
+            <div class="section-header">
+              <div>
+                <h2>DRM & Content Security</h2>
+                <p class="text-muted">
+                  Monitor license acquisition health, Widevine/FairPlay
+                  heartbeat, and active anti-piracy countermeasures.
+                </p>
+              </div>
+              <div class="search-box">
+                <span class="material-icons"
+                  ><i class="fa-solid fa-shield-halved"></i
+                ></span>
+                <input
+                  type="text"
+                  placeholder="Audit License IDs or IP ranges..."
+                />
+              </div>
+            </div>
+
+            <div class="data-table-wrapper glass-card">
+              <table class="clinical-table">
+                <thead>
+                  <tr>
+                    <th>Last Heartbeat</th>
+                    <th>Security Protocol</th>
+                    <th>Protection Layer</th>
+                    <th>Success Rate</th>
+                    <th>Policy Status</th>
+                    <th>Incident Log</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Mar 22, 18:25</td>
+                    <td><strong>Google Widevine L1</strong></td>
+                    <td>TEE/HW Decryption</td>
+                    <td class="status-good" style="color: #46d369">
+                      99.98%
+                      <span class="material-icons" style="font-size: 1rem"
+                        ><i class="fa-solid fa-check"></i
+                      ></span>
+                    </td>
+                    <td>
+                      <span
+                        class="badge badge-completed"
+                        style="
+                          background: rgba(70, 211, 105, 0.2);
+                          color: #46d369;
+                        "
+                        >Enforced</span
+                      >
+                    </td>
+                    <td>
+                      <button
+                        onclick="window.location.href = './error.html'"
+                        class="btn-outline btn-sm"
+                      >
+                        VIEW
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Mar 22, 18:20</td>
+                    <td><strong>Apple FairPlay</strong></td>
+                    <td>HLS Encryption</td>
+                    <td class="status-good" style="color: #46d369">99.95%</td>
+                    <td>
+                      <span
+                        class="badge badge-completed"
+                        style="
+                          background: rgba(70, 211, 105, 0.2);
+                          color: #46d369;
+                        "
+                        >Enforced</span
+                      >
+                    </td>
+                    <td>
+                      <button
+                        onclick="window.location.href = './error.html'"
+                        class="btn-outline btn-sm"
+                      >
+                        VIEW
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Mar 22, 18:15</td>
+                    <td><strong>PlayReady (Legacy)</strong></td>
+                    <td>Silverlight/Win</td>
+                    <td class="status-warning" style="color: var(--amber)">
+                      88.4%
+                      <span class="material-icons" style="font-size: 1rem"
+                        ><i class="fa-solid fa-arrow-trend-down"></i
+                      ></span>
+                    </td>
+                    <td>
+                      <span
+                        class="badge badge-processing"
+                        style="
+                          background: rgba(255, 193, 7, 0.2);
+                          color: var(--amber);
+                        "
+                        >Deprecating</span
+                      >
+                    </td>
+                    <td>
+                      <button
+                        onclick="window.location.href = './error.html'"
+                        class="btn-outline btn-sm"
+                      >
+                        VIEW
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3 class="mt-4 mb-4">Security Documentation & Keys</h3>
+            <div class="grid-2-col">
+              <div
+                class="consent-item glass-card"
+                style="justify-content: space-between"
+              >
+                <div style="display: flex; gap: 16px; align-items: center">
+                  <span
+                    class="material-icons file-icon"
+                    style="color: #e50914; margin: 0"
+                  >
+                    <i class="fa-solid fa-fingerprint"></i>
+                  </span>
+                  <div>
+                    <h4>Forensic Watermarking v5.0</h4>
+                    <p class="text-muted text-sm">
+                      Session-specific ID Injection
+                    </p>
+                  </div>
+                </div>
+                <button
+                  onclick="window.location.href = './error.html'"
+                  class="icon-btn-small"
+                >
+                  <span class="material-icons"
+                    ><i class="fa-solid fa-key"></i
+                  ></span>
+                </button>
+              </div>
+              <div
+                class="consent-item glass-card"
+                style="justify-content: space-between"
+              >
+                <div style="display: flex; gap: 16px; align-items: center">
+                  <span
+                    class="material-icons file-icon"
+                    style="color: #e50914; margin: 0"
+                  >
+                    <i class="fa-solid fa-user-shield"></i>
+                  </span>
+                  <div>
+                    <h4>HDCP 2.2 Compliance Audit</h4>
+                    <p class="text-muted text-sm">4K/HDR Output Requirements</p>
+                  </div>
+                </div>
+                <button
+                  onclick="window.location.href = './error.html'"
+                  class="icon-btn-small"
+                >
+                  <span class="material-icons"
+                    ><i class="fa-solid fa-download"></i
+                  ></span>
+                </button>
+              </div>
+            </div>
+
+            <div class="glass-card mt-4">
+              <h3>Active Take-down Requests (DMCA)</h3>
+              <p class="text-muted mb-3">
+                Real-time tracking of leaked assets and automated takedown
+                notices sent to hosting providers.
+              </p>
+              <div class="data-table-wrapper">
+                <table class="clinical-table">
+                  <thead>
+                    <tr>
+                      <th>Detected Asset</th>
+                      <th>Leaked Platform</th>
+                      <th>Mitigation Stage</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <strong>Stranger Things S05E01 (Pre-release)</strong>
+                      </td>
+                      <td>P2P / Torrent</td>
+                      <td>
+                        <span
+                          class="badge badge-processing"
+                          style="
+                            background: rgba(229, 9, 20, 0.2);
+                            color: #e50914;
+                          "
+                          >Seed Blocking</span
+                        >
+                      </td>
+                      <td class="text-muted">High Priority</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="glass-card mt-4" style="border-left: 4px solid #e50914">
+              <div class="section-header">
+                <h3>Illegal Concurrent Stream Attempts</h3>
+                <span class="text-muted text-sm"
+                  >Auth-Token Scraping Detection - Last 24 Hours</span
+                >
+              </div>
+              <div
+                style="
+                  width: 100%;
+                  height: 250px;
+                  background: rgba(229, 9, 20, 0.02);
+                  border-radius: 8px;
+                  border: 1px dashed rgba(229, 9, 20, 0.2);
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  flex-direction: column;
+                "
+              >
+                <span
+                  class="material-icons"
+                  style="font-size: 3rem; color: #4b1a1a"
+                  ><i class="fa-solid fa-user-secret"></i
+                ></span>
+                <p class="text-muted mt-2">
+                  Anomalous Traffic patterns identified in SE-Asia region.
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./script.js"></script>
+<script>
+  AOS.init({
+    once: true,
+    duration: 1000,
+    easing: "ease-out-cubic",
+    startEvent: "aos:ready", // manual trigger
+  });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<!-- <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    // =========================
+    // ✅ GET USER EMAIL
+    // =========================
+    const userEmailDisplay = document.getElementById("userEmailDisplay");
+    const dropdownEmail = document.getElementById("dropdown-email");
+    const greetingEl = document.getElementById("greeting");
+    const avatarBtn = document.getElementById("profile-avatar");
+
+    const activeEmail =
+      sessionStorage.getItem("userEmail") ||
+      sessionStorage.getItem("adminEmail");
+
+    if (!activeEmail) {
+      window.location.href = "login.html";
+      return;
+    }
+
+    // Show email
+    if (userEmailDisplay) {
+      userEmailDisplay.textContent = activeEmail;
+    }
+
+    if (dropdownEmail) {
+      dropdownEmail.textContent = activeEmail;
+    }
+
+    // Greeting (name from email)
+    if (greetingEl) {
+      let name = activeEmail.split("@")[0];
+      name = name.charAt(0).toUpperCase() + name.slice(1);
+      greetingEl.textContent = `Hello, ${name}`;
+    }
+
+    // Avatar first letter
+    if (avatarBtn) {
+      avatarBtn.textContent = activeEmail.charAt(0).toUpperCase();
+    }
+
+    // =========================
+    // ✅ PROFILE DROPDOWN
+    // =========================
+    const profileDropdown = document.getElementById("profile-dropdown");
+
+    if (avatarBtn && profileDropdown) {
+      avatarBtn.addEventListener("click", (event) => {
+        event.stopPropagation();
+        profileDropdown.classList.toggle("active");
+      });
+
+      document.addEventListener("click", (event) => {
+        if (
+          profileDropdown.classList.contains("active") &&
+          !profileDropdown.contains(event.target) &&
+          event.target !== avatarBtn
+        ) {
+          profileDropdown.classList.remove("active");
+        }
+      });
+    }
+
+    // =========================
+    // ✅ CHARTS FUNCTION
+    // =========================
+    function initCharts() {
+      const glucoseCtx = document.getElementById("glucoseChart");
+      if (glucoseCtx) {
+        new Chart(glucoseCtx, {
+          type: "line",
+          data: {
+            labels: ["Jan", "Feb", "Mar"],
+            datasets: [
+              {
+                label: "Glucose",
+                data: [95, 102, 110],
+                borderColor: "#00D4FF",
+                backgroundColor: "rgba(0,212,255,0.1)",
+                tension: 0.4,
+              },
+            ],
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+          },
+        });
+      }
+
+      const cholCtx = document.getElementById("cholesterolChart");
+      if (cholCtx) {
+        new Chart(cholCtx, {
+          type: "bar",
+          data: {
+            labels: ["LDL", "HDL", "Total"],
+            datasets: [
+              {
+                label: "Cholesterol",
+                data: [95, 55, 180],
+                backgroundColor: "rgba(16,185,129,0.6)",
+              },
+            ],
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+          },
+        });
+      }
+    }
+
+    // =========================
+    // ✅ SIDEBAR NAVIGATION
+    // =========================
+    const sidebarLinks = document.querySelectorAll(
+      ".sidebar-link[data-target]",
+    );
+    const contentViews = document.querySelectorAll(".content-view");
+    const sidebar = document.getElementById("sidebar");
+
+    sidebarLinks.forEach((link) => {
+      link.addEventListener("click", function () {
+        sidebarLinks.forEach((l) => l.classList.remove("active"));
+        this.classList.add("active");
+
+        contentViews.forEach((view) => view.classList.remove("active-view"));
+
+        const targetId = this.getAttribute("data-target");
+        const targetView = document.getElementById(targetId);
+
+        if (targetView) {
+          targetView.classList.add("active-view");
+
+          // Load charts only when analytics tab opens
+          if (targetId === "view-analytics") {
+            initCharts();
+          }
+        }
+
+        if (window.innerWidth <= 768 && sidebar) {
+          sidebar.classList.remove("mobile-open");
+        }
+      });
+    });
+
+    // =========================
+    // ✅ MOBILE SIDEBAR
+    // =========================
+    const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+    const closeSidebarBtn = document.getElementById("close-sidebar");
+
+    if (mobileMenuBtn && sidebar) {
+      mobileMenuBtn.addEventListener("click", () => {
+        sidebar.classList.add("mobile-open");
+      });
+    }
+
+    if (closeSidebarBtn && sidebar) {
+      closeSidebarBtn.addEventListener("click", () => {
+        sidebar.classList.remove("mobile-open");
+      });
+    }
+
+    document.addEventListener("click", (event) => {
+      if (!sidebar || !mobileMenuBtn) return;
+
+      const isClickInsideSidebar = sidebar.contains(event.target);
+      const isClickOnHamburger = mobileMenuBtn.contains(event.target);
+
+      if (
+        !isClickInsideSidebar &&
+        !isClickOnHamburger &&
+        sidebar.classList.contains("mobile-open")
+      ) {
+        sidebar.classList.remove("mobile-open");
+      }
+    });
+  });
+</script> -->
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const userEmailDisplay = document.getElementById("userEmailDisplay");
+    const dropdownEmail = document.getElementById("dropdown-email");
+    const greetingEl = document.getElementById("greeting");
+    const avatarBtn = document.getElementById("profile-avatar");
+
+    // ✅ Correct keys
+    const activeEmail = sessionStorage.getItem("loggedInUser");
+    const role = sessionStorage.getItem("role");
+
+    if (!activeEmail) {
+      window.location.href = "login.html";
+      return;
+    }
+
+    // 🔐 Restrict admin page
+    if (role !== "admin") {
+      window.location.href = "dashboard.html";
+      return;
+    }
+
+    // ✅ Show email
+    if (userEmailDisplay) userEmailDisplay.textContent = activeEmail;
+    if (dropdownEmail) dropdownEmail.textContent = activeEmail;
+
+    // ✅ Greeting
+    if (greetingEl) {
+      let name = activeEmail.split("@")[0];
+      name = name.charAt(0).toUpperCase() + name.slice(1);
+      greetingEl.textContent = `Hey, ${name}`;
+    }
+
+    // ✅ Avatar
+    if (avatarBtn) {
+      avatarBtn.textContent = activeEmail.charAt(0).toUpperCase();
+    }
+
+    // =========================
+    // PROFILE DROPDOWN
+    // =========================
+    const profileDropdown = document.getElementById("profile-dropdown");
+
+    if (avatarBtn && profileDropdown) {
+      avatarBtn.addEventListener("click", (event) => {
+        event.stopPropagation();
+        profileDropdown.classList.toggle("active");
+      });
+
+      document.addEventListener("click", (event) => {
+        if (
+          profileDropdown.classList.contains("active") &&
+          !profileDropdown.contains(event.target) &&
+          event.target !== avatarBtn
+        ) {
+          profileDropdown.classList.remove("active");
+        }
+      });
+    }
+
+    // =========================
+    // CHARTS
+    // =========================
+    function initCharts() {
+      const glucoseCtx = document.getElementById("glucoseChart");
+      if (glucoseCtx) {
+        new Chart(glucoseCtx, {
+          type: "line",
+          data: {
+            labels: ["Jan", "Feb", "Mar"],
+            datasets: [
+              {
+                label: "Glucose",
+                data: [95, 102, 110],
+                borderColor: "#00D4FF",
+                backgroundColor: "rgba(0,212,255,0.1)",
+                tension: 0.4,
+              },
+            ],
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+          },
+        });
+      }
+
+      const cholCtx = document.getElementById("cholesterolChart");
+      if (cholCtx) {
+        new Chart(cholCtx, {
+          type: "bar",
+          data: {
+            labels: ["LDL", "HDL", "Total"],
+            datasets: [
+              {
+                label: "Cholesterol",
+                data: [95, 55, 180],
+                backgroundColor: "rgba(16,185,129,0.6)",
+              },
+            ],
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+          },
+        });
+      }
+    }
+
+    // =========================
+    // SIDEBAR NAV
+    // =========================
+    const sidebarLinks = document.querySelectorAll(
+      ".sidebar-link[data-target]",
+    );
+    const contentViews = document.querySelectorAll(".content-view");
+    const sidebar = document.getElementById("sidebar");
+
+    sidebarLinks.forEach((link) => {
+      link.addEventListener("click", function () {
+        sidebarLinks.forEach((l) => l.classList.remove("active"));
+        this.classList.add("active");
+
+        contentViews.forEach((view) => view.classList.remove("active-view"));
+
+        const targetId = this.getAttribute("data-target");
+        const targetView = document.getElementById(targetId);
+
+        if (targetView) {
+          targetView.classList.add("active-view");
+
+          if (targetId === "view-analytics") {
+            initCharts();
+          }
+        }
+
+        if (window.innerWidth <= 768 && sidebar) {
+          sidebar.classList.remove("mobile-open");
+        }
+      });
+    });
+
+    // =========================
+    // MOBILE SIDEBAR
+    // =========================
+    const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+    const closeSidebarBtn = document.getElementById("close-sidebar");
+
+    if (mobileMenuBtn && sidebar) {
+      mobileMenuBtn.addEventListener("click", () => {
+        sidebar.classList.add("mobile-open");
+      });
+    }
+
+    if (closeSidebarBtn && sidebar) {
+      closeSidebarBtn.addEventListener("click", () => {
+        sidebar.classList.remove("mobile-open");
+      });
+    }
+
+    document.addEventListener("click", (event) => {
+      if (!sidebar || !mobileMenuBtn) return;
+
+      if (
+        !sidebar.contains(event.target) &&
+        !mobileMenuBtn.contains(event.target) &&
+        sidebar.classList.contains("mobile-open")
+      ) {
+        sidebar.classList.remove("mobile-open");
+      }
+    });
+  });
+</script>

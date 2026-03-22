@@ -1,0 +1,990 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <link rel="icon" href="./Assets/icon.webp" />
+    <link rel="stylesheet" href="./service.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header1">
+        <div class="container1">
+          <h3>Welcome to Stackly – Streamming Service Connect and Enjoy</h3>
+        </div>
+        <div class="container2">
+          <div>
+            <i class="fa-solid fa-phone-volume"></i>
+            <p>(123)456-7890</p>
+          </div>
+          <div>
+            <i class="fa-regular fa-envelope"></i>
+            <p>Support@stackly.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="header2">
+        <div class="logo">
+          <a href="./index.html">
+            <img src="./Assets/logo.webp" alt="Logo" />
+          </a>
+        </div>
+
+        <div class="div">
+          <nav>
+            <ul>
+              <li class="dropdown">
+                <a href="./index.html">Home</a>
+
+                <!-- <span class="drop-toggle">
+                  <i class="fa-solid fa-caret-down"></i>
+                </span> -->
+
+                <ul class="dropdown-menu">
+                  <li><a href="./index2.html">Home 2</a></li>
+                </ul>
+              </li>
+
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./service.html">Services</a></li>
+              <li><a href="./blog.html">Blog</a></li>
+              <li><a href="./contact.html">Contact Us</a></li>
+              <!-- <li><a href="./dashboard.html">Dashboard</a></li> -->
+            </ul>
+          </nav>
+
+          <div class="icons">
+            <div class="login">
+              <a href="./login.html">
+                <button class="log-btn">Login</button>
+              </a>
+            </div>
+
+            <div class="mobilebar">
+              <div class="hamburger-box">
+                <div class="hamburger">
+                  <div class="line line1"></div>
+                  <div class="line line2"></div>
+                  <div class="line line3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="sidebar" id="sidebar">
+      <ul>
+        <li class="has-dropdown menu-item">
+          <div class="dropdown-header">
+            <a href="./index.html">Home</a>
+            <!-- <span class="drop-caret" id="home-caret">▾</span> -->
+          </div>
+          <!-- <ul class="submenu" id="home-dropdown">
+            <li><a href="./index2.html">Home 2</a></li>
+          </ul> -->
+        </li>
+
+        <li class="menu-item">
+          <a href="./about.html">About</a>
+        </li>
+        <li class="menu-item">
+          <a href="./service.html">Services</a>
+        </li>
+        <li class="menu-item">
+          <a href="./blog.html">Blog</a>
+        </li>
+        <li class="menu-item">
+          <a href="./contact.html">Contact Us</a>
+        </li>
+        <!-- <li class="menu-item">
+          <a href="./dashboard.html">Dashboard</a>
+        </li> -->
+        <li class="menu-item">
+          <a href="./login.html">Login</a>
+        </li>
+      </ul>
+
+      <div class="sidebar-login">
+        <!-- <a href="./app.html">
+            <button class="login-btn">Buy Now</button>
+          </a> -->
+      </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <div class="services-page">
+      <section class="services-hero">
+        <div class="hero-vignette"></div>
+        <div class="services-hero-content">
+          <div class="hero-tag">Core Features</div>
+          <h1>Everything You Need Streaming
+            <!-- <br />for <span>Streaming</span> -->
+          </h1>
+          <p class="hero-desc">
+            Powerful features designed for seamless entertainment and unmatched
+            quality.
+          </p>
+        </div>
+      </section>
+
+      <section class="feature-spotlight">
+        <div class="services-container">
+          <div class="service-card highlight float-card" data-tilt>
+            <div class="card-glow"></div>
+            <div class="card-icon"><i class="fas fa-tv"></i></div>
+            <div class="card-text">
+              <h3>4K HDR & Dolby</h3>
+              <p>
+                Experience true immersion. We optimize every stream for peak
+                high-fidelity performance on all devices.
+              </p>
+            </div>
+          </div>
+
+          <div class="service-card highlight float-card" data-tilt>
+            <div class="card-glow"></div>
+            <div class="card-icon"><i class="fas fa-download"></i></div>
+            <div class="card-text">
+              <h3>Smart Downloads</h3>
+              <p>
+                Your content, ready anywhere. Offline viewing available on up to
+                5 mobile devices simultaneously.
+              </p>
+            </div>
+          </div>
+
+          <div class="service-card highlight float-card" data-tilt>
+            <div class="card-glow"></div>
+            <div class="card-icon"><i class="fas fa-globe-americas"></i></div>
+            <div class="card-text">
+              <h3>Global Delivery</h3>
+              <p>
+                190+ countries. Relentless uptime. We ensure your stream never
+                buffers, no matter your location.
+              </p>
+            </div>
+          </div>
+
+          <div class="service-card highlight float-card" data-tilt>
+            <div class="card-glow"></div>
+            <div class="card-icon"><i class="fas fa-brain"></i></div>
+            <div class="card-text">
+              <h3>Personalized picks</h3>
+              <p>
+                Our algorithm is your curator, suggesting your next favorite
+                story before you even know you want it.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="tech-section">
+      <div class="tech-container">
+        <div class="tech-info">
+          <div class="tech-tag">Next-Gen Engine</div>
+          <h2 class="tech-title">Adaptive <span>Bitrate</span> Tech</h2>
+          <p class="tech-desc">
+            Our proprietary streaming engine monitors your network 140 times per
+            second, seamlessly shifting between quality layers to ensure zero
+            buffering, even on unstable connections.
+          </p>
+
+          <div class="tech-features">
+            <div class="feature-item">
+              <i class="fas fa-bolt"></i>
+              <span>Instant Start</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-signal"></i>
+              <span>Zero-Lag Switching</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tech-visual">
+          <div class="visual-wrapper">
+            <img
+              src="./Assets/data stream_11zon_11zon.webp"
+              alt="Data Streams"
+              class="main-tech-img"
+            />
+            <div class="scanner-line"></div>
+            <div class="data-badge b-1">4K Ultra HD</div>
+            <div class="data-badge b-2">Low Latency</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="device-section">
+      <div class="device-container">
+        <div class="device-visual">
+          <div class="device-wrapper">
+            <img
+              src="./Assets/Smart TV_11zon.webp"
+              alt="Smart TV"
+              class="device-img tv"
+            />
+            <img
+              src="./Assets/Tablet_11zon.webp"
+              alt="Tablet"
+              class="device-img tablet"
+            />
+            <img
+              src="./Assets/smartphone_11zon.webp"
+              alt="Smartphone"
+              class="device-img phone"
+            />
+
+            <div class="sync-ring"></div>
+          </div>
+        </div>
+
+        <div class="device-info">
+          <div class="device-tag">Seamless Transition</div>
+          <h2 class="device-title">Stream <span>Anywhere</span></h2>
+          <p class="device-desc">
+            Start a movie on your TV and finish it on your commute. Our
+            cloud-sync technology remembers exactly where you left off across
+            every screen you own.
+          </p>
+
+          <div class="device-list">
+            <div class="dev-item">
+              <i class="fas fa-mobile-alt"></i> Mobile & Tablets
+            </div>
+            <div class="dev-item">
+              <i class="fas fa-desktop"></i> PCs & Laptops
+            </div>
+            <div class="dev-item">
+              <i class="fas fa-gamepad"></i> Consoles & Smart TVs
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="offline-section">
+      <div class="offline-container">
+        <div class="offline-visual">
+          <div class="phone-mockup">
+            <div class="screen-content">
+              <div class="download-card">
+                <img
+                  src="./Assets/indexh1_11zon_11zon.webp"
+                  alt="Movie Poster"
+                  class="poster"
+                />
+                <div class="dl-info">
+                  <h4>Stranger Stories: S4</h4>
+                  <p>Episode 1: The Vanishing</p>
+                  <div class="progress-bar-container">
+                    <div class="progress-fill"></div>
+                  </div>
+                  <span class="status-text"
+                    >Downloading... <span class="percent">0%</span></span
+                  >
+                </div>
+              </div>
+              <div class="floating-icon plane">
+                <i class="fas fa-plane"></i>
+              </div>
+              <div class="floating-icon wifi-off">
+                <i class="fas fa-wifi"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="offline-info">
+          <div class="offline-tag">Freedom to Watch</div>
+          <h2 class="offline-title">Entertainment <span>Unplugged</span></h2>
+          <p class="offline-desc">
+            Plane mode? No problem. Download your favorite movies and series
+            directly to your device and watch them anywhere, even without a data
+            connection.
+          </p>
+
+          <div class="offline-features">
+            <div class="off-feat">
+              <i class="fas fa-check-circle"></i>
+              <span>Smart Downloads: Auto-deletes watched episodes.</span>
+            </div>
+            <div class="off-feat">
+              <i class="fas fa-check-circle"></i>
+              <span>High-Speed Encoding: Faster saves, less space.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ai-section">
+      <div class="ai-container">
+        <div class="ai-visual">
+          <div class="matrix-wrapper">
+            <div class="matrix-item p-main">
+              <img
+                src="./Assets/Featured Show_11zon.webp"
+                alt="Featured Show"
+              />
+              <div class="match-badge">98% Match</div>
+            </div>
+            <div class="matrix-item p-sub-1">
+              <img
+                src="./Assets/cenral_11zon.webp"
+                alt="Central"
+              />
+            </div>
+            <div class="matrix-item p-sub-2">
+              <img
+                src="./Assets/trending_11zon.webp"
+                alt="Trending"
+              />
+            </div>
+
+            <div class="ai-radar"></div>
+            <div class="ai-radar-pulse"></div>
+          </div>
+        </div>
+
+        <div class="ai-info">
+          <div class="ai-header-tag">Neural Curation</div>
+          <h2 class="ai-title">Tailored to <span>Your Pulse</span></h2>
+          <p class="ai-desc">
+            Our algorithms don't just see data; they see patterns. By analyzing
+            your viewing velocity and genre affinity, we build a streaming home
+            that evolves with you.
+          </p>
+
+          <div class="ai-stats">
+            <div class="ai-stat-item">
+              <span class="stat-num" data-val="98">0</span
+              ><span class="unit">%</span>
+              <p>Accuracy Rate</p>
+            </div>
+            <div class="ai-stat-item">
+              <span class="stat-num" data-val="500">0</span
+              ><span class="unit">+</span>
+              <p>Daily Updates</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="license-section">
+      <div class="license-container">
+        <div class="license-info">
+          <div class="service-tag">Global Partnerships</div>
+          <h2 class="service-title">Premium <span>Licensing</span></h2>
+          <p class="service-desc">
+            We maintain exclusive multi-year deals with the world's leading
+            production houses. From Hollywood blockbusters to independent
+            international cinema, our library is powered by the biggest names in
+            entertainment.
+          </p>
+          <div class="studio-badges">
+            <span class="badge">Universal</span>
+            <span class="badge">Warner Bros</span>
+            <span class="badge">Paramount</span>
+            <span class="badge">A24</span>
+          </div>
+        </div>
+
+        <div class="license-visual">
+          <div class="floating-logos">
+            <img
+              src="./Assets/Film Studio_11zon.webp"
+              alt="Film Studio"
+              class="studio-hero-img"
+            />
+            <div class="logo-overlay-item l1">Exclusive</div>
+            <div class="logo-overlay-item l2">Global Rights</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="creator-section">
+      <div class="creator-container">
+        <div class="creator-visual">
+          <div class="dashboard-mockup">
+            <div class="dash-header">Creator Studio v4.0</div>
+            <div class="upload-widget">
+              <div class="upload-icon">
+                <i class="fas fa-cloud-upload-alt"></i>
+              </div>
+              <div class="upload-text">Distributing to 190 Countries</div>
+              <div class="upload-bar"><div class="upload-progress"></div></div>
+            </div>
+            <div class="dash-stats">
+              <div class="d-stat"><span>Views</span> 1.2M</div>
+              <div class="d-stat"><span>Revenue</span> $14.5K</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="creator-info">
+          <div class="service-tag">For the Makers</div>
+          <h2 class="service-title">Creator <span>Ecosystem</span></h2>
+          <p class="service-desc">
+            Empowering independent filmmakers and digital artists to reach
+            millions. Our platform provides the tools to upload, protect, and
+            monetize your content with global distribution at the click of a
+            button.
+          </p>
+          <button class="creator-btn">Become a Partner</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="sub-section">
+      <div class="sub-container">
+        <div class="sub-info">
+          <div class="service-tag">Flexible Control</div>
+          <h2 class="service-title">Plan <span>Management</span></h2>
+          <p class="service-desc">
+            No hidden fees. No long-term contracts. Upgrade for 4K streaming or
+            downgrade at any time directly from your dashboard. We believe
+            premium entertainment should be on your terms.
+          </p>
+          <ul class="sub-perks">
+            <li><i class="fas fa-check"></i> Instant Upgrades</li>
+            <li><i class="fas fa-check"></i> One-Click Cancellation</li>
+            <li><i class="fas fa-check"></i> 30-Day History</li>
+          </ul>
+        </div>
+
+        <div class="sub-visual">
+          <div class="plan-card-stack">
+            <div class="plan-card basic">
+              <span>Basic</span>
+              <div class="plan-price">$9.99</div>
+            </div>
+            <div class="plan-card premium active">
+              <div class="active-label">Active</div>
+              <span>Premium</span>
+              <div class="plan-price">$19.99</div>
+              <div class="plan-glow"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="cta-bg">
+        <img
+          src="./Assets/cta_11zon.webp"
+          alt="cta"
+          class="cta-img"
+          
+        />
+        <div class="cta-overlay"></div>
+      </div>
+
+      <div class="cta-content">
+        <h2 class="cta-title">Ready to watch?</h2>
+        <p class="cta-text">Join millions of streamers. Cancel anytime.</p>
+        <form class="cta-actions" action="./error.html">
+          <input type="email" placeholder="Email address" class="cta-input" required/>
+          <button class="cta-main-btn">
+            Get Started <i class="fas fa-chevron-right"></i>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <div class="footer-grid">
+        <div class="footer-brand gsap-contact">
+          <div class="logo" style="margin-bottom: 20px">
+            <a href="./index.html">
+              <img
+                src="./Assets/logo.webp"
+                alt="Netflix - Logo"
+                style="max-width: 180px"
+              />
+            </a>
+          </div>
+
+          <p>
+            Ready to watch? Enter your email to create or restart your
+            membership and unlock a world of unlimited movies, TV shows, and
+            more.
+          </p>
+        </div>
+
+        <div class="footer-links gsap-contact">
+          <h4>Quick Links</h4>
+
+          <a href="./about.html">About</a>
+          <a href="./service.html">Services</a>
+          <a href="./blog.html">Blog</a>
+          <a href="./contact.html">Contact Us</a>
+          <a href="./login.html">Login</a>
+        </div>
+        <!-- <div class="footer-links">
+          <h4>Navigation</h4>
+          <a href="./about.html">About</a>
+          <a href="./service.html">Services</a>
+          <a href="./blog.html">Blog</a>
+        </div> -->
+        <div class="footer-newsletter">
+          <h4>Newsletter</h4>
+          <p>
+            Enter your email to create or restart your membership and unlock a
+            world of unlimited movies, TV shows, and more.
+          </p>
+          <form action="./error.html">
+            <div class="news-input">
+              <input type="email" placeholder="Email Address" required />
+              <button type="submit">→</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Innovations. All Rights Reserved.</p>
+        <div class="legal-links">
+          <a href="./error.html">Privacy Policy</a>
+          <a href="./error.html">ISO Compliance</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./script.js"></script>
+<script>
+  AOS.init({
+    once: true,
+    duration: 1000,
+    easing: "ease-out-cubic",
+    startEvent: "aos:ready", // manual trigger
+  });
+</script>
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<!-- 1 -->
+<script>
+  window.addEventListener("load", () => {
+    // 1. Entrance Animation: Cards sequentially reveal
+    gsap.to(".service-card", {
+      scrollTrigger: {
+        trigger: ".services-container",
+        start: "top 80%",
+      },
+      opacity: 1, // Fade in
+      y: 0, // Move back to original Y position
+      rotateX: 0, // Flatten the rotation
+      stagger: 0.35,
+      duration: 1.5,
+      ease: "power4.out",
+      delay: 0.2, // Reduced delay for snappier feel
+    });
+
+    // 2. JS FUNCTION: Isometric Tilt & Glow Follow
+    const cards = document.querySelectorAll(".float-card");
+    const maxTilt = 10; // degrees
+
+    cards.forEach((card) => {
+      const glow = card.querySelector(".card-glow");
+
+      card.addEventListener("mousemove", (e) => {
+        // Get card dimensions
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+
+        // Calculate normalized mouse position (-1 to +1)
+        const xPercent = (x / rect.width) * 2 - 1;
+        const yPercent = (y / rect.height) * 2 - 1;
+
+        // --- TILT EFFECT ---
+        // We invert: if mouse is on left, rotate Y positive to tilt right side away
+        gsap.to(card, {
+          rotateX: -yPercent * maxTilt, // Tilts along horizontal axis
+          rotateY: xPercent * maxTilt, // Tilts along vertical axis
+          duration: 0.4,
+          ease: "power2.out",
+          overwrite: true,
+        });
+
+        // --- GLOW EFFECT FOLLOW ---
+        // Update CSS variables for the radial glow location
+        glow.style.setProperty("--x", `${(x / rect.width) * 100}%`);
+        glow.style.setProperty("--y", `${(y / rect.height) * 100}%`);
+      });
+
+      // Reset when mouse leaves
+      card.addEventListener("mouseleave", () => {
+        gsap.to(card, {
+          rotateX: 0,
+          rotateY: 0,
+          duration: 0.6,
+          ease: "power3.out",
+          overwrite: true,
+        });
+      });
+    });
+  });
+</script>
+
+<!-- 2 -->
+
+<script>
+  window.addEventListener("load", () => {
+    // 1. Entrance Animation
+    const entryTl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".tech-section",
+        start: "top 75%",
+      },
+    });
+
+    entryTl.to(".tech-info, .tech-visual", {
+      opacity: 1,
+      y: 0,
+      duration: 1.2,
+      stagger: 0.3,
+      ease: "power4.out",
+    });
+
+    // 2. Infinite Scanner Loop
+    gsap.to(".scanner-line", {
+      left: "150%",
+      duration: 3,
+      repeat: -1,
+      ease: "power1.inOut",
+    });
+
+    // 3. Floating Data Badges
+    gsap.to(".data-badge", {
+      y: 15,
+      duration: 2,
+      repeat: -1,
+      yoyo: true,
+      ease: "sine.inOut",
+      stagger: 0.5,
+    });
+
+    // 4. FUNCTION: Live Stats Update (Optional simulated numbers)
+    function simulateBitrate() {
+      const badges = document.querySelectorAll(".data-badge");
+      // You could update badge text here periodically to show "Live" Mbps
+    }
+  });
+</script>
+
+<!-- 3 -->
+
+<script>
+  window.addEventListener("load", () => {
+    // 1. Entrance Timeline
+    const deviceTl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".device-section",
+        start: "top 70%",
+      },
+    });
+
+    // Reveal Text
+    deviceTl
+      .to(".device-info", {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: "power3.out",
+      })
+      // Stagger Devices in one by one
+      .to(
+        [".tv", ".tablet", ".phone"],
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          stagger: 0.3,
+          ease: "back.out(1.7)",
+        },
+        "-=0.5",
+      );
+
+    // 2. Continuous "Floating" Effect
+    gsap.to(".tablet", {
+      y: -15,
+      duration: 3,
+      repeat: -1,
+      yoyo: true,
+      ease: "sine.inOut",
+    });
+
+    gsap.to(".phone", {
+      y: 10,
+      duration: 4,
+      repeat: -1,
+      yoyo: true,
+      ease: "sine.inOut",
+      delay: 0.5,
+    });
+
+    // 3. FUNCTION: Device Sync Glow
+    function highlightDevice(className) {
+      gsap.to(className, {
+        borderColor: "#e50914",
+        boxShadow: "0 0 20px #e50914",
+        duration: 0.5,
+      });
+    }
+  });
+</script>
+
+<!-- 4 -->
+
+<script>
+  window.addEventListener("load", () => {
+    // 1. Entrance Timeline
+    const offlineTl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".offline-section",
+        start: "top 70%",
+      },
+    });
+
+    offlineTl
+      .to(".offline-info", { opacity: 1, y: 0, duration: 1 })
+      .to(".phone-mockup", { opacity: 1, y: 0, duration: 1 }, "-=0.5")
+      .to(
+        ".floating-icon",
+        { opacity: 1, y: 0, stagger: 0.2, ease: "back.out(1.7)" },
+        "-=0.3",
+      );
+
+    // 2. Download Progress Functionality
+    function startDownloadAnimation() {
+      const progressFill = document.querySelector(".progress-fill");
+      const percentText = document.querySelector(".percent");
+
+      gsap.to(progressFill, {
+        width: "100%",
+        duration: 4,
+        ease: "power1.inOut",
+        repeat: -1,
+        repeatDelay: 2,
+        onUpdate: function () {
+          const progress = Math.round(this.progress() * 100);
+          percentText.innerText = progress + "%";
+        },
+        onRepeat: () => {
+          percentText.innerText = "0%";
+        },
+      });
+    }
+
+    startDownloadAnimation();
+
+    // 3. Floating Icons Animation
+    gsap.to(".floating-icon", {
+      y: 20,
+      duration: 2,
+      repeat: -1,
+      yoyo: true,
+      ease: "sine.inOut",
+      stagger: 0.5,
+    });
+  });
+</script>
+
+<!-- 5 -->
+
+<script>
+  window.addEventListener("load", () => {
+    // 1. Entrance Animation
+    const aiTl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".ai-section",
+        start: "top 70%",
+      },
+    });
+
+    aiTl
+      .to(".ai-info", { opacity: 1, y: 0, duration: 1 })
+      .to(
+        ".matrix-item",
+        {
+          opacity: 1,
+          y: 0,
+          stagger: 0.2,
+          duration: 1,
+          ease: "expo.out",
+        },
+        "-=0.5",
+      )
+      .to(".ai-radar-pulse", { opacity: 1, duration: 1 }, "-=1");
+
+    // 2. Continuous 3D Floating / Breathing
+    gsap.to(".p-main", {
+      y: -20,
+      duration: 3,
+      repeat: -1,
+      yoyo: true,
+      ease: "sine.inOut",
+    });
+
+    gsap.to(".p-sub-1, .p-sub-2", {
+      y: 15,
+      duration: 4,
+      repeat: -1,
+      yoyo: true,
+      ease: "sine.inOut",
+      stagger: 0.5,
+    });
+
+    // 3. Radar Pulse Effect
+    gsap.fromTo(
+      ".ai-radar-pulse",
+      { scale: 0.8, opacity: 0.5 },
+      { scale: 1.5, opacity: 0, duration: 2, repeat: -1, ease: "power1.out" },
+    );
+
+    // 4. Counter-Up Function
+    function initCounters() {
+      const stats = document.querySelectorAll(".stat-num");
+      stats.forEach((stat) => {
+        const target = +stat.getAttribute("data-val");
+        gsap.to(stat, {
+          innerText: target,
+          duration: 2.5,
+          snap: { innerText: 1 },
+          scrollTrigger: {
+            trigger: ".ai-stats",
+            start: "top 90%",
+          },
+        });
+      });
+    }
+
+    initCounters();
+  });
+</script>
+
+<!-- 6,7 -->
+
+<script>
+  window.addEventListener("load", () => {
+    // 1. CONTENT LICENSING ENTRANCE
+    gsap.to(".license-info, .license-visual", {
+      scrollTrigger: { trigger: ".license-section", start: "top 75%" },
+      opacity: 1,
+      y: 0,
+      duration: 1.2,
+      stagger: 0.3,
+      ease: "power3.out",
+    });
+
+    // 2. CREATOR ECOSYSTEM ENTRANCE
+    gsap.to(".creator-info, .creator-visual", {
+      scrollTrigger: { trigger: ".creator-section", start: "top 75%" },
+      opacity: 1,
+      y: 0,
+      duration: 1.2,
+      stagger: 0.3,
+      ease: "power3.out",
+    });
+
+    // 3. DASHBOARD UPLOAD ANIMATION (Function)
+    function animateUpload() {
+      gsap.to(".upload-progress", {
+        width: "100%",
+        duration: 3,
+        repeat: -1,
+        repeatDelay: 2,
+        ease: "power1.inOut",
+      });
+    }
+
+    // Trigger upload animation when in view
+    ScrollTrigger.create({
+      trigger: ".creator-section",
+      onEnter: animateUpload,
+    });
+
+    // Floating effect for licensing overlay badges
+    gsap.to(".logo-overlay-item", {
+      y: -10,
+      duration: 2,
+      repeat: -1,
+      yoyo: true,
+      ease: "sine.inOut",
+      stagger: 0.5,
+    });
+  });
+</script>
+
+<!-- 8,9 -->
+
+<script>
+  window.addEventListener("load", () => {
+    // 1. Subscription Entrance
+    gsap.to(".sub-info, .sub-visual", {
+      scrollTrigger: { trigger: ".sub-section", start: "top 75%" },
+      opacity: 1,
+      y: 0,
+      duration: 1.2,
+      stagger: 0.3,
+      ease: "power3.out",
+    });
+
+    // 2. Plan Card Interaction (Function)
+    function setupPlanHover() {
+      const activePlan = document.querySelector(".plan-card.premium");
+      gsap.to(activePlan, {
+        y: -10,
+        duration: 2,
+        repeat: -1,
+        yoyo: true,
+        ease: "sine.inOut",
+      });
+    }
+    setupPlanHover();
+
+    // 3. CTA Entrance
+    gsap.to(".cta-content", {
+      scrollTrigger: { trigger: ".cta-section", start: "top 80%" },
+      opacity: 1,
+      scale: 1,
+      duration: 1.5,
+      ease: "expo.out",
+    });
+
+    // 4. CTA Button Pulse
+    gsap.to(".cta-main-btn", {
+      boxShadow: "0 0 20px rgba(229, 9, 20, 0.6)",
+      repeat: -1,
+      yoyo: true,
+      duration: 1,
+      ease: "sine.inOut",
+    });
+  });
+</script>

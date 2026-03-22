@@ -1,0 +1,2352 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <link rel="icon" href="./Assets/icon.webp" />
+    <link rel="stylesheet" href="./index.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header1">
+        <div class="container1">
+          <h3>Welcome to Stackly – Streamming Service Connect and Enjoy</h3>
+        </div>
+        <div class="container2">
+          <div>
+            <i class="fa-solid fa-phone-volume"></i>
+            <p>(123)456-7890</p>
+          </div>
+          <div>
+            <i class="fa-regular fa-envelope"></i>
+            <p>Support@stackly.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="header2">
+        <div class="logo">
+          <a href="./index.html">
+            <img src="./Assets/logo.webp" alt="Logo" />
+          </a>
+        </div>
+
+        <div class="div">
+          <nav>
+            <ul>
+              <li class="dropdown">
+                <a href="./index.html">Home</a>
+
+                <!-- <span class="drop-toggle">
+                  <i class="fa-solid fa-caret-down"></i>
+                </span> -->
+
+                <ul class="dropdown-menu">
+                  <li><a href="./index2.html">Home 2</a></li>
+                </ul>
+              </li>
+
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./service.html">Services</a></li>
+              <li><a href="./blog.html">Blog</a></li>
+              <li><a href="./contact.html">Contact Us</a></li>
+              <!-- <li><a href="./dashboard.html">Dashboard</a></li> -->
+            </ul>
+          </nav>
+
+          <div class="icons">
+            <div class="login">
+              <a href="./login.html">
+                <button class="log-btn">Login</button>
+              </a>
+            </div>
+
+            <div class="mobilebar">
+              <div class="hamburger-box">
+                <div class="hamburger">
+                  <div class="line line1"></div>
+                  <div class="line line2"></div>
+                  <div class="line line3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="sidebar" id="sidebar">
+      <ul>
+        <li class="has-dropdown menu-item">
+          <div class="dropdown-header">
+            <a href="./index.html">Home</a>
+            <!-- <span class="drop-caret" id="home-caret">▾</span> -->
+          </div>
+          <!-- <ul class="submenu" id="home-dropdown">
+            <li><a href="./index2.html">Home 2</a></li>
+          </ul> -->
+        </li>
+
+        <li class="menu-item">
+          <a href="./about.html">About</a>
+        </li>
+        <li class="menu-item">
+          <a href="./service.html">Services</a>
+        </li>
+        <li class="menu-item">
+          <a href="./blog.html">Blog</a>
+        </li>
+        <li class="menu-item">
+          <a href="./contact.html">Contact Us</a>
+        </li>
+        <!-- <li class="menu-item">
+          <a href="./dashboard.html">Dashboard</a>
+        </li> -->
+        <li class="menu-item">
+          <a href="./login.html">Login</a>
+        </li>
+      </ul>
+
+      <div class="sidebar-login">
+        <!-- <a href="./app.html">
+            <button class="login-btn">Buy Now</button>
+          </a> -->
+      </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <section class="hero-wrapper-main">
+      <div class="hero-section">
+        <div class="swiper heroSwiper">
+          <div class="swiper-wrapper">
+            <div
+              class="swiper-slide"
+              style="
+                background-image: url(&quot;./Assets/indexh1_11zon_11zon.webp&quot;);
+              "
+            ></div>
+            <div
+              class="swiper-slide"
+              style="
+                background-image: url(&quot;./Assets/indexh2_11zon.webp&quot;);
+              "
+            ></div>
+            <div
+              class="swiper-slide"
+              style="
+                background-image: url(&quot;./Assets/indexh3_11zon.webp&quot;);
+              "
+            ></div>
+          </div>
+          <div class="hero-vignette"></div>
+        </div>
+
+        <div class="heroblock">
+          <div class="hero-content center-content">
+            <div class="hero-meta">
+              <span class="n-series"
+                ><span class="n-logo-letter">N</span> SERIES</span
+              >
+              <span class="trending-rank">#1 in TV Shows Today</span>
+            </div>
+
+            <h1 class="hero-title">
+              Shadow <br /><span>Entry: Blackout</span>
+            </h1>
+
+            <div class="hero-info">
+              <span class="match">99% Match</span>
+              <span class="year">2026</span>
+              <span class="rating">TV-MA</span>
+              <span class="hd">4K Ultra HD</span>
+            </div>
+
+            <p class="hero-description">
+              An interpol agent and the world's greatest art thief team up to
+              catch an elusive criminal. No one can be trusted. High stakes.
+              Higher adrenaline. <br /><strong>Watch Part 2 Now.</strong>
+            </p>
+
+            <div class="hero-actions">
+              <a href="./error.html">
+                <button class="play-btn">
+                  <span class="play-icon">▶</span> Play
+                </button>
+              </a>
+              <a href="./error.html">
+                <button class="more-info-btn">
+                  <span class="info-icon">ⓘ</span> More Info
+                </button>
+              </a>
+            </div>
+
+            <form class="hero-signup-form" action="./error.html">
+              <h3>
+                Ready to watch? Enter your email to create or restart your
+                membership.
+              </h3>
+              <div class="form-row">
+                <div class="input-wrapper">
+                  <input type="email" placeholder=" " id="email" required />
+                  <label for="email">Email address</label>
+                </div>
+                <button type="submit" class="get-started">
+                  Get Started <span class="chevron"></span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trending-section">
+      <div class="trending-container">
+        <h2 class="section-title">Trending Now</h2>
+
+        <div class="carousel-wrapper">
+          <div class="trending-carousel" id="trending-carousel">
+            <div class="trending-card">
+              <div class="card-rank">1</div>
+              <div class="image-box">
+                <img
+                  src="./Assets/shadow entry_11zon_11zon.webp"
+                  alt="Action"
+                />
+                <div class="card-overlay">
+                  <a href="./error.html">
+                    <button class="preview-btn">▶ Preview</button>
+                  </a>
+                </div>
+              </div>
+              <div class="card-info">
+                <h4>Shadow Entry</h4>
+                <p>
+                  <span class="view-count" data-target="2500000">0</span> Views
+                </p>
+              </div>
+            </div>
+
+            <div class="trending-card">
+              <div class="card-rank">2</div>
+              <div class="image-box">
+                <img
+                  src="./Assets/apex predaor_11zon_11zon.webp"
+                  alt="Sci-Fi"
+                />
+                <div class="card-overlay">
+                  <a href="./error.html">
+                    <button class="preview-btn">▶ Preview</button>
+                  </a>
+                </div>
+              </div>
+              <div class="card-info">
+                <h4>Apex Predator</h4>
+                <p>
+                  <span class="view-count" data-target="1800000">0</span> Views
+                </p>
+              </div>
+            </div>
+
+            <div class="trending-card">
+              <div class="card-rank">3</div>
+              <div class="image-box">
+                <img src="./Assets/zero hour_11zon.webp" alt="Thriller" />
+                <div class="card-overlay">
+                  <a href="./error.html">
+                    <button class="preview-btn">▶ Preview</button>
+                  </a>
+                </div>
+              </div>
+              <div class="card-info">
+                <h4>Zero Hour</h4>
+                <p>
+                  <span class="view-count" data-target="1200000">0</span> Views
+                </p>
+              </div>
+            </div>
+
+            <div class="trending-card">
+              <div class="card-rank">4</div>
+              <div class="image-box">
+                <img src="./Assets/final frame_11zon.webp" alt="Drama" />
+                <div class="card-overlay">
+                  <a href="./error.html">
+                    <button class="preview-btn">▶ Preview</button>
+                  </a>
+                </div>
+              </div>
+              <div class="card-info">
+                <h4>Final Frame</h4>
+                <p>
+                  <span class="view-count" data-target="950000">0</span> Views
+                </p>
+              </div>
+            </div>
+
+            <div class="trending-card">
+              <div class="card-rank">5</div>
+              <div class="image-box">
+                <img src="./Assets/midnyt pulse_11zon.webp" alt="Cinema" />
+                <div class="card-overlay">
+                  <a href="./error.html">
+                    <button class="preview-btn">▶ Preview</button>
+                  </a>
+                </div>
+              </div>
+              <div class="card-info">
+                <h4>Midnight Pulse</h4>
+                <p>
+                  <span class="view-count" data-target="820000">0</span> Views
+                </p>
+              </div>
+            </div>
+
+            <div class="trending-card">
+              <div class="card-rank">6</div>
+              <div class="image-box">
+                <img src="./Assets/neon ghost_11zon.webp" alt="Cyberpunk" />
+                <div class="card-overlay">
+                  <a href="./error.html">
+                    <button class="preview-btn">▶ Preview</button>
+                  </a>
+                </div>
+              </div>
+              <div class="card-info">
+                <h4>Neon Ghost</h4>
+                <p>
+                  <span class="view-count" data-target="745000">0</span> Views
+                </p>
+              </div>
+            </div>
+
+            <div class="trending-card">
+              <div class="card-rank">7</div>
+              <div class="image-box">
+                <img src="./Assets/the vault_11zon_11zon.webp" alt="Heist" />
+                <div class="card-overlay">
+                  <a href="./error.html">
+                    <button class="preview-btn">▶ Preview</button>
+                  </a>
+                </div>
+              </div>
+              <div class="card-info">
+                <h4>The Vault</h4>
+                <p>
+                  <span class="view-count" data-target="680000">0</span> Views
+                </p>
+              </div>
+            </div>
+
+            <div class="trending-card">
+              <div class="card-rank">8</div>
+              <div class="image-box">
+                <img src="./Assets/Deep Orbit_11zon.webp" alt="Space" />
+                <div class="card-overlay">
+                  <a href="./error.html">
+                    <button class="preview-btn">▶ Preview</button>
+                  </a>
+                </div>
+              </div>
+              <div class="card-info">
+                <h4>Deep Orbit</h4>
+                <p>
+                  <span class="view-count" data-target="610000">0</span> Views
+                </p>
+              </div>
+            </div>
+
+            <div class="trending-card">
+              <div class="card-rank">9</div>
+              <div class="image-box">
+                <img src="./Assets/Rain City_11zon.webp" alt="Noir" />
+                <div class="card-overlay">
+                  <a href="./error.html">
+                    <button class="preview-btn">▶ Preview</button>
+                  </a>
+                </div>
+              </div>
+              <div class="card-info">
+                <h4>Rain City</h4>
+                <p>
+                  <span class="view-count" data-target="590000">0</span> Views
+                </p>
+              </div>
+            </div>
+
+            <div class="trending-card">
+              <div class="card-rank">10</div>
+              <div class="image-box">
+                <img src="./Assets/Vintage Soul_11zon.webp" alt="Classic" />
+                <div class="card-overlay">
+                  <a href="./error.html">
+                    <button class="preview-btn">▶ Preview</button>
+                  </a>
+                </div>
+              </div>
+              <div class="card-info">
+                <h4>Vintage Soul</h4>
+                <p>
+                  <span class="view-count" data-target="540000">0</span> Views
+                </p>
+              </div>
+            </div>
+
+            <div class="trending-card">
+              <div class="card-rank">11</div>
+              <div class="image-box">
+                <img src="./Assets/Iron Throne_11zon.webp" alt="Fantasy" />
+                <div class="card-overlay">
+                  <a href="./error.html">
+                    <button class="preview-btn">▶ Preview</button>
+                  </a>
+                </div>
+              </div>
+              <div class="card-info">
+                <h4>Iron Throne</h4>
+                <p>
+                  <span class="view-count" data-target="490000">0</span> Views
+                </p>
+              </div>
+            </div>
+
+            <div class="trending-card">
+              <div class="card-rank">12</div>
+              <div class="image-box">
+                <img
+                  src="./Assets/the glitch_11zon_11zon.webp"
+                  alt="Abstract"
+                />
+                <div class="card-overlay">
+                  <a href="./error.html">
+                    <button class="preview-btn">▶ Preview</button>
+                  </a>
+                </div>
+              </div>
+              <div class="card-info">
+                <h4>The Glitch</h4>
+                <p>
+                  <span class="view-count" data-target="430000">0</span> Views
+                </p>
+              </div>
+            </div>
+
+            <div class="trending-card">
+              <div class="card-rank">13</div>
+              <div class="image-box">
+                <img src="./Assets/Wild Frontier_11zon.webp" alt="Discovery" />
+                <div class="card-overlay">
+                  <a href="./error.html">
+                    <button class="preview-btn">▶ Preview</button>
+                  </a>
+                </div>
+              </div>
+              <div class="card-info">
+                <h4>Wild Frontier</h4>
+                <p>
+                  <span class="view-count" data-target="380000">0</span> Views
+                </p>
+              </div>
+            </div>
+
+            <div class="trending-card">
+              <div class="card-rank">14</div>
+              <div class="image-box">
+                <img src="./Assets/Dark Echoes.webp" alt="Horror" />
+                <div class="card-overlay">
+                  <a href="./error.html">
+                    <button class="preview-btn">▶ Preview</button>
+                  </a>
+                </div>
+              </div>
+              <div class="card-info">
+                <h4>Dark Echoes</h4>
+                <p>
+                  <span class="view-count" data-target="310000">0</span> Views
+                </p>
+              </div>
+            </div>
+
+            <div class="trending-card">
+              <div class="card-rank">15</div>
+              <div class="image-box">
+                <img src="./Assets/Last Valley_11zon.webp" alt="Nature" />
+                <div class="card-overlay">
+                  <a href="./error.html">
+                    <button class="preview-btn">▶ Preview</button>
+                  </a>
+                </div>
+              </div>
+              <div class="card-info">
+                <h4>Last Valley</h4>
+                <p>
+                  <span class="view-count" data-target="275000">0</span> Views
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="continue-watching">
+      <div class="section-header">
+        <h2 class="section-title">Continue Watching</h2>
+        <span class="user-badge">Logged In</span>
+      </div>
+
+      <div class="carousel-wrapper">
+        <div class="trending-carousel">
+          <div class="watch-card" data-progress="75">
+            <div class="thumb-container">
+              <img src="./Assets/shadow entry_11zon_11zon.webp" alt="Movie" />
+              <div class="progress-container">
+                <div class="progress-bar"></div>
+              </div>
+              <div class="card-overlay">
+                <a href="./error.html">
+                  <button class="resume-btn">Continue</button>
+                </a>
+              </div>
+            </div>
+            <div class="card-details">
+              <h4>Shadow Entry</h4>
+              <p>S2:E4 "The Protocol"</p>
+            </div>
+          </div>
+
+          <div class="watch-card" data-progress="30">
+            <div class="thumb-container">
+              <img src="./Assets/apex predaor_11zon_11zon.webp" alt="Movie" />
+              <div class="progress-container">
+                <div class="progress-bar"></div>
+              </div>
+              <div class="card-overlay">
+                <a href="./error.html">
+                  <button class="resume-btn">Continue</button>
+                </a>
+              </div>
+            </div>
+            <div class="card-details">
+              <h4>Apex Predator</h4>
+              <p>S1:E1 "Origins"</p>
+            </div>
+          </div>
+
+          <div class="watch-card" data-progress="90">
+            <div class="thumb-container">
+              <img src="./Assets/Red Notice_11zon_11zon.webp" alt="Action" />
+              <div class="progress-container">
+                <div class="progress-bar"></div>
+              </div>
+              <div class="card-overlay">
+                <a href="./error.html">
+                  <button class="resume-btn">Continue</button>
+                </a>
+              </div>
+            </div>
+            <div class="card-details">
+              <h4>Red Notice</h4>
+              <p>S1:E8 "The Vault"</p>
+            </div>
+          </div>
+
+          <div class="watch-card" data-progress="15">
+            <div class="thumb-container">
+              <img src="./Assets/zero hour_11zon.webp" alt="Thriller" />
+              <div class="progress-container">
+                <div class="progress-bar"></div>
+              </div>
+              <div class="card-overlay">
+                <a href="./error.html">
+                  <button class="resume-btn">Continue</button>
+                </a>
+              </div>
+            </div>
+            <div class="card-details">
+              <h4>Zero Hour</h4>
+              <p>S3:E1 "The Awakening"</p>
+            </div>
+          </div>
+
+          <div class="watch-card" data-progress="50">
+            <div class="thumb-container">
+              <img src="./Assets/neon ghost_11zon.webp" alt="Cyber" />
+              <div class="progress-container">
+                <div class="progress-bar"></div>
+              </div>
+              <div class="card-overlay">
+                <a href="./error.html">
+                  <button class="resume-btn">Continue</button>
+                </a>
+              </div>
+            </div>
+            <div class="card-details">
+              <h4>Neon Ghost</h4>
+              <p>S1:E5 "Upgrade"</p>
+            </div>
+          </div>
+
+          <div class="watch-card" data-progress="42">
+            <div class="thumb-container">
+              <img src="./Assets/Deep Orbit_11zon.webp" alt="Space" />
+              <div class="progress-container">
+                <div class="progress-bar"></div>
+              </div>
+              <div class="card-overlay">
+                <a href="./error.html">
+                  <button class="resume-btn">Continue</button>
+                </a>
+              </div>
+            </div>
+            <div class="card-details">
+              <h4>Deep Orbit</h4>
+              <p>S2:E2 "Oxygen"</p>
+            </div>
+          </div>
+
+          <div class="watch-card" data-progress="88">
+            <div class="thumb-container">
+              <img src="./Assets/Rain City_11zon.webp" alt="Noir" />
+              <div class="progress-container">
+                <div class="progress-bar"></div>
+              </div>
+              <div class="card-overlay">
+                <a href="./error.html">
+                  <button class="resume-btn">Continue</button>
+                </a>
+              </div>
+            </div>
+            <div class="card-details">
+              <h4>Rain City</h4>
+              <p>S1:E10 "The Reveal"</p>
+            </div>
+          </div>
+
+          <div class="watch-card" data-progress="5">
+            <div class="thumb-container">
+              <img src="./Assets/Iron Throne_11zon.webp" alt="Fantasy" />
+              <div class="progress-container">
+                <div class="progress-bar"></div>
+              </div>
+              <div class="card-overlay">
+                <a href="./error.html">
+                  <button class="resume-btn">Continue</button>
+                </a>
+              </div>
+            </div>
+            <div class="card-details">
+              <h4>Iron Throne</h4>
+              <p>S1:E1 "Winter"</p>
+            </div>
+          </div>
+
+          <div class="watch-card" data-progress="66">
+            <div class="thumb-container">
+              <img src="./Assets/Dark Echoes.webp" alt="Horror" />
+              <div class="progress-container">
+                <div class="progress-bar"></div>
+              </div>
+              <div class="card-overlay">
+                <a href="./error.html">
+                  <button class="resume-btn">Continue</button>
+                </a>
+              </div>
+            </div>
+            <div class="card-details">
+              <h4>Dark Echoes</h4>
+              <p>S4:E3 "Whisper"</p>
+            </div>
+          </div>
+
+          <div class="watch-card" data-progress="22">
+            <div class="thumb-container">
+              <img src="./Assets/the glitch_11zon_11zon.webp" alt="Glitch" />
+              <div class="progress-container">
+                <div class="progress-bar"></div>
+              </div>
+              <div class="card-overlay">
+                <a href="./error.html">
+                  <button class="resume-btn">Continue</button>
+                </a>
+              </div>
+            </div>
+            <div class="card-details">
+              <h4>The Glitch</h4>
+              <p>S1:E4 "Reboot"</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="popular-section">
+      <div class="section-header">
+        <h2 class="section-title">Popular on Platform</h2>
+      </div>
+
+      <div class="carousel-wrapper">
+        <div class="popular-carousel">
+          <div class="popular-card">
+            <div class="image-box">
+              <img src="./Assets/The Martian Colony_11zon.webp" alt="Sci-Fi" />
+              <div class="card-overlay">
+                <div class="rating-box">⭐ 4.9</div>
+                <button class="play-btn">Play Now</button>
+              </div>
+            </div>
+            <div class="card-info">
+              <div class="genre-tags">
+                <span class="tag">Sci-Fi</span>
+                <span class="tag">Action</span>
+              </div>
+              <h4>The Martian Colony</h4>
+            </div>
+          </div>
+
+          <div class="popular-card">
+            <div class="image-box">
+              <img src="./Assets/The Midnight Heist_11zon.webp" alt="Action" />
+              <div class="card-overlay">
+                <div class="rating-box">⭐ 4.7</div>
+                <button class="play-btn">Play Now</button>
+              </div>
+            </div>
+            <div class="card-info">
+              <div class="genre-tags">
+                <span class="tag">Thriller</span>
+                <span class="tag">Heist</span>
+              </div>
+              <h4>The Midnight Heist</h4>
+            </div>
+          </div>
+
+          <div class="popular-card">
+            <div class="image-box">
+              <img
+                src="./Assets/Whisper in the Woods_11zon.webp"
+                alt="Horror"
+              />
+              <div class="card-overlay">
+                <div class="rating-box">⭐ 4.5</div>
+                <button class="play-btn">Play Now</button>
+              </div>
+            </div>
+            <div class="card-info">
+              <div class="genre-tags">
+                <span class="tag">Horror</span>
+                <span class="tag">Mystery</span>
+              </div>
+              <h4>Whisper in the Woods</h4>
+            </div>
+          </div>
+
+          <div class="popular-card">
+            <div class="image-box">
+              <img src="./Assets/Neon Streets 2099_11zon.webp" alt="Cyber" />
+              <div class="card-overlay">
+                <div class="rating-box">⭐ 4.8</div>
+                <button class="play-btn">Play Now</button>
+              </div>
+            </div>
+            <div class="card-info">
+              <div class="genre-tags">
+                <span class="tag">Cyberpunk</span>
+                <span class="tag">Action</span>
+              </div>
+              <h4>Neon Streets: 2099</h4>
+            </div>
+          </div>
+
+          <div class="popular-card">
+            <div class="image-box">
+              <img src="./Assets/Beyond the Horizon_11zon.webp" alt="Space" />
+              <div class="card-overlay">
+                <div class="rating-box">⭐ 4.9</div>
+                <button class="play-btn">Play Now</button>
+              </div>
+            </div>
+            <div class="card-info">
+              <div class="genre-tags">
+                <span class="tag">Documentary</span>
+                <span class="tag">Science</span>
+              </div>
+              <h4>Beyond the Horizon</h4>
+            </div>
+          </div>
+
+          <div class="popular-card">
+            <div class="image-box">
+              <img src="./Assets/The Glass Detective_11zon.webp" alt="Noir" />
+              <div class="card-overlay">
+                <div class="rating-box">⭐ 4.6</div>
+                <button class="play-btn">Play Now</button>
+              </div>
+            </div>
+            <div class="card-info">
+              <div class="genre-tags">
+                <span class="tag">Noir</span>
+                <span class="tag">Crime</span>
+              </div>
+              <h4>The Glass Detective</h4>
+            </div>
+          </div>
+
+          <div class="popular-card">
+            <div class="image-box">
+              <img src="./Assets/vintage_11zon_11zon.webp" alt="Classic" />
+              <div class="card-overlay">
+                <div class="rating-box">⭐ 4.4</div>
+                <button class="play-btn">Play Now</button>
+              </div>
+            </div>
+            <div class="card-info">
+              <div class="genre-tags">
+                <span class="tag">Drama</span>
+                <span class="tag">Classic</span>
+              </div>
+              <h4>Vintage Melodies</h4>
+            </div>
+          </div>
+
+          <div class="popular-card">
+            <div class="image-box">
+              <img src="./Assets/Kingdom of Ash_11zon.webp" alt="Fantasy" />
+              <div class="card-overlay">
+                <div class="rating-box">⭐ 5.0</div>
+                <button class="play-btn">Play Now</button>
+              </div>
+            </div>
+            <div class="card-info">
+              <div class="genre-tags">
+                <span class="tag">Fantasy</span>
+                <span class="tag">Adventure</span>
+              </div>
+              <h4>Kingdom of Ash</h4>
+            </div>
+          </div>
+
+          <div class="popular-card">
+            <div class="image-box">
+              <img src="./Assets/Fractured Reality_11zon.webp" alt="Abstract" />
+              <div class="card-overlay">
+                <div class="rating-box">⭐ 4.3</div>
+                <button class="play-btn">Play Now</button>
+              </div>
+            </div>
+            <div class="card-info">
+              <div class="genre-tags">
+                <span class="tag">Experimental</span>
+                <span class="tag">Mind-Bend</span>
+              </div>
+              <h4>Fractured Reality</h4>
+            </div>
+          </div>
+
+          <div class="popular-card">
+            <div class="image-box">
+              <img src="./Assets/The Untamed Wild_11zon.webp" alt="Discovery" />
+              <div class="card-overlay">
+                <div class="rating-box">⭐ 4.7</div>
+                <button class="play-btn">Play Now</button>
+              </div>
+            </div>
+            <div class="card-info">
+              <div class="genre-tags">
+                <span class="tag">Nature</span>
+                <span class="tag">Adventure</span>
+              </div>
+              <h4>The Untamed Wild</h4>
+            </div>
+          </div>
+
+          <div class="popular-card">
+            <div class="image-box">
+              <img src="./Assets/Quiet Shadows_11zon.webp" alt="Horror" />
+              <div class="card-overlay">
+                <div class="rating-box">⭐ 4.2</div>
+                <button class="play-btn">Play Now</button>
+              </div>
+            </div>
+            <div class="card-info">
+              <div class="genre-tags">
+                <span class="tag">Horror</span>
+                <span class="tag">Thriller</span>
+              </div>
+              <h4>Quiet Shadows</h4>
+            </div>
+          </div>
+
+          <div class="popular-card">
+            <div class="image-box">
+              <img
+                src="./Assets/Eternal Forest_11zon_11zon.webp"
+                alt="Nature"
+              />
+              <div class="card-overlay">
+                <div class="rating-box">⭐ 4.9</div>
+                <button class="play-btn">Play Now</button>
+              </div>
+            </div>
+            <div class="card-info">
+              <div class="genre-tags">
+                <span class="tag">Documentary</span>
+                <span class="tag">Nature</span>
+              </div>
+              <h4>Eternal Forest</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="genre-section">
+      <div class="section-header">
+        <h2 class="section-title">Browse by Genre</h2>
+        <p class="section-subtitle">Curated collections for every mood.</p>
+      </div>
+
+      <div class="genre-grid">
+        <div class="genre-card" data-genre="action">
+          <img
+            src="./Assets/Adrenaline & Heroics_11zon_11zon.webp"
+            alt="Action"
+          />
+          <div class="genre-overlay">
+            <div class="genre-content">
+              <span class="trending-pill">Trending</span>
+              <h3>Action</h3>
+              <p>Adrenaline & Heroics</p>
+              <span class="count">240+ Titles</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="genre-card" data-genre="thriller">
+          <img src="./Assets/Edge of your seat_11zon.webp" alt="Thriller" />
+          <div class="genre-overlay">
+            <div class="genre-content">
+              <span class="trending-pill">Popular</span>
+              <h3>Thriller</h3>
+              <p>Edge of your seat</p>
+              <span class="count">180+ Titles</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="genre-card" data-genre="comedy">
+          <img src="./Assets/drama_11zon.webp" alt="Comedy" />
+          <div class="genre-overlay">
+            <div class="genre-content">
+              <h3>Comedy</h3>
+              <p>Laugh out loud</p>
+              <span class="count">310+ Titles</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="genre-card" data-genre="scifi">
+          <img src="./Assets/Future Worlds_11zon_11zon.webp" alt="Sci-Fi" />
+          <div class="genre-overlay">
+            <div class="genre-content">
+              <span class="trending-pill">New</span>
+              <h3>Sci-Fi</h3>
+              <p>Future Worlds</p>
+              <span class="count">150+ Titles</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="genre-card" data-genre="romance">
+          <img
+            src="./Assets/Love & Heartfelt Stories_11zon.webp"
+            alt="Romance"
+          />
+          <div class="genre-overlay">
+            <div class="genre-content">
+              <span class="trending-pill">Top Rated</span>
+              <h3>Romance</h3>
+              <p>Love & Heartfelt Stories</p>
+              <span class="count">120+ Titles</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="genre-card" data-genre="horror">
+          <img src="./Assets/Fear the Unknown_11zon.webp" alt="Horror" />
+          <div class="genre-overlay">
+            <div class="genre-content">
+              <span class="trending-pill">Trending</span>
+              <h3>Horror</h3>
+              <p>Fear the Unknown</p>
+              <span class="count">95+ Titles</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="genre-card" data-genre="doc">
+          <img
+            src="./Assets/Real Stories, Real Life_11zon_11zon.webp"
+            alt="Documentary"
+          />
+          <div class="genre-overlay">
+            <div class="genre-content">
+              <h3>Doc</h3>
+              <p>Real Stories, Real Life</p>
+              <span class="count">210+ Titles</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="genre-card" data-genre="animation">
+          <img src="./Assets/Art in Motion_11zon_11zon.webp" alt="Animation" />
+          <div class="genre-overlay">
+            <div class="genre-content">
+              <span class="trending-pill">Trending</span>
+              <h3>Animation</h3>
+              <p>Art in Motion</p>
+              <span class="count">140+ Titles</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="genre-card" data-genre="cartoon">
+          <img src="./Assets/Family Fun & Classics_11zon.webp" alt="Cartoon" />
+          <div class="genre-overlay">
+            <div class="genre-content">
+              <span class="trending-pill">Kids Special</span>
+
+              <h3>Cartoon</h3>
+              <p>Family Fun & Classics</p>
+              <span class="count">80+ Titles</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="genre-card" data-genre="3rd">
+          <img src="./Assets/Next-Gen Visuals_11zon_11zon.webp" alt="3D" />
+          <div class="genre-overlay">
+            <div class="genre-content">
+              <span class="trending-pill">New</span>
+              <h3>3D / CGI</h3>
+              <p>Next-Gen Visuals</p>
+              <span class="count">60+ Titles</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="genre-card" data-genre="webseries">
+          <img src="./Assets/webseries_11zon.webp" alt="Webseries" />
+          <div class="genre-overlay">
+            <div class="genre-content">
+              <span class="trending-pill">Trending</span>
+              <h3>Webseries</h3>
+              <p>Original Originals</p>
+              <span class="count">300+ Titles</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="genre-card" data-genre="fantasy">
+          <img src="./Assets/fantasy_11zon.webp" alt="Fantasy" />
+          <div class="genre-overlay">
+            <div class="genre-content">
+              <h3>Fantasy</h3>
+              <p>Magic & Mythic Realms</p>
+              <span class="count">175+ Titles</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="originals-section">
+      <div class="section-header" style="padding: 40px 5% 20px 5%">
+        <h2 class="section-title">Featured Originals</h2>
+        <p class="section-subtitle">
+          Exclusive stories you won't find anywhere else.
+        </p>
+      </div>
+
+      <div class="originals-container">
+        <div class="original-feature left-feature">
+          <img
+            src="./Assets/The Midnight Heist_11zon.webp"
+            alt="Midnight Sky"
+            class="feature-img"
+          />
+          <div class="feature-content">
+            <span class="platform-badge">Only on Platform</span>
+            <h2 class="show-title">Midnight Sky</h2>
+            <p class="show-desc">
+              One city. Ten hours. No witnesses. The heist that changed
+              everything.
+            </p>
+            <div class="feature-btns">
+              <a href="./error.html"
+                ><button class="play-now">Watch Now</button></a
+              >
+              <a href="./error.html"
+                ><button class="more-info">+ My List</button></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="original-feature right-feature">
+          <img
+            src="./Assets/neon ghost_11zon.webp"
+            alt="Neon Ghost"
+            class="feature-img"
+          />
+          <div class="feature-content">
+            <span class="platform-badge">Only on Platform</span>
+            <h2 class="show-title">Neon Ghost</h2>
+            <p class="show-desc">
+              In a city that never sleeps, the past never dies. Unmatched
+              storytelling quality.
+            </p>
+            <div class="feature-btns">
+              <a href="./error.html"
+                ><button class="play-now">Watch Now</button></a
+              >
+              <a href="./error.html"
+                ><button class="more-info">+ My List</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="top-rated-section">
+      <div class="section-header">
+        <div class="header-left">
+          <h2 class="section-title">Critically Acclaimed</h2>
+          <p class="section-subtitle">
+            The highest-rated masterpieces on the platform.
+          </p>
+        </div>
+        <div class="sorting-wrapper">
+          <span class="sort-label">Sort by:</span>
+          <select id="rating-sort" class="sort-select">
+            <option value="all">All Awards</option>
+            <option value="9">Rating 9.0+</option>
+            <option value="8">Rating 8.0+</option>
+            <option value="7">Rating 7.0+</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="top-rated-container">
+        <div class="rated-card" data-rating="9.8">
+          <div class="card-inner">
+            <img
+              src="./Assets/masterpiece_11zon_11zon.webp"
+              alt="Masterpiece"
+            />
+            <div class="card-badge">Must Watch</div>
+            <div class="rated-info">
+              <div class="star-rating">⭐⭐⭐⭐⭐ <span>9.8</span></div>
+              <h3>The Silent Pulse</h3>
+              <p class="review-snippet">
+                "A visual odyssey that redefines modern cinema. Truly
+                breathtaking."
+              </p>
+              <p class="reviewer">— Global Critics Daily</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="rated-card" data-rating="9.2">
+          <div class="card-inner">
+            <img
+              src="./Assets/cinema_11zon.webp"
+              alt="Cinema"
+            />
+            <div class="rated-info">
+              <div class="star-rating">⭐⭐⭐⭐⭐ <span>8.2</span></div>
+              <h3>Midnight Protocol</h3>
+              <p class="review-snippet">
+                "The most intelligent thriller of the decade. A masterpiece of
+                tension."
+              </p>
+              <p class="reviewer">— Cinephile Weekly</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="rated-card" data-rating="8.9">
+          <div class="card-inner">
+            <img
+              src="./Assets/drama_11zon.webp"
+              alt="Drama"
+            />
+            <div class="rated-info">
+              <div class="star-rating">⭐⭐⭐⭐☆ <span>8.9</span></div>
+              <h3>Beyond Earth</h3>
+              <p class="review-snippet">
+                "Groundbreaking special effects paired with a deeply human
+                story."
+              </p>
+              <p class="reviewer">— Sci-Fi Insider</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="rated-card" data-rating="7.2">
+          <div class="card-inner">
+            <img
+              src="./Assets/vintage_11zon_11zon.webp"
+              alt="Vintage"
+            />
+            <div class="rated-info">
+              <div class="star-rating">⭐⭐⭐☆☆ <span>7.2</span></div>
+              <h3>The Last Recall</h3>
+              <p class="review-snippet">
+                "A nostalgic trip through forgotten memories. Solid performances
+                all around."
+              </p>
+              <p class="reviewer">— Retro Reviewer</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="rated-card" data-rating="8.5">
+          <div class="card-inner">
+            <img
+              src="./Assets/action_11zon.webp"
+              alt="Action"
+            />
+            <div class="card-badge">Must Watch</div>
+            <div class="rated-info">
+              <div class="star-rating">⭐⭐⭐⭐☆ <span>8.5</span></div>
+              <h3>Redline Syndicate</h3>
+              <p class="review-snippet">
+                "High-stakes action that never lets up. A visceral, gritty
+                experience."
+              </p>
+              <p class="reviewer">— Speed & Sound</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="rated-card" data-rating="7.8">
+          <div class="card-inner">
+            <img
+              src="./Assets/detective_11zon_11zon.webp"
+              alt="Detective"
+            />
+            <div class="rated-info">
+              <div class="star-rating">⭐⭐⭐⭐☆ <span>7.8</span></div>
+              <h3>Urban Shadows</h3>
+              <p class="review-snippet">
+                "A dark, methodical look at the underbelly of the city.
+                Compelling drama."
+              </p>
+              <p class="reviewer">— Metropolitan Daily</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="new-releases-section">
+      <div class="section-header">
+        <div class="header-content">
+          <h2 class="section-title">New Releases</h2>
+          <p class="section-subtitle">
+            Freshly added this week. Don't miss out.
+          </p>
+        </div>
+        <div class="slider-controls">
+          <button id="prevBtn" class="control-btn">←</button>
+          <button id="nextBtn" class="control-btn">→</button>
+        </div>
+      </div>
+
+      <div class="releases-wrapper">
+        <div class="releases-track">
+          <div class="release-card" data-date="2026-03-20">
+            <div class="img-container">
+              <span class="new-badge">NEW</span>
+              <img
+                src="./Assets/The Midnight Heist_11zon.webp"
+                alt="Movie"
+              />
+            </div>
+            <div class="release-info">
+              <span class="added-date">Added: Loading...</span>
+              <h3>The Last Signal</h3>
+              <p>Sci-Fi • 2h 15m</p>
+            </div>
+          </div>
+
+          <div class="release-card" data-date="2026-03-18">
+            <div class="img-container">
+              <span class="new-badge">NEW</span>
+              <img
+                src="./Assets/apex predaor_11zon_11zon.webp"
+                alt="Movie"
+              />
+            </div>
+            <div class="release-info">
+              <span class="added-date">Added: Loading...</span>
+              <h3>Apex Predator</h3>
+              <p>Action • 1h 45m</p>
+            </div>
+          </div>
+
+          <div class="release-card" data-date="2026-03-15">
+            <div class="img-container">
+              <span class="new-badge">NEW</span>
+              <img
+                src="./Assets/darkertides_11zon.webp"
+                alt="Movie"
+              />
+            </div>
+            <div class="release-info">
+              <span class="added-date">Added: Loading...</span>
+              <h3>Darker Tides</h3>
+              <p>Horror • 1h 50m</p>
+            </div>
+          </div>
+
+          <div class="release-card" data-date="2026-03-10">
+            <div class="img-container">
+              <span class="new-badge">NEW</span>
+              <img
+                src="./Assets/The Nomads_11zon.webp"
+                alt="Movie"
+              />
+            </div>
+            <div class="release-info">
+              <span class="added-date">Added: Loading...</span>
+              <h3>The Nomads</h3>
+              <p>Documentary • 1h 20m</p>
+            </div>
+          </div>
+
+          <div class="release-card" data-date="2026-03-21">
+            <div class="img-container">
+              <span class="new-badge">NEW</span>
+              <img
+                src="./Assets/The Glass Room_11zon.webp"
+                alt="Thriller"
+              />
+            </div>
+            <div class="release-info">
+              <span class="added-date">Added: Loading...</span>
+              <h3>The Glass Room</h3>
+              <p>Mystery • 1h 55m</p>
+            </div>
+          </div>
+
+          <div class="release-card" data-date="2026-03-19">
+            <div class="img-container">
+              <span class="new-badge">NEW</span>
+              <img
+                src="./Assets/drama_11zon.webp"
+                alt="Drama"
+              />
+            </div>
+            <div class="release-info">
+              <span class="added-date">Added: Loading...</span>
+              <h3>Velvet Echoes</h3>
+              <p>Drama • 2h 10m</p>
+            </div>
+          </div>
+
+          <div class="release-card" data-date="2026-03-14">
+            <div class="img-container">
+              <span class="new-badge">NEW</span>
+              <img
+                src="./Assets/Binary Sky_11zon_11zon.webp"
+                alt="Sci-Fi"
+              />
+            </div>
+            <div class="release-info">
+              <span class="added-date">Added: Loading...</span>
+              <h3>Blue Sky</h3>
+              <p>Sci-Fi • 1h 40m</p>
+            </div>
+          </div>
+
+          <div class="release-card" data-date="2026-03-08">
+            <div class="img-container">
+              <span class="new-badge">NEW</span>
+              <img
+                src="./Assets/Undercurrent_11zon.webp"
+                alt="Crime"
+              />
+            </div>
+            <div class="release-info">
+              <span class="added-date">Added: Loading...</span>
+              <h3>Undercurrent</h3>
+              <p>Crime • 1h 30m</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="watch-anywhere-section">
+      <div class="anywhere-container">
+        <div class="anywhere-text">
+          <h2 class="section-title">Watch Anywhere</h2>
+          <p class="section-subtitle">
+            Your stories follow you. Experience seamless streaming on all your
+            favorite devices, optimized for the best quality.
+          </p>
+
+          <div class="device-icons">
+            <div class="icon-box active" data-device="tv">
+              <i class="fas fa-tv"></i>
+              <span>Smart TV</span>
+            </div>
+            <div class="icon-box" data-device="laptop">
+              <i class="fas fa-laptop"></i>
+              <span>Laptop</span>
+            </div>
+            <div class="icon-box" data-device="mobile">
+              <i class="fas fa-mobile-alt"></i>
+              <span>Mobile</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mockup-stage">
+          <div class="mockup-wrapper">
+            <img
+              id="main-mockup"
+              src="./Assets/tv mockup_11zon.webp"
+              alt="TV Mockup"
+              class="device-img"
+            />
+            <div class="glow-effect"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="offline-section">
+      <div class="offline-container">
+        <div class="offline-visual">
+          <div class="phone-mockup">
+            <div class="screen-content">
+              <div class="download-status">
+                <i class="fas fa-arrow-alt-circle-down download-icon"></i>
+                <p>Downloading: <span id="progress-text">0%</span></p>
+                <div class="progress-bar-container">
+                  <div id="progress-fill" class="progress-fill"></div>
+                </div>
+              </div>
+              <img
+                src="./Assets/app content_11zon.webp"
+                alt="App Content"
+                class="screen-img"
+              />
+            </div>
+          </div>
+          <div class="floating-badge">Offline Mode</div>
+        </div>
+
+        <div class="offline-text">
+          <h2 class="section-title">
+            Take Your Stories <br /><span>Anywhere</span>
+          </h2>
+          <p class="section-subtitle">
+            Download your favorite movies and series directly to your device.
+            Watch without internet — the perfect companion for flights,
+            commutes, and travel.
+          </p>
+
+          <ul class="feature-list">
+            <li><i class="fas fa-check-circle"></i> High Quality Downloads</li>
+            <li>
+              <i class="fas fa-check-circle"></i> Automatic Smart-Downloads
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i> Save Storage with SD Card
+              support
+            </li>
+          </ul>
+
+          <div class="cta-group">
+            <button class="download-btn-trigger">Test Download Speed</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing-section">
+      <div class="pricing-header">
+        <h2 class="section-title">Choose Your <span>Plan</span></h2>
+        <p class="section-subtitle">
+          No contracts. No hidden fees. Cancel at any time.
+        </p>
+      </div>
+
+      <div class="pricing-container">
+        <div class="pricing-card">
+          <div class="card-header">
+            <h3>Basic</h3>
+            <div class="price"><span>$</span>9.99<span>/mo</span></div>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fas fa-check"></i> 720p Resolution</li>
+            <li><i class="fas fa-check"></i> 1 Screen at a time</li>
+            <li><i class="fas fa-times"></i> Offline Downloads</li>
+            <li><i class="fas fa-check"></i> Unlimited Movies</li>
+          </ul>
+          <button class="plan-btn">Get Started</button>
+        </div>
+
+        <div class="pricing-card featured">
+          <div class="popular-tag">Best Value</div>
+          <div class="card-header">
+            <h3>Standard</h3>
+            <div class="price"><span>$</span>15.99<span>/mo</span></div>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fas fa-check"></i> 1080p Full HD</li>
+            <li><i class="fas fa-check"></i> 2 Screens at a time</li>
+            <li><i class="fas fa-check"></i> Offline Downloads</li>
+            <li><i class="fas fa-check"></i> Unlimited Movies</li>
+          </ul>
+          <button class="plan-btn featured-btn">Get Started</button>
+        </div>
+
+        <div class="pricing-card">
+          <div class="card-header">
+            <h3>Premium</h3>
+            <div class="price"><span>$</span>19.99<span>/mo</span></div>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fas fa-check"></i> 4K + HDR Video</li>
+            <li><i class="fas fa-check"></i> 4 Screens at a time</li>
+            <li><i class="fas fa-check"></i> Spatial Audio</li>
+            <li><i class="fas fa-check"></i> Offline Downloads</li>
+          </ul>
+          <button class="plan-btn">Get Started</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta-section" id="cta-trigger">
+      <div class="cta-spotlight"></div>
+
+      <div class="cta-content">
+        <h2 class="cta-heading">Ready to Start <span>Watching?</span></h2>
+        <p class="cta-text">
+          Join millions of users enjoying unlimited entertainment. <br />
+          Your next favorite story is just a click away.
+        </p>
+
+        <div class="cta-button-wrapper">
+          <button class="main-cta-btn" id="magnetic-btn">
+            <span class="btn-text">Get Started Now</span>
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+
+        <p class="cta-subtext">30-day money-back guarantee • Cancel anytime</p>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <div class="footer-grid">
+        <div class="footer-brand gsap-contact">
+          <div class="logo" style="margin-bottom: 20px">
+            <a href="./index.html">
+              <img
+                src="./Assets/logo.webp"
+                alt="Netflix - Logo"
+                style="max-width: 180px"
+              />
+            </a>
+          </div>
+
+          <p>
+            Ready to watch? Enter your email to create or restart your
+            membership and unlock a world of unlimited movies, TV shows, and
+            more.
+          </p>
+        </div>
+
+        <div class="footer-links gsap-contact">
+          <h4>Quick Links</h4>
+
+          <a href="./about.html">About</a>
+          <a href="./service.html">Services</a>
+          <a href="./blog.html">Blog</a>
+          <a href="./contact.html">Contact Us</a>
+          <a href="./login.html">Login</a>
+        </div>
+        <!-- <div class="footer-links">
+          <h4>Navigation</h4>
+          <a href="./about.html">About</a>
+          <a href="./service.html">Services</a>
+          <a href="./blog.html">Blog</a>
+        </div> -->
+        <div class="footer-newsletter">
+          <h4>Newsletter</h4>
+          <p>
+            Enter your email to create or restart your membership and unlock a
+            world of unlimited movies, TV shows, and more.
+          </p>
+          <form action="./error.html">
+            <div class="news-input">
+              <input type="email" placeholder="Email Address" required />
+              <button type="submit">→</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Innovations. All Rights Reserved.</p>
+        <div class="legal-links">
+          <a href="./error.html">Privacy Policy</a>
+          <a href="./error.html">ISO Compliance</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./script.js"></script>
+<script>
+  AOS.init({
+    once: true,
+    duration: 1000,
+    easing: "ease-out-cubic",
+    startEvent: "aos:ready", // manual trigger
+  });
+</script>
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<script>
+  // Ensure Swiper is initialized after the library loads
+  const swiper = new Swiper(".heroSwiper", {
+    effect: "fade",
+    fadeEffect: { crossFade: true },
+    loop: true,
+    autoplay: { delay: 4000, disableOnInteraction: false },
+    speed: 1500,
+  });
+
+  window.addEventListener("load", () => {
+    const tl = gsap.timeline({ defaults: { ease: "power4.out" } });
+
+    // Slow zoom on background
+    gsap.to(".heroSwiper", {
+      scale: 1.1,
+      duration: 12,
+      repeat: -1,
+      yoyo: true,
+    });
+
+    // Text animations
+    tl.from(".hero-meta", { y: -30, opacity: 0, duration: 1 })
+      .from(".hero-title", { x: -100, opacity: 0, duration: 1.2 }, "-=0.7")
+      .from(".hero-info span", { opacity: 0, y: 10, stagger: 0.1 }, "-=0.8")
+      .from(".hero-description", { opacity: 0, y: 20 }, "-=0.8")
+      .from(
+        ".hero-actions button",
+        { scale: 0, opacity: 0, stagger: 0.2, ease: "back.out(1.7)" },
+        "-=0.5",
+      )
+      .from(".hero-signup-form", { y: 30, opacity: 0 }, "-=0.5");
+  });
+</script>
+
+<!-- 2 -->
+
+<script>
+  window.addEventListener("load", () => {
+    // GSAP Entrance Animation
+    gsap.from(".trending-card", {
+      scrollTrigger: {
+        trigger: ".trending-section",
+        start: "top 80%",
+      },
+      opacity: 0,
+      y: 30,
+      stagger: 0.2,
+      duration: 1,
+      ease: "power2.out",
+    });
+
+    // Hover Animations
+    const cards = document.querySelectorAll(".trending-card");
+
+    cards.forEach((card) => {
+      const overlay = card.querySelector(".card-overlay");
+      const btn = card.querySelector(".preview-btn");
+      const rank = card.querySelector(".card-rank");
+
+      const tl = gsap.timeline({ paused: true });
+
+      tl.to(card, {
+        // scale: 1.08,
+        zIndex: 50,
+        duration: 0.2,
+        // stagger: 0.8,
+        ease: "power2.out",
+      })
+        .to(overlay, { opacity: 1, duration: 0.2 }, "-=0.3")
+        .to(
+          btn,
+          { y: 0, opacity: 1, duration: 0.4, ease: "back.out(1.7)" },
+          "-=0.2",
+        )
+        .to(
+          rank,
+          { webkitTextStroke: "2px #e50914", color: "#e50914", duration: 0.3 },
+          "-=0.4",
+        );
+
+      card.addEventListener("mouseenter", () => tl.play());
+      card.addEventListener("mouseleave", () => tl.reverse());
+    });
+  });
+</script>
+
+<!-- 3 -->
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const cards = document.querySelectorAll(".watch-card");
+
+    cards.forEach((card) => {
+      const progressBar = card.querySelector(".progress-bar");
+      const progressVal = card.getAttribute("data-progress");
+      const overlay = card.querySelector(".card-overlay");
+      const btn = card.querySelector(".resume-btn");
+
+      // 1. Animate Progress Bars on Load
+      gsap.to(progressBar, {
+        width: progressVal + "%",
+        duration: 1.5,
+        ease: "power2.out",
+        delay: 0.5,
+      });
+
+      // 2. Combined Hover Timeline
+      const hoverTl = gsap.timeline({ paused: true });
+
+      hoverTl
+
+        .to(overlay, { opacity: 1, duration: 0.2 }, "-=0.3")
+        .to(btn, { scale: 1, duration: 0.3, ease: "back.out(1.7)" }, "-=0.1");
+
+      card.addEventListener("mouseenter", () => hoverTl.play());
+      card.addEventListener("mouseleave", () => hoverTl.reverse());
+    });
+  });
+</script>
+
+<script>
+  document.querySelectorAll(".watch-card").forEach((card) => {
+    const overlay = card.querySelector(".card-overlay");
+    const btn = card.querySelector(".resume-btn");
+    const originalText = "Continue";
+    const hoverText = "Continue Watching";
+
+    // Timeline for the card "Pop" effect
+    const hoverTl = gsap.timeline({ paused: true });
+
+    hoverTl
+      .to(card, {
+        // y: -10,
+        // scale: 1.05,
+        duration: 0.4,
+        ease: "power2.out",
+        boxShadow: "0 15px 30px rgba(0,0,0,0.5)",
+      })
+      .to(
+        btn,
+        {
+          paddingLeft: "25px",
+          paddingRight: "25px",
+          duration: 0.3,
+          onStart: () => {
+            btn.innerText = hoverText;
+          },
+        },
+        "-=0.3",
+      );
+
+    card.addEventListener("mouseenter", () => hoverTl.play());
+
+    card.addEventListener("mouseleave", () => {
+      // Reverse the animation and then reset the text
+      hoverTl.reverse().then(() => {
+        btn.innerText = originalText;
+      });
+    });
+  });
+</script>
+
+<script>
+  window.addEventListener("load", () => {
+    // Entrance Animation for "Continue Watching" Section
+    gsap.from(".watch-card", {
+      scrollTrigger: {
+        trigger: ".continue-watching", // The main section container
+        start: "top 85%", // Starts when the section is 85% from the top of the viewport
+        toggleActions: "play none none none", // Plays once and stays
+      },
+      stagger: 0.8, // 0.1s delay between each card's entrance
+      duration: 1.2,
+      ease: "back.out(1.7)", // "Back" ease gives it that premium Netflix bounce
+    });
+  });
+</script>
+
+<!-- 4 -->
+
+<script>
+  window.addEventListener("load", () => {
+    // 1. Entrance Pop Animation - Updated target and opacity
+    gsap.to(".popular-card", {
+      scrollTrigger: {
+        trigger: ".popular-section",
+        start: "top 85%",
+      },
+      opacity: 1, // Animate TO visible
+      y: 0, // Animate TO original position
+      scale: 1, // Animate TO full size
+      stagger: 0.1,
+      duration: 1,
+      ease: "back.out(1.7)",
+    });
+
+    // 2. Hover Interaction
+    const popularCards = document.querySelectorAll(".popular-card");
+
+    popularCards.forEach((card) => {
+      const overlay = card.querySelector(".card-overlay");
+      const btn = card.querySelector(".play-btn");
+
+      const tl = gsap.timeline({ paused: true });
+
+      tl.to(card, { scale: 1.05, duration: 0.3, ease: "power2.out" })
+        .to(overlay, { opacity: 1, duration: 0.2 }, "-=0.3")
+        .to(btn, { y: 0, duration: 0.4, ease: "back.out(1.7)" }, "-=0.2");
+
+      card.addEventListener("mouseenter", () => tl.play());
+      card.addEventListener("mouseleave", () => tl.reverse());
+    });
+  });
+</script>
+
+<!-- 5 -->
+
+<script>
+  window.addEventListener("load", () => {
+    const genreCards = document.querySelectorAll(".genre-card");
+
+    // 1. Entrance Stagger
+    gsap.to(genreCards, {
+      scrollTrigger: {
+        trigger: ".genre-section",
+        start: "top 80%",
+      },
+      opacity: 1,
+      y: 0,
+      stagger: 0.15,
+      duration: 1,
+      ease: "power3.out",
+      from: { y: 50 },
+    });
+
+    // 2. Filter / Redirect Logic
+    genreCards.forEach((card) => {
+      card.addEventListener("click", () => {
+        const genre = card.getAttribute("data-genre");
+
+        // Visual Click Feedback
+        gsap.to(card, {
+          scale: 0.95,
+          duration: 0.1,
+          yoyo: true,
+          repeat: 1,
+          onComplete: () => {
+            // Implementing your requested redirect logic
+            console.log(`Navigating to: ${genre}`);
+            window.location.href = "./error.html";
+          },
+        });
+      });
+    });
+  });
+</script>
+
+<!-- 6 -->
+<script>
+  window.addEventListener("load", () => {
+    const features = document.querySelectorAll(".original-feature");
+
+    // Dynamically set background
+    features.forEach((f) => {
+      f.style.backgroundImage = `url(${f.getAttribute("data-bg")})`;
+    });
+
+    // 1. Entrance Animation
+    const originalTl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".originals-section",
+        start: "top 60%",
+      },
+    });
+
+    originalTl
+      .from(".left-feature", {
+        xPercent: -100,
+        duration: 1.5,
+        ease: "power4.out",
+      })
+      .from(
+        ".right-feature",
+        {
+          xPercent: 100,
+          duration: 1.5,
+          ease: "power4.out",
+        },
+        "-=1.5",
+      )
+      .to(
+        ".feature-content",
+        {
+          opacity: 1,
+          y: 0,
+          stagger: 0.4,
+          duration: 1,
+          ease: "back.out(1.2)",
+        },
+        "-=0.5",
+      );
+
+    // 2. Continuous Slow Zoom (Ken Burns)
+    features.forEach((feature) => {
+      gsap.to(feature, {
+        backgroundSize: "120%",
+        duration: 20,
+        repeat: -1,
+        yoyo: true,
+        ease: "none",
+      });
+
+      // Hover Scaling for Content
+      feature.addEventListener("mouseenter", () => {
+        gsap.to(feature.querySelector(".show-title"), {
+          letterSpacing: "4px", // Wiser cinematic touch
+          color: "#e50914",
+          duration: 0.4,
+        });
+      });
+
+      feature.addEventListener("mouseleave", () => {
+        gsap.to(feature.querySelector(".show-title"), {
+          letterSpacing: "1px",
+          color: "#fff",
+          duration: 0.4,
+        });
+      });
+
+      feature.addEventListener("click", () => {
+        window.location.href = "./error.html";
+      });
+    });
+  });
+</script>
+
+<!-- 7 -->
+<script>
+  window.addEventListener("load", () => {
+    const cards = document.querySelectorAll(".rated-card");
+    const sortSelect = document.getElementById("rating-sort");
+
+    // 1. Entrance Animation
+    gsap.from(cards, {
+      opacity: 1,
+      stagger: 0.4,
+      duration: 1,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: ".top-rated-section",
+        start: "top 75%",
+      },
+    });
+
+    // 2. FIXED Sorting Functionality with GSAP
+    sortSelect.addEventListener("change", (e) => {
+      const threshold =
+        e.target.value === "all" ? 0 : parseFloat(e.target.value);
+
+      cards.forEach((card) => {
+        const cardRating = parseFloat(card.getAttribute("data-rating"));
+
+        if (cardRating >= threshold) {
+          // Show matching cards
+          gsap.to(card, {
+            opacity: 1,
+            scale: 1,
+            duration: 0.4,
+            display: "block", // Ensure it's in the layout
+            ease: "power2.out",
+          });
+        } else {
+          // Hide non-matching cards
+          gsap.to(card, {
+            opacity: 0,
+            scale: 0.8,
+            duration: 0.4,
+            display: "none", // Remove from layout to fix "wasting" space
+            ease: "power2.in",
+          });
+        }
+      });
+    });
+
+    // 3. Click to Error Page
+    cards.forEach((card) => {
+      card.addEventListener("click", () => {
+        window.location.href = "./error.html";
+      });
+    });
+  });
+</script>
+
+<!-- 8 -->
+<script>
+  window.addEventListener("load", () => {
+    const track = document.querySelector(".releases-track");
+    const cards = document.querySelectorAll(".release-card");
+
+    // 1. Function: Auto-Update Date Labels
+    function updateReleaseDates() {
+      cards.forEach((card) => {
+        const dateStr = card.getAttribute("data-date");
+        const addedDate = new Date(dateStr);
+        const now = new Date();
+        const diffTime = Math.abs(now - addedDate);
+        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+
+        const dateLabel = card.querySelector(".added-date");
+        if (diffDays <= 1) dateLabel.innerText = "Added Today";
+        else if (diffDays <= 7)
+          dateLabel.innerText = `Added ${diffDays} days ago`;
+        else
+          dateLabel.innerText = addedDate.toLocaleDateString("en-US", {
+            month: "short",
+            day: "numeric",
+          });
+      });
+    }
+    updateReleaseDates();
+
+    // 2. GSAP Entrance Animation
+    gsap.from(cards, {
+      scrollTrigger: {
+        trigger: ".new-releases-section",
+        start: "top 80%",
+      },
+      opacity: 0,
+      stagger: 0.4,
+      duration: 1,
+      ease: "power4.out",
+    });
+
+    // 3. Slider Functionality
+    let scrollAmount = 0;
+    const step = 320; // Card width + gap
+
+    const nextBtn = document.getElementById("nextBtn");
+    const prevBtn = document.getElementById("prevBtn");
+
+    nextBtn.addEventListener("click", () => {
+      // scrollWidth = total width of all cards
+      // offsetWidth = width of the visible section
+      const maxScroll = track.scrollWidth - track.parentElement.offsetWidth;
+
+      if (scrollAmount < maxScroll) {
+        scrollAmount += step;
+
+        // Boundary check: Don't scroll past the literal end
+        if (scrollAmount > maxScroll) {
+          scrollAmount = maxScroll;
+        }
+
+        gsap.to(track, { x: -scrollAmount, duration: 0.6, ease: "power2.out" });
+      } else {
+        // Optional: Shake button to show end is reached
+        gsap.to(nextBtn, { x: 5, duration: 0.1, yoyo: true, repeat: 3 });
+      }
+    });
+
+    prevBtn.addEventListener("click", () => {
+      if (scrollAmount > 0) {
+        scrollAmount -= step;
+
+        // Boundary check: Don't scroll into negative space
+        if (scrollAmount < 0) {
+          scrollAmount = 0;
+        }
+
+        gsap.to(track, { x: -scrollAmount, duration: 0.6, ease: "power2.out" });
+      } else {
+        // Optional: Shake button to show start is reached
+        gsap.to(prevBtn, { x: -5, duration: 0.1, yoyo: true, repeat: 3 });
+      }
+    });
+
+    // 4. Redirect to Error Page
+    cards.forEach((card) => {
+      card.addEventListener("click", () => {
+        window.location.href = "./error.html";
+      });
+    });
+  });
+</script>
+
+<!-- 9 -->
+<script>
+  window.addEventListener("load", () => {
+    const iconBoxes = document.querySelectorAll(".icon-box");
+    const mainImage = document.getElementById("main-mockup");
+
+    // Device Data (Images)
+    const deviceContent = {
+      tv: "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?q=80&w=1000",
+      laptop:
+        "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=1000",
+      mobile:
+        "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1000",
+    };
+
+    // 1. Entrance Animation
+    gsap.from(".anywhere-text", {
+      opacity: 0,
+      x: -50,
+      duration: 1,
+      scrollTrigger: ".watch-anywhere-section",
+    });
+
+    gsap.from(".mockup-stage", {
+      opacity: 0,
+      scale: 0.8,
+      duration: 1.2,
+      ease: "back.out(1.7)",
+      scrollTrigger: ".watch-anywhere-section",
+    });
+
+    // 2. Click Logic: Switch Device
+    iconBoxes.forEach((box) => {
+      box.addEventListener("click", function () {
+        // Update UI
+        iconBoxes.forEach((b) => b.classList.remove("active"));
+        this.classList.add("active");
+
+        const selectedDevice = this.getAttribute("data-device");
+
+        // GSAP Image Swap Animation
+        gsap.to(mainImage, {
+          opacity: 0,
+          y: 20,
+          duration: 0.3,
+          onComplete: () => {
+            mainImage.src = deviceContent[selectedDevice];
+            gsap.to(mainImage, {
+              opacity: 1,
+              y: 0,
+              duration: 0.4,
+              ease: "power2.out",
+            });
+          },
+        });
+      });
+    });
+  });
+</script>
+
+<!-- 10 -->
+
+<script>
+  window.addEventListener("load", () => {
+    const progressFill = document.getElementById("progress-fill");
+    const progressText = document.getElementById("progress-text");
+    const downloadBtn = document.querySelector(".download-btn-trigger");
+
+    // 1. Entrance Animation
+    gsap.from(".phone-mockup", {
+      y: 100,
+      opacity: 0,
+      duration: 1.2,
+      ease: "power4.out",
+      scrollTrigger: ".offline-section",
+    });
+
+    gsap.from(".offline-text", {
+      x: 50,
+      opacity: 0,
+      duration: 1,
+      scrollTrigger: ".offline-section",
+    });
+
+    // 2. Download Simulation Function
+    function startDownload() {
+      let progress = { value: 0 };
+
+      // Reset
+      gsap.set(progressFill, { width: "0%" });
+      progressText.innerText = "0%";
+
+      gsap.to(progress, {
+        value: 100,
+        duration: 3,
+        ease: "power1.inOut",
+        onUpdate: () => {
+          const p = Math.floor(progress.value);
+          progressFill.style.width = p + "%";
+          progressText.innerText = p + "%";
+        },
+        onComplete: () => {
+          progressText.innerText = "Download Complete!";
+          gsap.to(".download-icon", {
+            scale: 1.2,
+            color: "#4CAF50",
+            yoyo: true,
+            repeat: 1,
+          });
+        },
+      });
+    }
+
+    // Trigger download on scroll or button click
+    ScrollTrigger.create({
+      trigger: ".offline-section",
+      start: "top 40%",
+      onEnter: () => startDownload(),
+    });
+
+    downloadBtn.addEventListener("click", () => startDownload());
+  });
+</script>
+
+<!-- 11 -->
+
+<script>
+  window.addEventListener("load", () => {
+    const cards = document.querySelectorAll(".pricing-card");
+
+    // 1. Entrance Stagger Animation
+    gsap.from(cards, {
+      scrollTrigger: {
+        trigger: ".pricing-section",
+        start: "top 70%",
+      },
+      opacity: 0,
+      stagger: 0.2,
+      duration: 1,
+      ease: "power4.out",
+    });
+
+    // 2. Hover Interaction with GSAP
+    cards.forEach((card) => {
+      card.addEventListener("mouseenter", () => {
+        gsap.to(card, {
+          y: -10,
+          borderColor: "#e50914",
+          duration: 0.3,
+        });
+      });
+
+      card.addEventListener("mouseleave", () => {
+        // Only reset border color if it's NOT the featured card
+        const resetColor = card.classList.contains("featured")
+          ? "#e50914"
+          : "#333";
+        gsap.to(card, {
+          y: 0,
+          borderColor: resetColor,
+          duration: 0.3,
+        });
+      });
+    });
+
+    // 3. Function: Handle Subscription Selection
+    const buttons = document.querySelectorAll(".plan-btn");
+    buttons.forEach((btn) => {
+      btn.addEventListener("click", function () {
+        const planName = this.parentElement.querySelector("h3").innerText;
+        // Navigate to error page with plan context
+        window.location.href = `./error.html?plan=${planName}`;
+      });
+    });
+  });
+</script>
+
+<!-- 12 -->
+
+<script>
+  window.addEventListener("load", () => {
+    const section = document.querySelector(".final-cta-section");
+    const spotlight = document.querySelector(".cta-spotlight");
+    const btn = document.getElementById("magnetic-btn");
+
+    // 1. Entrance Animation
+    gsap.from(".cta-content > *", {
+      scrollTrigger: {
+        trigger: ".final-cta-section",
+        start: "top 80%",
+      },
+      y: 50,
+      opacity: 0,
+      stagger: 0.2,
+      duration: 1,
+      ease: "power4.out",
+    });
+
+    // 2. Mouse Tracking Spotlight
+    section.addEventListener("mousemove", (e) => {
+      const rect = section.getBoundingClientRect();
+      const x = ((e.clientX - rect.left) / rect.width) * 100;
+      const y = ((e.clientY - rect.top) / rect.height) * 100;
+
+      // Smoothly update CSS variables for the spotlight
+      gsap.to(section, {
+        "--x": `${x}%`,
+        "--y": `${y}%`,
+        duration: 0.5,
+        ease: "power2.out",
+      });
+    });
+
+    // 4. Function: Final Action
+    btn.addEventListener("click", () => {
+      // Show a quick ripple/loading state before redirecting
+      gsap.to(btn, { scale: 0.95, duration: 0.1 });
+      setTimeout(() => {
+        window.location.href = "./error.html?status=signup_init";
+      }, 200);
+    });
+  });
+</script>
