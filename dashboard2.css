@@ -383,7 +383,7 @@ body.dashboard-body {
 }
 
 .glass-card {
-  background: var(--bg-glass);
+  background: var(--bg-panel);
   border: var(--border-glass);
   border-radius: 16px;
   padding: 24px;
