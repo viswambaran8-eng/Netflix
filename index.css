@@ -2003,6 +2003,7 @@ body.no-scroll {
   background: #111;
   transition: transform 0.4s ease;
   cursor: pointer;
+
 }
 
 .img-container {
